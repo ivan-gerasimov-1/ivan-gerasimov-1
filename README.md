@@ -2,11 +2,20 @@
 
 ## Current stack
 
-JavaScript, React / React Native / AngularJS
+JavaScript | React, AngularJS; Node.js | NestJS
 
 ## Technologies and Tools
-
-NodeJS, Babel, Webpack, Gulp, HTML, Pug, Styled-components, CSS, LESS, Stylus, SASS, PostCSS, Git, npm, Yarn, Jest, Karma, Mocha, Chai, Sinon, Cypress, ESLint, Stylelint, Apache Cordova, React Native, CI/CD, GoCD, AWS, nginx, Docker
+- JavaScript | Node.js
+- React, AngularJS, NestJS, Express, React Native
+- Webpack, Gulp, Babel
+- HTML, Pug
+- CSS, SASS, CSS Modules, Styled-components, LESS, Stylus, PostCSS
+- Git
+- npm, Yarn
+- Jest, Karma, Mocha, Chai, Sinon, Cypress
+- ESLint, Stylelint
+- CI/CD, GoCD, AWS, nginx, Docker
+- Apache Cordova
 
 ## Skills
 
@@ -14,6 +23,10 @@ NodeJS, Babel, Webpack, Gulp, HTML, Pug, Styled-components, CSS, LESS, Stylus, S
 - Web Applications
 - User Experience
 - Agile Methodologies
+
+##
+
+📫 How to reach me: ivangerasimow@gmail.com
 
 <!--
 **EvanJ0hnson/EvanJ0hnson** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
