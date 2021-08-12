@@ -1,13 +1,12 @@
 h1,
 p {
-  appearance: none;
+  /* TODO: remove display flex from h1 */
   display: flex;
   white-space: nowrap;
-  cursor: default;
 }
 
-a,
 h1,
+a,
 p {
   margin: 0;
   padding: 0;
@@ -16,6 +15,8 @@ p {
 body {
   color: #F5F5F5;
   background-color: #212121;
+
+  cursor: default;
 }
 
 .ig-container {
@@ -27,26 +28,17 @@ body {
 }
 
 h1 {
-  padding-bottom: 1rem;
+  padding-bottom: 1.25rem;
 
   font-family: Georgia, serif;
   font-size: 7rem;
-  letter-spacing: 0.1875rem;
-
-  transition-property: font-size, letter-spacing;
-  transition-duration: 0.15s;
-  transition-timing-function: ease-in-out
 }
 
 p {
   padding-bottom: 0.25rem;
 
-  font-size: 2rem;
   font-family: "Courier New", Courier, monospace;
-
-  text-align: right;
-
-  transition: font-size 0.15s ease-in-out
+  font-size: 2rem;
 }
 
 .ig-link {
@@ -59,7 +51,6 @@ p {
   transition-property: color, border-color;
   transition-duration: 0.15s;
   transition-timing-function: ease-in-out;
-
 }
 
 .ig-link:hover {
