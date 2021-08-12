@@ -2,11 +2,12 @@
 
 ## Current stack
 
-JavaScript | React, AngularJS; Node.js | NestJS
+JavaScript | Vue, Node.js
 
 ## Technologies and Tools
 - JavaScript | Node.js
-- React, AngularJS, NestJS, Express, React Native
+- React, Vue, AngularJS, React Native
+- NestJS, Koa, Express
 - Webpack, Gulp, Babel
 - HTML, Pug
 - CSS, SASS, CSS Modules, Styled-components, LESS, Stylus, PostCSS
