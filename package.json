@@ -1,0 +1,24 @@
+{
+  "name": "gerasimov.pw",
+  "version": "0.1.0",
+  "description": "Personal website",
+  "scripts": {
+    "build": "parcel build src/index.html --no-cache",
+    "start": "parcel src/index.html -p 3000 --no-cache",
+    "serve": "serve dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EvanJ0hnson/gerasimov.pw.git"
+  },
+  "author": "Ivan Gerasimov <ivangerasimow@gmail.com> (gerasimov.pw)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EvanJ0hnson/gerasimov.pw/issues"
+  },
+  "homepage": "https://github.com/EvanJ0hnson/gerasimov.pw#readme",
+  "devDependencies": {
+    "parcel-bundler": "1.12.3",
+    "serve": "12.0.0"
+  }
+}

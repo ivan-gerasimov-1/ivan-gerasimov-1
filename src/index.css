@@ -1,0 +1,120 @@
+h1,
+p {
+  appearance: none;
+  display: flex;
+  white-space: nowrap;
+  cursor: default;
+}
+
+a,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #F5F5F5;
+  background-color: #212121;
+}
+
+.ig-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  padding-bottom: 1rem;
+
+  font-family: Georgia, serif;
+  font-size: 7rem;
+  letter-spacing: 0.1875rem;
+
+  transition-property: font-size, letter-spacing;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in-out
+}
+
+p {
+  padding-bottom: 0.25rem;
+
+  font-size: 2rem;
+  font-family: "Courier New", Courier, monospace;
+
+  text-align: right;
+
+  transition: font-size 0.15s ease-in-out
+}
+
+.ig-link {
+  color: #2196F3;
+
+  border-bottom: 1px solid transparent;
+
+  text-decoration: none;
+
+  transition-property: color, border-color;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in-out;
+
+}
+
+.ig-link:hover {
+  color: #64B5F6;
+
+  border-bottom-color: currentColor
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 5rem
+  }
+
+  p {
+    font-size: 1.75rem
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.25rem;
+    letter-spacing: 0.125rem
+  }
+
+  p {
+    font-size: 1.125rem
+  }
+}
+
+@media (max-width: 425px) {
+  h1 {
+    font-size: 2.25rem
+  }
+
+  p {
+    font-size: 1rem
+  }
+}
+
+@media (max-width: 375px) {
+  h1 {
+    font-size: 1.875rem
+  }
+
+  p {
+    font-size: 1rem
+  }
+}
+
+@media (max-width: 320px) {
+  h1 {
+    font-size: 1.75rem
+  }
+
+  p {
+    font-size: 1rem
+  }
+}
