@@ -6,7 +6,7 @@
     "build": "parcel build src/index.html --no-cache",
     "start": "parcel src/index.html -p 3000 --no-cache",
     "serve": "serve dist",
-    "deploy": "exit 1"
+    "deploy": "exit 0"
   },
   "repository": {
     "type": "git",
