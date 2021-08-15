@@ -4,7 +4,7 @@
   "description": "Personal website",
   "scripts": {
     "build": "parcel build src/index.html --no-cache",
-    "start": "parcel src/index.html -p 3000 --cache-dir .tmp/parcel-cache",
+    "start": "parcel src/index.html --port 3000 --cache-dir .tmp/parcel-cache",
     "serve": "serve dist"
   },
   "repository": {
