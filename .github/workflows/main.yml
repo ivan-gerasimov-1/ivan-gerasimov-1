@@ -26,6 +26,13 @@ jobs:
           node-version: '14'
           cache: 'npm'
 
+      - run: set -eu
+      - run: mkdir "$HOME/.ssh"
+      - run: echo "${{secrets.SSH_KEY}}" > "$HOME/.ssh/id_rsa"
+      - run: chmod 600 "$HOME/.ssh/id_rsa"
+
       - run: npm ci
       - run: npm run build
-      - run: npm run deploy
+
+      - run: cd dist && rsync -e "ssh -i $HOME/.ssh/id_rsa/" -o StrictHostKeyChecking=no" --archive --compress --delete . root@8156138.gq/:/srv/gerasimov.pw/
+
