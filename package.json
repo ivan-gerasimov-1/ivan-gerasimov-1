@@ -5,8 +5,7 @@
   "scripts": {
     "build": "parcel build src/index.html --no-cache",
     "start": "parcel src/index.html -p 3000 --no-cache",
-    "serve": "serve dist",
-    "deploy": "exit 0"
+    "serve": "serve dist"
   },
   "repository": {
     "type": "git",
