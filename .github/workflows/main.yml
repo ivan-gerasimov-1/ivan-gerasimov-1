@@ -23,4 +23,5 @@ jobs:
       - run: npm ci
       - run: npm run build
 
+      - run: cp deploy/upload.sh upload.sh
       - run: sh deploy/upload.sh
