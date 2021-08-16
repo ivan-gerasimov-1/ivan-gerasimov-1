@@ -1,0 +1,118 @@
+:root {
+  --color-body: #f5f5f5;
+  --color-body-background: #212121;
+
+  --color-link: #2196f3;
+  --color-link-hover: #64b5f6;
+}
+
+body {
+  color: var(--color-body);
+  background-color: var(--color-body-background);
+
+  cursor: default;
+}
+
+.pw-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.pw-name {
+  display: flex;
+
+  padding-bottom: 1.25rem;
+
+  font-family: Georgia, serif;
+  font-size: 7rem;
+
+  white-space: nowrap;
+
+  @media (max-width: 1024px) {
+    & {
+      font-size: 5rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    & {
+      font-size: 2.25rem;
+      letter-spacing: 0.125rem;
+    }
+  }
+
+  @media (max-width: 425px) {
+    & {
+      font-size: 2.25rem;
+    }
+  }
+
+  @media (max-width: 375px) {
+    & {
+      font-size: 1.875rem;
+    }
+  }
+
+  @media (max-width: 320px) {
+    & {
+      font-size: 1.75rem;
+    }
+  }
+}
+
+.pw-section {
+  padding-bottom: 0.25rem;
+
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2rem;
+
+  @media (max-width: 1024px) {
+    & {
+      font-size: 1.75rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    & {
+      font-size: 1.125rem;
+    }
+  }
+
+  @media (max-width: 425px) {
+    & {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 375px) {
+    & {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 320px) {
+    & {
+      font-size: 1rem;
+    }
+  }
+}
+
+.pw-link {
+  color: var(--color-link);
+
+  border-bottom: 1px solid transparent;
+
+  text-decoration: none;
+
+  transition-property: color, border-color;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in-out;
+
+  &:hover {
+    color: var(--color-link-hover);
+    border-bottom-color: currentColor;
+  }
+}

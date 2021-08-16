@@ -19,6 +19,7 @@
   "homepage": "https://github.com/EvanJ0hnson/gerasimov.pw#readme",
   "devDependencies": {
     "parcel-bundler": "1.12.3",
+    "sass": "1.37.5",
     "serve": "12.0.0"
   }
 }
