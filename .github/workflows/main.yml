@@ -9,7 +9,6 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      DEPLOY_SRC: ${{secrets.DEPLOY_SRC}}
       DEPLOY_DEST: ${{secrets.DEPLOY_DEST}}
 
     steps:
