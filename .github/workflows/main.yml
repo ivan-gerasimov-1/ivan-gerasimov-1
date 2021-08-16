@@ -9,6 +9,8 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
+      DEPLOY_USER: ${{secrets.DEPLOY_USER}}
+      DEPLOY_HOST: ${{secrets.DEPLOY_HOST}}
       DEPLOY_DEST: ${{secrets.DEPLOY_DEST}}
 
     steps:
