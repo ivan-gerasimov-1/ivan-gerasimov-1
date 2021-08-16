@@ -1,7 +1,7 @@
 #!/bin/sh
 
-rm -rf $DEPLOY_SRC
-mkdir -p $DEPLOY_SRC
+rm -rf .tmp/deploy
+mkdir -p .tmp/deploy
 
-cp -r dist/* $DEPLOY_SRC
-cp -r src/public/* $DEPLOY_SRC
+cp -r dist/* .tmp/deploy
+cp -r src/public/* .tmp/deploy
