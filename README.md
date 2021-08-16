@@ -1,3 +1,5 @@
+[![CI](https://github.com/EvanJ0hnson/EvanJ0hnson/actions/workflows/main.yml/badge.svg?branch=master)](https://github.com/EvanJ0hnson/EvanJ0hnson/actions/workflows/main.yml)
+
 ### Hi there 👋
 
 ## Current stack
