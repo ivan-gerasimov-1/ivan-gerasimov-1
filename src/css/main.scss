@@ -101,18 +101,36 @@ body {
 }
 
 .pw-link {
+  position: relative;
+
+  padding: 0.5rem 0 0.5rem 0;
+
   color: var(--color-link);
 
   border-bottom: 1px solid transparent;
 
   text-decoration: none;
 
-  transition-property: color, border-color;
-  transition-duration: 0.15s;
-  transition-timing-function: ease-in-out;
+  &::before {
+    position: absolute;
+    top: 87.5%;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 1px;
+
+    background-color: transparent;
+
+    transition: background-color 0.15s ease-in-out;
+
+    content: "";
+  }
 
   &:hover {
-    color: var(--color-link-hover);
-    border-bottom-color: currentColor;
+    &::before {
+      background-color: currentColor;
+    }
   }
 }
