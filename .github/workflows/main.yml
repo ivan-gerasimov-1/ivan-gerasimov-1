@@ -2,10 +2,34 @@ name: CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
   build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+          cache: "npm"
+
+      - run: set -eu
+      - run: mkdir "$HOME/.ssh"
+      - run: echo "${{secrets.SSH_KEY}}" > "$HOME/.ssh/id_rsa"
+      - run: chmod 600 "$HOME/.ssh/id_rsa"
+
+      - run: npm ci
+      - run: npm run build
+
+      - name: Archive "dist" directory
+        uses: actions/upload-artifact@v2
+        with:
+          name: dist
+          path: dist
+
+  deploy:
     runs-on: ubuntu-latest
 
     env:
@@ -15,17 +39,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - name: Download "dist" directory
+        uses: actions/download-artifact@v2
         with:
-          node-version: '14'
-          cache: 'npm'
-
-      - run: set -eu
-      - run: mkdir "$HOME/.ssh"
-      - run: echo "${{secrets.SSH_KEY}}" > "$HOME/.ssh/id_rsa"
-      - run: chmod 600 "$HOME/.ssh/id_rsa"
-
-      - run: npm ci
-      - run: npm run build
+          name: dist
 
       - run: sh scripts/deploy/deploy.sh
