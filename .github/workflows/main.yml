@@ -46,6 +46,4 @@ jobs:
       - run: echo "${{secrets.SSH_KEY}}" > "$HOME/.ssh/id_rsa"
       - run: chmod 600 "$HOME/.ssh/id_rsa"
 
-      - run: ls
-
       - run: sh scripts/deploy/deploy.sh
