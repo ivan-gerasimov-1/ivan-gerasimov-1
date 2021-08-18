@@ -15,11 +15,6 @@ jobs:
           node-version: "14"
           cache: "npm"
 
-      - run: set -eu
-      - run: mkdir "$HOME/.ssh"
-      - run: echo "${{secrets.SSH_KEY}}" > "$HOME/.ssh/id_rsa"
-      - run: chmod 600 "$HOME/.ssh/id_rsa"
-
       - run: npm ci
       - run: npm run build
 
@@ -44,5 +39,10 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: dist
+
+      - run: set -eu
+      - run: mkdir "$HOME/.ssh"
+      - run: echo "${{secrets.SSH_KEY}}" > "$HOME/.ssh/id_rsa"
+      - run: chmod 600 "$HOME/.ssh/id_rsa"
 
       - run: sh scripts/deploy/deploy.sh
