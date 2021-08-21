@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Personal website",
   "scripts": {
-    "build": "parcel build src/index.html --no-cache --no-source-maps",
+    "build": "sh scripts/build.sh",
     "start": "parcel src/index.html --port 3000 --cache-dir .tmp/parcel-cache --https",
     "serve": "serve dist"
   },
