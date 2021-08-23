@@ -16,9 +16,10 @@ jobs:
           node-version: "14"
           cache: "npm"
 
-      - run: |
-        npm ci
-        npm run build
+      - name: Install dependencies and build the project
+        run: |
+          npm ci
+          npm run build
 
       - name: Archive build artifact
         uses: actions/upload-artifact@v2
