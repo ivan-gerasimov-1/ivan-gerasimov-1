@@ -26,10 +26,11 @@ jobs:
           name: dist
           path: dist
 
-      - run: |
-        set -eu
-        mkdir "$HOME/.ssh"
-        echo "${{secrets.SSH_KEY}}" > "$HOME/.ssh/id_rsa"
-        chmod 600 "$HOME/.ssh/id_rsa"
+      - name: Setup SSH
+        run: |
+          set -eu
+          mkdir "$HOME/.ssh"
+          echo "${{secrets.SSH_KEY}}" > "$HOME/.ssh/id_rsa"
+          chmod 600 "$HOME/.ssh/id_rsa"
 
       - run: sh scripts/deploy/deploy.sh
