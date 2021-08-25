@@ -35,7 +35,7 @@ jobs:
       DEPLOY_USER: ${{secrets.DEPLOY_USER}}
       DEPLOY_HOST: ${{secrets.DEPLOY_HOST}}
       # TODO: use DEPLOY_DEST from env
-      DEPLOY_DEST: ${{secrets.DEPLOY_DEST}}
+      DEPLOY_DEST: ${{env.DEPLOY_DEST}}
 
     steps:
       - uses: actions/checkout@v2
