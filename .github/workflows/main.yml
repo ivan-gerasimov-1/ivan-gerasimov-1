@@ -35,7 +35,7 @@ jobs:
       SSH_KEY: ${{secrets.SSH_KEY}}
       DEPLOY_USER: ${{secrets.DEPLOY_USER}}
       DEPLOY_HOST: ${{secrets.DEPLOY_HOST}}
-      DEPLOY_DEST: ${{env.DEPLOY_DEST}}
+      DEPLOY_DEST: ${{secrets.DEPLOY_DEST}}
 
     steps:
       - uses: actions/checkout@v2
