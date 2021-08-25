@@ -34,7 +34,6 @@ jobs:
     env:
       DEPLOY_USER: ${{secrets.DEPLOY_USER}}
       DEPLOY_HOST: ${{secrets.DEPLOY_HOST}}
-      # TODO: use DEPLOY_DEST from env
       DEPLOY_DEST: ${{env.DEPLOY_DEST}}
 
     steps:
