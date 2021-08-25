@@ -1,4 +1,4 @@
-name: DEV
+name: Build and Deploy
 
 on:
   push:
