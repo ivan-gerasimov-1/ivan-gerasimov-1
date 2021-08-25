@@ -27,7 +27,7 @@ jobs:
           name: dist
           path: dist
 
-  deploy_production:
+  deploy_development:
     if: ${{ github.ref == 'refs/heads/master' }}
     runs-on: ubuntu-latest
     environment: development
