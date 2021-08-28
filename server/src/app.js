@@ -1,16 +1,11 @@
 import Koa from 'koa';
-import Pino from 'pino';
+import { loggerFactory } from './logger/loggerFactory';
 
 const EStateField = {
   RESPONSE_TIME: 'responseTime',
 };
 
-const logger = Pino(
-  Pino.destination({
-    minLength: 4096,
-    sync: false,
-  })
-);
+const logger = loggerFactory();
 
 new Koa()
   .use(async (ctx, next) => {
