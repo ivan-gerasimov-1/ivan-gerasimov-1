@@ -1,5 +1,5 @@
 import Koa from 'koa';
-import { loggerFactory } from './logger/loggerFactory';
+import { loggerFactory } from './logger/loggerFactory.js';
 
 const EStateField = {
   RESPONSE_TIME: 'responseTime',
