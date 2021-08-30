@@ -21,11 +21,17 @@ jobs:
           npm ci
           npm run build
 
-      - name: Upload build artifact
+      - name: Upload client build artifact
         uses: actions/upload-artifact@v2
         with:
-          name: dist
-          path: dist
+          name: build/client
+          path: .tmp/build/client
+
+      - name: Upload server build artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: build/server
+          path: .tmp/build/server
 
   deploy_development:
     if: ${{ github.ref == 'refs/heads/master' }}
@@ -41,11 +47,18 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Download build artifact
+      - name: Download client build artifact
         uses: actions/download-artifact@v2
         with:
-          name: dist
-          path: dist
+          name: build/client
+          path: .tmp/build/client
+
+      - uses: actions/checkout@v2
+      - name: Download server build artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: build/server
+          path: .tmp/build/server
 
       - name: Setup SSH
         run: |
