@@ -25,13 +25,13 @@ body {
   display: flex;
 
   font-family: Georgia, serif;
-  font-size: 7rem;
+  font-size: 6rem;
 
   white-space: nowrap;
 
   @media (max-width: 1024px) {
     & {
-      font-size: 5rem;
+      font-size: 4.5rem;
     }
   }
 
@@ -131,4 +131,28 @@ body {
       background-color: currentColor;
     }
   }
+}
+
+.pw-description {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 2rem;
+
+  @media (max-width: 425px) {
+    & {
+      display: block;
+    }
+  }
+}
+
+.pw-main-photo__container {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.pw-main-photo {
+  display: flex;
+  border-radius: 100%;
 }
