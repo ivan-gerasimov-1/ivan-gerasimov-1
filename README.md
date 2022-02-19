@@ -4,7 +4,7 @@
 
 ## Current stack
 
-JavaScript | Vue, Node.js
+JavaScript | React, Vue, Node.js
 
 ## Technologies and Tools
 - JavaScript | Node.js
