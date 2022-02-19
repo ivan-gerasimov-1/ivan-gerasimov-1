@@ -9,7 +9,7 @@ JavaScript | React, Vue, Node.js
 ## Technologies and Tools
 - JavaScript | Node.js
 - React, Vue, AngularJS, React Native
-- NestJS, Koa, Express
+- NestJS, Koa, Express, Fastify
 - Webpack, Gulp, Babel
 - HTML, Pug
 - CSS, SASS, CSS Modules, Styled-components, LESS, Stylus, PostCSS
