@@ -1,4 +1,4 @@
 module.exports = {
-  collapseWhitespace: "all",
-  minifySvg: false,
+	collapseWhitespace: 'all',
+	minifySvg: false,
 };
