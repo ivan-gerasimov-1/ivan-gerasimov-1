@@ -7,7 +7,7 @@
 		"packages/server"
 	],
 	"scripts": {
-		"build": "npm run build --workspaces",
+		"build": "npm run build:client && npm run build:server",
 		"build:client": "npm run build --workspace=@gerasimov.pw/client",
 		"build:server": "npm run build --workspace=@gerasimov.pw/server"
 	},
