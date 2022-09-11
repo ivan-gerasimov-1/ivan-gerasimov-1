@@ -2,6 +2,9 @@
 	"name": "gerasimov.pw",
 	"version": "0.1.0",
 	"description": "Personal website",
+	"workspaces": [
+		"packages/server"
+	],
 	"scripts": {
 		"build": "sh scripts/build/build.sh",
 		"start": "parcel src/index.html --port 3000 --cache-dir .tmp/parcel-cache --https",
