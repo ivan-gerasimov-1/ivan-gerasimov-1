@@ -11,7 +11,7 @@
 	"author": "Ivan Gerasimov <ivangerasimow@gmail.com> (gerasimov.pw)",
 	"license": "MIT",
 	"dependencies": {
-		"koa": "2.13.1",
+		"fastify": "4.5.3",
 		"pino": "6.13.1"
 	},
 	"devDependencies": {

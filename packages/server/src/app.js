@@ -1,30 +1,12 @@
-import Koa from 'koa';
+import fastify from 'fastify';
 import { loggerFactory } from './logger/loggerFactory.js';
-
-const EStateField = {
-	RESPONSE_TIME: 'responseTime',
-};
 
 const logger = loggerFactory();
 
-new Koa()
-	.use(async (ctx, next) => {
-		await next();
+fastify({ logger: true })
+	.addHook('onRequest', async (request, reply) => {
+		logger.info('onRequest');
 
-		const responseTime = ctx.state[EStateField.RESPONSE_TIME];
-
-		logger.info(`${ctx.method} ${ctx.url} - ${responseTime}ms`);
+		reply.send('OK');
 	})
-	.use(async (ctx, next) => {
-		const start = Date.now();
-
-		await next();
-
-		const duration = Date.now() - start;
-
-		ctx.state[EStateField.RESPONSE_TIME] = duration;
-	})
-	.use((ctx) => {
-		ctx.body = 'OK';
-	})
-	.listen(3000);
+	.listen({ port: 3001 });
