@@ -13,12 +13,12 @@ sh scripts/build/common/pre-build.sh
 
 # Build client
 echo $LOG_PREFIX Build client
-npx parcel build src/index.html --out-dir $BUILD_DEST --no-cache --no-source-maps
+npx parcel build packages/client/src/index.html --out-dir $BUILD_DEST --no-cache --no-source-maps
 echo $LOG_PREFIX ✓ Done
 
 # Copy assets
 echo $LOG_PREFIX Copy assets to \"$BUILD_DEST\" dir
-cp -r src/public/ $BUILD_DEST
+cp -r packages/client/src/public/ $BUILD_DEST
 echo $LOG_PREFIX ✓ Done
 
 # Finish

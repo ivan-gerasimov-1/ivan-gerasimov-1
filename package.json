@@ -3,13 +3,11 @@
 	"version": "0.1.0",
 	"description": "Personal website",
 	"workspaces": [
+		"packages/client",
 		"packages/server"
 	],
 	"scripts": {
-		"build": "sh scripts/build/build.sh",
-		"start": "parcel src/index.html --port 3000 --cache-dir .tmp/parcel-cache --https",
-		"serve": "serve dist",
-		"format": "prettier --write ./src/**/*"
+		"build": "npm run build --workspaces --if-present"
 	},
 	"repository": {
 		"type": "git",
@@ -20,11 +18,5 @@
 	"bugs": {
 		"url": "https://github.com/EvanJ0hnson/gerasimov.pw/issues"
 	},
-	"homepage": "https://github.com/EvanJ0hnson/gerasimov.pw#readme",
-	"devDependencies": {
-		"parcel-bundler": "1.12.3",
-		"prettier": "2.7.1",
-		"sass": "1.37.5",
-		"serve": "12.0.0"
-	}
+	"homepage": "https://github.com/EvanJ0hnson/gerasimov.pw#readme"
 }
