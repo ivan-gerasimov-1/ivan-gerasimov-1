@@ -5,7 +5,8 @@
 	"main": "index.js",
 	"type": "module",
 	"scripts": {
-		"start": ""
+		"start": "node index.js",
+		"build": "cd ../../ && sh scripts/server/build.sh"
 	},
 	"author": "Ivan Gerasimov <ivangerasimow@gmail.com> (gerasimov.pw)",
 	"license": "MIT",

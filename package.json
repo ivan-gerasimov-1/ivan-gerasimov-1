@@ -7,7 +7,9 @@
 		"packages/server"
 	],
 	"scripts": {
-		"build": "npm run build --workspaces --if-present"
+		"build": "npm run build --workspaces",
+		"build:client": "npm run build --workspace=@gerasimov.pw/client",
+		"build:server": "npm run build --workspace=@gerasimov.pw/server"
 	},
 	"repository": {
 		"type": "git",

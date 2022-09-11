@@ -11,7 +11,7 @@ sh scripts/build/common/pre-build.sh
 
 echo $LOG_PREFIX Copy source files
 cp -r packages/server/package.json $BUILD_DEST/
-cp -r packages/server/package-lock.json $BUILD_DEST/
+cp -r package-lock.json $BUILD_DEST/
 
 cp -r packages/server/index.js $BUILD_DEST/
 cp -r packages/server/src $BUILD_DEST
