@@ -9,7 +9,9 @@
 	"scripts": {
 		"build": "npm run build --workspaces",
 		"build:client": "npm run build --workspace=@gerasimov.pw/client",
-		"build:server": "npm run build --workspace=@gerasimov.pw/server"
+		"build:server": "npm run build --workspace=@gerasimov.pw/server",
+		"start:client": "npm run start --workspace=@gerasimov.pw/client",
+		"start:server": "npm run start --workspace=@gerasimov.pw/server"
 	},
 	"repository": {
 		"type": "git",
