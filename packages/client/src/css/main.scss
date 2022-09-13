@@ -7,18 +7,18 @@
 }
 
 body {
+	height: 100vh;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	margin: 0;
+
 	color: var(--color-body);
 	background-color: var(--color-body-background);
 
 	cursor: default;
-}
-
-.pw-container {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-
-	transform: translate(-50%, -50%);
 }
 
 .pw-name {
@@ -112,11 +112,11 @@ body {
 	&::before {
 		position: absolute;
 		top: 87.5%;
-		left: 0;
+		left: 0.125rem;
 
 		display: block;
 
-		width: 100%;
+		width: calc(100% - 0.125rem);
 		height: 1px;
 
 		background-color: transparent;
@@ -138,7 +138,7 @@ body {
 	grid-template-columns: 1fr auto;
 	column-gap: 2rem;
 
-	@media (max-width: 425px) {
+	@media (max-width: 768px) {
 		& {
 			display: block;
 		}
@@ -150,6 +150,8 @@ body {
 
 	align-items: center;
 	justify-content: center;
+
+	margin-left: -0.25rem;
 }
 
 .pw-main-photo {
