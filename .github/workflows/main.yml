@@ -27,11 +27,11 @@ jobs:
           name: build-client
           path: .tmp/build/client
 
-      - name: Upload server build artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: build-server
-          path: .tmp/build/server
+      # - name: Upload server build artifact
+      #   uses: actions/upload-artifact@v2
+      #   with:
+      #     name: build-server
+      #     path: .tmp/build/server
 
   deploy_development:
     if: ${{ github.ref == 'refs/heads/master' }}
@@ -54,11 +54,11 @@ jobs:
           name: build-client
           path: .tmp/build/client
 
-      - name: Download server build artifact
-        uses: actions/download-artifact@v2
-        with:
-          name: build-server
-          path: .tmp/build/server
+      # - name: Download server build artifact
+      #   uses: actions/download-artifact@v2
+      #   with:
+      #     name: build-server
+      #     path: .tmp/build/server
 
       - name: Setup SSH
         run: |
@@ -67,7 +67,9 @@ jobs:
           echo "$SSH_KEY" > "$HOME/.ssh/id_rsa"
           chmod 600 "$HOME/.ssh/id_rsa"
 
-      - run: sh scripts/deploy/deploy.sh
+      - run: |
+          cd ~/
+          sh scripts/deploy/deploy.sh
 
   deploy_production:
     if: ${{ github.ref == 'refs/heads/production' }}
