@@ -67,9 +67,7 @@ jobs:
           echo "$SSH_KEY" > "$HOME/.ssh/id_rsa"
           chmod 600 "$HOME/.ssh/id_rsa"
 
-      - run: |
-          cd ~/
-          sh scripts/deploy/deploy.sh
+      - run: sh scripts/deploy/deploy.sh
 
   deploy_production:
     if: ${{ github.ref == 'refs/heads/production' }}
