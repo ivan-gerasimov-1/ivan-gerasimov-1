@@ -4,6 +4,7 @@
 	"description": "Personal website",
 	"workspaces": [
 		"packages/client",
+		"packages/client-v2",
 		"packages/server"
 	],
 	"scripts": {
