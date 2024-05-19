@@ -39,6 +39,7 @@ export default function Index() {
 						width="32"
 						height="32"
 						viewBox="0 0 382 382"
+						aria-label="LinkedIn profile"
 					>
 						<path
 							fill="currentColor"
@@ -52,6 +53,7 @@ export default function Index() {
 					href="https://github.com/ivan-gerasimov-1"
 					target="_blank"
 					rel="noopener"
+					aria-label="GitHub profile"
 				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
