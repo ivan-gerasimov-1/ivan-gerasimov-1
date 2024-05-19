@@ -15,7 +15,6 @@
 	@media (max-width: 768px) {
 		& {
 			font-size: 2.25rem;
-			letter-spacing: 0.125rem;
 		}
 	}
 
@@ -133,7 +132,12 @@
 	justify-content: center;
 
 	margin-left: -0.25rem;
-}
+
+	@media (max-width: 1024px) {
+		& {
+			margin-left: 0;
+		}
+	}
 }
 
 .profileLinksContainer {
