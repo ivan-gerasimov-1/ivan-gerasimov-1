@@ -1,10 +1,8 @@
-// export const config = {
-// 	unstable_runtimeJS: false,
-// };
+export const config = {
+	unstable_runtimeJS: false,
+};
 
-export const dynamic = 'force-static';
-
-export default function MainPage() {
+export default function Index() {
 	return (
 		<main>
 			<div className="pw-description">
