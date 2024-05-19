@@ -33,13 +33,13 @@ export default function Index() {
 					href="https://linkedin.com/in/ivan-gerasimov"
 					target="_blank"
 					rel="noopener"
+					aria-label="LinkedIn profile"
 				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						width="32"
 						height="32"
 						viewBox="0 0 382 382"
-						aria-label="LinkedIn profile"
 					>
 						<path
 							fill="currentColor"
