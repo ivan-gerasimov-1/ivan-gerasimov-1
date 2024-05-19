@@ -1,3 +1,5 @@
+import styles from './index.module.css';
+
 export const config = {
 	unstable_runtimeJS: false,
 };
@@ -5,10 +7,10 @@ export const config = {
 export default function Index() {
 	return (
 		<main>
-			<div className="pw-description">
-				<div className="pw-main-photo__container">
+			<div className={styles.description}>
+				<div className={styles.mainPhotoContainer}>
 					<img
-						className="pw-main-photo"
+						className={styles.mainPhoto}
 						src="/ivan-gerasimov_photo.webp"
 						alt="Ivan Gerasimov"
 						width="130"
@@ -17,17 +19,17 @@ export default function Index() {
 				</div>
 
 				<div>
-					<h1 className="pw-name">Ivan Gerasimov</h1>
+					<h1 className={styles.name}>Ivan Gerasimov</h1>
 
-					<section className="pw-section">
+					<section className={styles.section}>
 						Fullstack JavaScript developer
 					</section>
 				</div>
 			</div>
 
-			<section className="pw-profile-links__container">
+			<section className={styles.profileLinksContainer}>
 				<a
-					className="pw-profile-links__link"
+					className={styles.profileLink}
 					href="https://linkedin.com/in/ivan-gerasimov"
 					target="_blank"
 					rel="noopener"
@@ -46,7 +48,7 @@ export default function Index() {
 				</a>
 
 				<a
-					className="pw-profile-links__link"
+					className={styles.profileLink}
 					href="https://github.com/ivan-gerasimov-1"
 					target="_blank"
 					rel="noopener"
@@ -65,8 +67,8 @@ export default function Index() {
 				</a>
 			</section>
 
-			<section className="pw-section">
-				<a className="pw-link" href="mailto:contact@gerasimov.pw">
+			<section className={styles.section}>
+				<a className={styles.link} href="mailto:contact@gerasimov.pw">
 					contact@gerasimov.pw
 				</a>
 			</section>
