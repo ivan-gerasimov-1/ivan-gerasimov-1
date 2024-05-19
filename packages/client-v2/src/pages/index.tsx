@@ -15,12 +15,10 @@ export default function Index() {
 					<Photo />
 				</div>
 
-				<div>
+				<div className={styles.info}>
 					<h1 className={styles.name}>Ivan Gerasimov</h1>
 
-					<section className={styles.section}>
-						Fullstack JavaScript developer
-					</section>
+					<span className={styles.section}>Fullstack JavaScript developer</span>
 				</div>
 			</div>
 
