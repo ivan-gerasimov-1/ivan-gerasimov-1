@@ -19,7 +19,7 @@ p {
 }
 
 body {
-	height: 100svh;
+	height: 100dvh;
 
 	display: flex;
 	align-items: center;
