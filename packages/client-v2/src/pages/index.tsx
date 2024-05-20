@@ -9,7 +9,7 @@ export const config = {
 
 export default function Index() {
 	return (
-		<main>
+		<main className={styles.page}>
 			<div className={styles.description}>
 				<div className={styles.mainPhotoContainer}>
 					<Photo />

@@ -1,3 +1,9 @@
+.page {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 .name {
 	display: flex;
 
