@@ -37,8 +37,8 @@ export default function Index() {
 			</section>
 
 			<section className={styles.section}>
-				<a className={styles.link} href="mailto:contact@gerasimov.pw">
-					contact@gerasimov.pw
+				<a className={styles.link} href="mailto:ivan@gerasimov.dev">
+					ivan@gerasimov.dev
 				</a>
 			</section>
 		</main>
