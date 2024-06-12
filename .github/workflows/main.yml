@@ -31,7 +31,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: build
-          path: artifacts/build
+          path: packages/client-v2/out
 
   deploy:
     if: false
@@ -67,7 +67,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: build
-          path: artifacts/build
+          path: packages/client-v2/out
 
       - name: Deploy config
         run: |
