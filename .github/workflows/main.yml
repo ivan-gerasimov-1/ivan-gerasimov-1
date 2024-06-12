@@ -4,13 +4,13 @@ on:
   push:
     branches:
       - master
-			- development
+      - development
     paths:
       - 'packages/client-v2/**'
   pull_request:
     branches:
       - master
-			- development
+      - development
     paths:
       - 'packages/client-v2/**'
 
