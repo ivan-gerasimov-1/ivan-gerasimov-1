@@ -21,8 +21,16 @@ p {
 body {
 	height: 100dvh;
 
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
 	color: var(--fc-body);
 	background-color: var(--clr-body-background);
 
 	cursor: default;
+}
+
+#__next {
+	display: contents;
 }
