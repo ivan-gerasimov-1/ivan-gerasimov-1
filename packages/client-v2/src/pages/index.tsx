@@ -7,7 +7,8 @@ export const config = {
 	unstable_runtimeJS: false,
 };
 
-export default function Index() {
+export default IndexPage;
+export function IndexPage() {
 	return (
 		<main className={styles.page}>
 			<div className={styles.description}>
