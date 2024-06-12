@@ -34,7 +34,6 @@ jobs:
           path: packages/client-v2/out
 
   deploy:
-    if: false
     runs-on: ubuntu-latest
     environment: production
     needs: build
