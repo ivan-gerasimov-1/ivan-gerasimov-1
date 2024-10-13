@@ -8,7 +8,7 @@
 		"start": "node index.js",
 		"build": "cd ../../ && sh scripts/server/build.sh"
 	},
-	"author": "Ivan Gerasimov <ivangerasimow@gmail.com> (gerasimov.pw)",
+	"author": "Ivan Gerasimov <ivangerasimow@gmail.com> (gerasimov.dev)",
 	"license": "MIT",
 	"dependencies": {
 		"fastify": "4.5.3",
