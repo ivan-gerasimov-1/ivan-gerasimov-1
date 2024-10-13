@@ -3,7 +3,7 @@
 	"version": "0.1.1",
 	"description": "Personal website",
 	"workspaces": [
-		"packages/*"
+		"apps/*"
 	],
 	"repository": {
 		"type": "git",

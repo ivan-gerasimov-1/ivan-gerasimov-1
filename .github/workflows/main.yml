@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - "packages/client/**"
+      - "apps/client/**"
 
   workflow_dispatch:
 
@@ -30,7 +30,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: build
-          path: packages/client/out
+          path: apps/client/out
 
   deploy:
     runs-on: ubuntu-latest
@@ -53,12 +53,12 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: build
-          path: packages/client/out
+          path: apps/client/out
 
       - name: Deploy
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ env.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ env.CLOUDFLARE_ACCOUNT_ID }}
-          workingDirectory: "packages/client"
+          workingDirectory: "apps/client"
           command: pages deploy
