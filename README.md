@@ -4,22 +4,21 @@
 
 ## Current stack
 
-JavaScript | React, Vue, Node.js
+TypeScript | React, Vue, Node.js
 
 ## Technologies and Tools
 
-- JavaScript | Node.js
-- React, Vue, AngularJS, React Native
-- NestJS, Koa, Express, Fastify
-- Webpack, Gulp, Babel
-- HTML, Pug
+- TypeScript | Node.js
+- React, Vue, React Native
+- NestJS, Fastify, Koa, Express
+- Vite, Webpack, Gulp, Babel
+- HTML
 - CSS, SASS, CSS Modules, Styled-components, LESS, Stylus, PostCSS
-- Git
-- npm, Yarn
-- Jest, Karma, Mocha, Chai, Sinon, Cypress
+- git
+- npm, yarn
+- Vitest, Jest, Karma, Mocha, Chai, Sinon, Cypress
 - ESLint, Stylelint
-- CI/CD, GoCD, AWS, nginx, Docker
-- Apache Cordova
+- CI/CD, GitHub Actions, GitLab CI/CD, GoCD, AWS, nginx, Docker
 
 ## Skills
 
