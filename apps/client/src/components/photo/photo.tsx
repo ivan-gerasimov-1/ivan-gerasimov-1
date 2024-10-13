@@ -8,6 +8,8 @@ export function Photo() {
 			alt="Ivan Gerasimov | Иван Герасимов"
 			width="130"
 			height="130"
+			loading="lazy"
+			decoding="async"
 		/>
 	);
 }
