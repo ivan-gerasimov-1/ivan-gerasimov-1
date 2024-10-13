@@ -1,5 +1,5 @@
 {
-	"name": "@gerasimov.pw/client-v2",
+	"name": "@gerasimov/client-v2",
 	"version": "0.1.4",
 	"private": true,
 	"scripts": {
