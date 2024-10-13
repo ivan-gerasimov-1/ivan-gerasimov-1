@@ -1,0 +1,36 @@
+body,
+h1,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--fc-body: #f5f5f5;
+	--fc-body-200: #8e8e8e;
+	--fc-link: var(--fc-body-200);
+	--fc-link-hover: #2196f3;
+
+	--clr-body-background: #212121;
+
+	--ff-transitional: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+	--ff-monospace: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo,
+		Consolas, 'DejaVu Sans Mono', monospace;
+}
+
+body {
+	height: 100dvh;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	color: var(--fc-body);
+	background-color: var(--clr-body-background);
+
+	cursor: default;
+}
+
+#__next {
+	display: contents;
+}
