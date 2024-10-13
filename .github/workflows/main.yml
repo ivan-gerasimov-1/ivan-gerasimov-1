@@ -3,8 +3,7 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - master
-      - development
+      - main
     paths:
       - 'packages/client-v2/**'
 
@@ -47,11 +46,14 @@ jobs:
           export-env: true
         env:
           OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
-          SSH_KEY: 'op://Savee/GitHub Actions/private key'
-          HOST: 'op://Savee/Main Server/Host'
-          USER: 'op://Savee/Main Server/Username'
+          CLOUDFLARE_ACCOUNT_ID: 'op://Savee/Cloudflare Wrangler/Account ID'
+          CLOUDFLARE_API_TOKEN: 'op://Savee/Cloudflare Wrangler/API Token'
+          # SSH_KEY: 'op://Savee/GitHub Actions/private key'
+          # HOST: 'op://Savee/Main Server/Host'
+          # USER: 'op://Savee/Main Server/Username'
 
       - name: Setup SSH
+        if: false
         run: |
           set -eu
           mkdir $HOME/.ssh
@@ -69,5 +71,14 @@ jobs:
           path: packages/client-v2/out
 
       - name: Deploy config
+        if: false
         run: |
           rsync --archive --compress --delete packages/client-v2/out/* $USER@$HOST:~/srv/gerasimov.dev
+
+      - name: Deploy
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: $CLOUDFLARE_API_TOKEN
+          accountId: $CLOUDFLARE_ACCOUNT_ID
+          workingDirectory: 'packages/client-v2'
+          command: pages deploy
