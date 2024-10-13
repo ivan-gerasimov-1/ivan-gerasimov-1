@@ -9,7 +9,7 @@
 		"build": "cd ../../ && sh scripts/server/build.sh"
 	},
 	"author": "Ivan Gerasimov <ivangerasimow@gmail.com> (gerasimov.dev)",
-	"license": "MIT",
+	"license": "UNLICENSED",
 	"dependencies": {
 		"fastify": "4.5.3",
 		"pino": "6.13.1"

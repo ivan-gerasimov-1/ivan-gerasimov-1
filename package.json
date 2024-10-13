@@ -7,12 +7,12 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/EvanJ0hnson/gerasimov.pw.git"
+		"url": "git+https://github.com/ivan-gerasimov-1/ivan-gerasimov-1.git"
 	},
 	"author": "Ivan Gerasimov <ivangerasimow@gmail.com> (gerasimov.dev)",
 	"license": "UNLICENSED",
 	"bugs": {
-		"url": "https://github.com/EvanJ0hnson/gerasimov.pw/issues"
+		"url": "https://github.com/ivan-gerasimov-1/ivan-gerasimov-1/issues"
 	},
-	"homepage": "https://github.com/EvanJ0hnson/gerasimov.pw#readme"
+	"homepage": "https://github.com/ivan-gerasimov-1/ivan-gerasimov-1#readme"
 }

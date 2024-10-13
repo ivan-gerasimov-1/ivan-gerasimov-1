@@ -8,16 +8,8 @@
 		"preview": "serve dist",
 		"format": "prettier --write ./src/**/*"
 	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/EvanJ0hnson/gerasimov.pw.git"
-	},
 	"author": "Ivan Gerasimov <ivangerasimow@gmail.com> (gerasimov.dev)",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/EvanJ0hnson/gerasimov.pw/issues"
-	},
-	"homepage": "https://github.com/EvanJ0hnson/gerasimov.pw#readme",
+	"license": "UNLICENSED",
 	"devDependencies": {
 		"parcel-bundler": "1.12.3",
 		"prettier": "2.7.1",

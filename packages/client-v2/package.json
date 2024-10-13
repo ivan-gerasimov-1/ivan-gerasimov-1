@@ -1,7 +1,8 @@
 {
 	"name": "@gerasimov/client-v2",
 	"version": "0.1.4",
-	"private": true,
+	"author": "Ivan Gerasimov <ivangerasimow@gmail.com> (gerasimov.dev)",
+	"license": "UNLICENSED",
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
