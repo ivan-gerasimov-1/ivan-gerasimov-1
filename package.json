@@ -3,9 +3,7 @@
 	"version": "0.1.1",
 	"description": "Personal website",
 	"workspaces": [
-		"packages/client",
-		"packages/client-v2",
-		"packages/server"
+		"packages/*"
 	],
 	"scripts": {
 		"build": "npm run build --workspaces",
