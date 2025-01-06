@@ -4,7 +4,7 @@
 
 ## Current stack
 
-TypeScript | React, Vue, Node.js
+TypeScript | React, React Router, TanStack Query, Vite | Node.js, Fastify
 
 ## Technologies and Tools
 
