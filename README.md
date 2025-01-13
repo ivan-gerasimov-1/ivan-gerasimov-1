@@ -30,7 +30,3 @@ TypeScript | React, React Router, TanStack Query, Vite | Node.js, Fastify
 ##
 
 📫 How to reach me: ivan@gerasimov.dev
-
-##
-
-<a href="https://app.daily.dev/ivangerasimov"><img src="https://api.daily.dev/devcards/v2/y098t9IX17Ad6S8UPsW6g.png?type=default&r=qlg" width="356" alt="Ivan Gerasimov's Dev Card"/></a>
