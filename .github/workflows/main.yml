@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - "apps/client/**"
+      - "apps/client-v2/**"
 
   workflow_dispatch:
 
@@ -24,13 +24,13 @@ jobs:
       - name: Install dependencies and build the project
         run: |
           npm ci
-          npm --workspace=@gerasimov/client run build
+          npm --workspace=@gerasimov/client-v2 run build
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
           name: build
-          path: apps/client/out
+          path: apps/client-v2/out
 
   deploy:
     runs-on: ubuntu-latest
@@ -53,12 +53,12 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: build
-          path: apps/client/out
+          path: apps/client-v2/out
 
       - name: Deploy
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ env.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ env.CLOUDFLARE_ACCOUNT_ID }}
-          workingDirectory: "apps/client"
+          workingDirectory: "apps/client-v2"
           command: pages deploy
