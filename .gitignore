@@ -1,5 +1,6 @@
+.astro/
 .env
-.tmp
+.tmp/
 *.log
-dist
-node_modules
+dist/
+node_modules/
