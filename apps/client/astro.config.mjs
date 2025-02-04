@@ -1,8 +1,11 @@
 // @ts-check
-import { defineConfig } from "astro/config";
+import { defineConfig, passthroughImageService } from "astro/config";
 
 export default defineConfig({
 	experimental: {
 		svg: true,
+	},
+	image: {
+		service: passthroughImageService(),
 	},
 });
