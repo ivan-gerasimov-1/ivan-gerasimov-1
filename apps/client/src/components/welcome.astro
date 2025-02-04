@@ -1,6 +1,15 @@
 ---
 import Photo from "../components/photo.astro";
 import SocialLink from "../components/socialLink.astro";
+
+let content = {
+	name: "Ivan Gerasimov",
+	description: "Fullstack JavaScript developer",
+	email: {
+		to: "ivan@gerasimov.dev",
+		label: "ivan@gerasimov.dev",
+	},
+};
 ---
 
 <div id="container">
@@ -11,9 +20,9 @@ import SocialLink from "../components/socialLink.astro";
 			</div>
 
 			<div class="about">
-				<h1 class="name">Ivan Gerasimov</h1>
+				<h1 class="name">{content.name}</h1>
 
-				<span class="description">Fullstack JavaScript developer</span>
+				<span class="description">{content.description}</span>
 			</div>
 		</section>
 
@@ -32,7 +41,9 @@ import SocialLink from "../components/socialLink.astro";
 		</section>
 
 		<section class="email">
-			<a class="link" href="mailto:ivan@gerasimov.dev">ivan@gerasimov.dev</a>
+			<a class="link" href=`mailto:${content.email.to}`>
+				{content.email.label}
+			</a>
 		</section>
 	</main>
 </div>

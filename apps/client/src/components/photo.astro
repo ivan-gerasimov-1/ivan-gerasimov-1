@@ -2,12 +2,16 @@
 import { Image } from "astro:assets";
 
 import photo from "../assets/ivan-gerasimov_photo.jpeg";
+
+let content = {
+	alt: "Ivan Gerasimov",
+};
 ---
 
 <Image
 	class="photo"
 	src={photo}
-	alt="Ivan Gerasimov"
+	alt={content.alt}
 	width="130"
 	height="130"
 	loading="lazy"
