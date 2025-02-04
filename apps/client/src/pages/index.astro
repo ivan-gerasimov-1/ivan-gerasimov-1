@@ -2,6 +2,7 @@
 import Layout from "../layouts/layout.astro";
 import Photo from "../components/heroPhoto.astro";
 import SocialLink from "../components/socialLink.astro";
+import Link from "../components/link.astro";
 
 let content = {
 	name: "Ivan Gerasimov",
@@ -43,9 +44,7 @@ let content = {
 			</section>
 
 			<section class="email">
-				<a class="link" href=`mailto:${content.email.to}`>
-					{content.email.label}
-				</a>
+				<Link to={content.email.to} label={content.email.label} />
 			</section>
 		</main>
 	</div>
@@ -76,45 +75,6 @@ let content = {
 
 		font-size: clamp(1rem, 2vw, 1.5rem);
 		letter-spacing: -0.5px;
-	}
-
-	.link {
-		position: relative;
-
-		padding: 0.5rem 0 0.5rem 0;
-
-		color: var(--fc-link);
-
-		border-bottom: 1px solid transparent;
-
-		text-decoration: none;
-
-		transition: color 0.15s ease-in-out;
-
-		&::before {
-			position: absolute;
-			top: 87.5%;
-			left: 0.125rem;
-
-			display: block;
-
-			width: calc(100% - 0.125rem);
-			height: 2px;
-
-			background-color: transparent;
-
-			transition: background-color 0.15s ease-in-out;
-
-			content: "";
-		}
-
-		&:hover {
-			color: var(--fc-link-hover);
-
-			&::before {
-				background-color: currentColor;
-			}
-		}
 	}
 
 	.profile {
