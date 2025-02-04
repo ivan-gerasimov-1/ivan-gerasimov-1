@@ -47,43 +47,11 @@ import SocialLink from "../components/socialLink.astro";
 		margin: 0;
 
 		font-family: var(--ff-transitional);
+		font-size: 8.25vw;
 		font-weight: 600;
-		font-size: 6rem;
 		letter-spacing: 1px;
-
 		line-height: 1;
-
 		white-space: nowrap;
-
-		@media (max-width: 1024px) {
-			& {
-				font-size: 4.5rem;
-			}
-		}
-
-		@media (max-width: 768px) {
-			& {
-				font-size: 2.25rem;
-			}
-		}
-
-		@media (max-width: 425px) {
-			& {
-				font-size: 2.25rem;
-			}
-		}
-
-		@media (max-width: 375px) {
-			& {
-				font-size: 1.875rem;
-			}
-		}
-
-		@media (max-width: 320px) {
-			& {
-				font-size: 1.75rem;
-			}
-		}
 	}
 
 	.section {
@@ -94,35 +62,7 @@ import SocialLink from "../components/socialLink.astro";
 
 		margin-top: 10px;
 
-		@media (max-width: 1024px) {
-			& {
-				font-size: 1.25rem;
-			}
-		}
-
-		@media (max-width: 768px) {
-			& {
-				font-size: 1rem;
-			}
-		}
-
-		@media (max-width: 425px) {
-			& {
-				font-size: 1rem;
-			}
-		}
-
-		@media (max-width: 375px) {
-			& {
-				font-size: 1rem;
-			}
-		}
-
-		@media (max-width: 320px) {
-			& {
-				font-size: 1rem;
-			}
-		}
+		font-size: clamp(16px, calc(100vw / 48), 24px);
 	}
 
 	.link {
