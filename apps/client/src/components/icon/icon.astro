@@ -19,3 +19,17 @@ let TargetIcon = EIcon[name];
 ---
 
 <TargetIcon width="100%" height="100%" />
+
+<style>
+	svg {
+		transition: all 0.15s ease-in-out;
+
+		will-change: transform;
+
+		&:hover {
+			color: var(--blue);
+
+			transform: scale(0.9);
+		}
+	}
+</style>
