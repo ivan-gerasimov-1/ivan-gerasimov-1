@@ -1,20 +1,12 @@
 ---
-import photo from "../assets/ivan-gerasimov_photo.webp";
+import Photo from "../components/photo.astro";
 ---
 
 <div id="container">
 	<main class="page">
 		<div class="description">
 			<div class="mainPhotoContainer">
-				<img
-					class="photo"
-					src={photo.src}
-					alt="Ivan Gerasimov | Иван Герасимов"
-					width="130"
-					height="130"
-					loading="lazy"
-					decoding="async"
-				/>
+				<Photo />
 			</div>
 
 			<div class="info">
@@ -216,9 +208,5 @@ import photo from "../assets/ivan-gerasimov_photo.webp";
 		margin-top: 50px;
 
 		color: var(--fc-body);
-	}
-
-	.photo {
-		border-radius: 100%;
 	}
 </style>
