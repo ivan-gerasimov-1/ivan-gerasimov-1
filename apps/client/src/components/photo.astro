@@ -1,0 +1,21 @@
+---
+import { Image } from "astro:assets";
+
+import photo from "../assets/ivan-gerasimov_photo.webp";
+---
+
+<Image
+	class="photo"
+	src={photo}
+	alt="Ivan Gerasimov | Иван Герасимов"
+	width="130"
+	height="130"
+	loading="lazy"
+	decoding="async"
+/>
+
+<style>
+	.photo {
+		border-radius: 100%;
+	}
+</style>
