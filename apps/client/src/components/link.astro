@@ -1,0 +1,48 @@
+---
+let { to, label } = Astro.props;
+---
+
+<a class="link" href=`mailto:${to}`>
+	{label}
+</a>
+
+<style>
+	.link {
+		position: relative;
+
+		padding: 0.5rem 0 0.5rem 0;
+
+		color: var(--fc-link);
+
+		border-bottom: 1px solid transparent;
+
+		text-decoration: none;
+
+		transition: color 0.15s ease-in-out;
+
+		&::before {
+			position: absolute;
+			top: 87.5%;
+			left: 0.125rem;
+
+			display: block;
+
+			width: calc(100% - 0.125rem);
+			height: 2px;
+
+			background-color: transparent;
+
+			transition: background-color 0.15s ease-in-out;
+
+			content: "";
+		}
+
+		&:hover {
+			color: var(--fc-link-hover);
+
+			&::before {
+				background-color: currentColor;
+			}
+		}
+	}
+</style>
