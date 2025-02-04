@@ -7,10 +7,6 @@
 		{
 			"path": "../apps/client",
 			"name": "client"
-		},
-		{
-			"path": "../apps/server",
-			"name": "server"
 		}
 	],
 	"settings": {}
