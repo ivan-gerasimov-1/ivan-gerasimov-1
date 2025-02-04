@@ -1,5 +1,0 @@
-.env
-.tmp
-*.log
-dist
-node_modules

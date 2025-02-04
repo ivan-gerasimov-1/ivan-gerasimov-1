@@ -1,0 +1,26 @@
+---
+import { Image } from "astro:assets";
+
+import photo from "../assets/ivan-gerasimov_photo.jpeg";
+
+let content = {
+	alt: "Ivan Gerasimov",
+};
+---
+
+<Image
+	class="photo"
+	src={photo}
+	alt={content.alt}
+	width="130"
+	height="130"
+	loading="lazy"
+	decoding="async"
+/>
+
+<style>
+	.photo {
+		border-radius: 100%;
+		border: 5px solid var(--white);
+	}
+</style>

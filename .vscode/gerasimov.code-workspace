@@ -1,7 +1,16 @@
 {
 	"folders": [
 		{
-			"path": "../"
+			"path": "../",
+			"name": "root"
+		},
+		{
+			"path": "../apps/client",
+			"name": "client"
+		},
+		{
+			"path": "../apps/server",
+			"name": "server"
 		}
 	],
 	"settings": {}

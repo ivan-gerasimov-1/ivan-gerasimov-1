@@ -1,0 +1,14 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"command": "npm --workspace=@gerasimov/client run start",
+			"name": "Client",
+			"request": "launch",
+			"type": "node-terminal",
+			"cwd": "${workspaceFolder}/apps/client",
+			"sourceMaps": true,
+			"skipFiles": ["<node_internals>/**"]
+		}
+	]
+}

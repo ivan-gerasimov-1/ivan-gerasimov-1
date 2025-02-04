@@ -1,7 +1,0 @@
-.DS_Store
-.env
-*.log*
-/.next/
-/node_modules
-/out/
-next-env.d.ts
