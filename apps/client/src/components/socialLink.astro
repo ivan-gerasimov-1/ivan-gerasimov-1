@@ -1,0 +1,31 @@
+---
+import Icon from "../components/icon/icon.astro";
+
+type Props = {
+	name: "github" | "linkedIn";
+	url: string;
+	label: string;
+};
+
+let { name, url, label } = Astro.props;
+---
+
+<a
+	class="socialLink"
+	href={url}
+	target="_blank"
+	rel="noopener"
+	aria-label={label}
+>
+	<Icon name={name} />
+</a>
+
+<style>
+	a {
+		display: flex;
+
+		color: currentColor;
+
+		appearance: none;
+	}
+</style>
