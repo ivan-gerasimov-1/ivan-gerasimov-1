@@ -5,19 +5,19 @@ import SocialLink from "../components/socialLink.astro";
 
 <div id="container">
 	<main class="page">
-		<section class="description">
-			<div class="mainPhotoContainer">
+		<section class="profile">
+			<div class="photo">
 				<Photo />
 			</div>
 
-			<div class="info">
+			<div class="about">
 				<h1 class="name">Ivan Gerasimov</h1>
 
-				<span class="section">Fullstack JavaScript developer</span>
+				<span class="description">Fullstack JavaScript developer</span>
 			</div>
 		</section>
 
-		<section class="profileLinksContainer">
+		<section class="socialLinks">
 			<SocialLink
 				name="linkedIn"
 				url="https://linkedin.com/in/ivan-gerasimov"
@@ -31,16 +31,13 @@ import SocialLink from "../components/socialLink.astro";
 			/>
 		</section>
 
-		<section class="section">
+		<section class="email">
 			<a class="link" href="mailto:ivan@gerasimov.dev">ivan@gerasimov.dev</a>
 		</section>
 	</main>
 </div>
 
 <style>
-	.page {
-	}
-
 	.name {
 		display: flex;
 
@@ -54,15 +51,16 @@ import SocialLink from "../components/socialLink.astro";
 		white-space: nowrap;
 	}
 
-	.section {
+	.description,
+	.email {
 		font-family: var(--ff-monospace);
 		font-size: 1.5rem;
 
 		color: var(--fc-200);
 
-		margin-top: 10px;
+		margin-top: 15px;
 
-		font-size: clamp(16px, calc(100vw / 48), 24px);
+		font-size: clamp(1rem, 2vw, 1.5rem);
 	}
 
 	.link {
@@ -76,7 +74,7 @@ import SocialLink from "../components/socialLink.astro";
 
 		text-decoration: none;
 
-		transition: color 0.25s ease-in-out;
+		transition: color 0.15s ease-in-out;
 
 		&::before {
 			position: absolute;
@@ -90,7 +88,7 @@ import SocialLink from "../components/socialLink.astro";
 
 			background-color: transparent;
 
-			transition: background-color 0.25s ease-in-out;
+			transition: background-color 0.15s ease-in-out;
 
 			content: "";
 		}
@@ -104,7 +102,7 @@ import SocialLink from "../components/socialLink.astro";
 		}
 	}
 
-	.description {
+	.profile {
 		display: grid;
 		grid-template-columns: 1fr auto;
 		column-gap: 2rem;
@@ -116,7 +114,7 @@ import SocialLink from "../components/socialLink.astro";
 		}
 	}
 
-	.info {
+	.about {
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-end;
@@ -128,8 +126,9 @@ import SocialLink from "../components/socialLink.astro";
 		}
 	}
 
-	.mainPhotoContainer {
+	.photo {
 		display: flex;
+		align-items: center;
 
 		margin-left: -0.25rem;
 
@@ -140,7 +139,7 @@ import SocialLink from "../components/socialLink.astro";
 		}
 	}
 
-	.profileLinksContainer {
+	.socialLinks {
 		display: grid;
 		grid-template-columns: 2.75rem 2.75rem auto;
 		grid-template-rows: 2.75rem;
