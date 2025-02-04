@@ -25,12 +25,17 @@
 
 <style>
 	:root {
-		--fc-body: #f5f5f5;
-		--fc-body-200: #8e8e8e;
-		--fc-link: var(--fc-body-200);
-		--fc-link-hover: #2196f3;
+		--white: #f5f5f5;
+		--grey: #8e8e8e;
+		--blue: #2196f3;
+		--black: #212121;
 
-		--clr-body-background: #212121;
+		--fc-100: var(--white);
+		--fc-200: var(--grey);
+		--fc-link: var(--fc-200);
+		--fc-link-hover: var(--blue);
+
+		--clr-body-background: var(--black);
 
 		--ff-transitional: Charter, "Bitstream Charter", "Sitka Text", Cambria,
 			serif;
@@ -48,7 +53,7 @@
 		align-items: center;
 		justify-content: center;
 
-		color: var(--fc-body);
+		color: var(--fc-100);
 		background-color: var(--clr-body-background);
 
 		cursor: default;
