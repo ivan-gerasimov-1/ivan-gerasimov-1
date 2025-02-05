@@ -1,5 +1,6 @@
 ---
-import Layout from "#app/layouts/layout.astro";
+import DefaultLayout from "#app/layouts/defaultLayout.astro";
+
 import Photo from "#app/components/heroPhoto.astro";
 import SocialLink from "#app/components/socialLink.astro";
 import Link from "#app/components/link.astro";
@@ -36,7 +37,7 @@ let content = {
 };
 ---
 
-<Layout>
+<DefaultLayout>
 	<main class="main">
 		<div class="profile">
 			<Photo />
@@ -83,7 +84,7 @@ let content = {
 			<Link to=`mailto:${content.email.to}`>{content.email.label}</Link>
 		</div>
 	</footer>
-</Layout>
+</DefaultLayout>
 
 <style>
 	.main {
