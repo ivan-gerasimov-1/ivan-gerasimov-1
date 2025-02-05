@@ -15,11 +15,9 @@ let content = {
 ---
 
 <Layout>
-	<main class="page">
+	<main class="main">
 		<section class="profile">
-			<div class="photo">
-				<Photo />
-			</div>
+			<Photo />
 
 			<div class="about">
 				<h1 class="name">{content.name}</h1>
@@ -27,52 +25,39 @@ let content = {
 				<span class="description">{content.description}</span>
 			</div>
 		</section>
-
-		<section class="socialLinks">
-			<SocialLink
-				name="linkedIn"
-				url="https://linkedin.com/in/ivan-gerasimov"
-				label="LinkedIn profile"
-			/>
-
-			<SocialLink
-				name="github"
-				url="https://github.com/ivan-gerasimov-1"
-				label="GitHub profile"
-			/>
-		</section>
-
-		<section class="email">
-			<Link to={content.email.to} label={content.email.label} />
-		</section>
 	</main>
+
+	<footer>
+		<hr class="divider" />
+
+		<div class="footerContent">
+			<section class="socialLinks">
+				<SocialLink
+					name="linkedIn"
+					url="https://linkedin.com/in/ivan-gerasimov"
+					label="LinkedIn profile"
+				/>
+
+				<SocialLink
+					name="github"
+					url="https://github.com/ivan-gerasimov-1"
+					label="GitHub profile"
+				/>
+			</section>
+
+			<section class="email">
+				<Link to={content.email.to} label={content.email.label} />
+			</section>
+		</div>
+	</footer>
 </Layout>
 
 <style>
-	.name {
+	.main {
 		display: flex;
+		justify-content: center;
 
-		margin: 0;
-
-		font-family: var(--ff-transitional);
-		font-size: 8.25vw;
-		font-weight: 600;
-		letter-spacing: 1.5px;
-		line-height: 1;
-		white-space: nowrap;
-	}
-
-	.description,
-	.email {
-		font-family: var(--ff-monospace);
-		font-size: 1.5rem;
-
-		color: var(--fc-200);
-
-		margin-top: 10px;
-
-		font-size: clamp(1rem, 2vw, 1.5rem);
-		letter-spacing: -0.5px;
+		margin: auto 0;
 	}
 
 	.profile {
@@ -82,7 +67,9 @@ let content = {
 
 		@media (max-width: 768px) {
 			& {
-				display: block;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
 			}
 		}
 	}
@@ -94,31 +81,69 @@ let content = {
 
 		@media (max-width: 768px) {
 			& {
-				margin-top: 15px;
+				margin-top: 1rem;
 			}
 		}
 	}
 
-	.photo {
+	.name {
+		margin: 0;
+
+		font-family: var(--ff-transitional);
+		font-size: 8vw;
+		font-weight: 800;
+
+		letter-spacing: -0.5px;
+		line-height: 1;
+		white-space: nowrap;
+	}
+
+	.description {
+		margin-top: 0.25rem;
+		font-family: var(--ff-monospace);
+		font-size: 1.5rem;
+
+		color: var(--fc-200);
+
+		font-size: clamp(1rem, 2vw, 1.5rem);
+		letter-spacing: -0.5px;
+	}
+
+	.divider {
+		display: block;
+
+		margin: 0;
+
+		height: 1px;
+		width: 100%;
+
+		border: none;
+		border-radius: 2px;
+
+		background-color: var(--white);
+
+		opacity: 0.25;
+	}
+
+	.footerContent {
 		display: flex;
-		align-items: center;
+		justify-content: space-between;
+		align-items: flex-end;
 
-		margin-left: -0.25rem;
-
-		@media (max-width: 768px) {
-			& {
-				justify-content: center;
-				margin-left: 0;
-			}
-		}
+		margin: 10px;
 	}
 
 	.socialLinks {
 		display: grid;
-		grid-template-columns: 2.75rem 2.75rem auto;
-		grid-template-rows: 2.75rem;
-		column-gap: 1.5rem;
+		grid-template-columns: 1.5rem 1.5rem auto;
+		grid-gap: 1rem;
+	}
 
-		margin-top: 50px;
+	.email {
+		font-family: var(--ff-monospace);
+		font-size: 1rem;
+		letter-spacing: -0.5px;
+
+		color: var(--fc-200);
 	}
 </style>
