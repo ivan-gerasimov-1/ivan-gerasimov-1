@@ -1,7 +1,9 @@
 // @ts-check
 import { defineConfig, passthroughImageService } from "astro/config";
+import sitemap from "@astrojs/sitemap";
 
 export default defineConfig({
+	site: "https://gerasimov.dev",
 	experimental: {
 		svg: true,
 	},
@@ -12,4 +14,5 @@ export default defineConfig({
 		locales: ["en", "ru"],
 		defaultLocale: "en",
 	},
+	integrations: [sitemap()],
 });

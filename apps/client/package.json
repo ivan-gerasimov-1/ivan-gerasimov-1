@@ -17,6 +17,7 @@
 		"astro": "5.2.5"
 	},
 	"devDependencies": {
+		"@astrojs/sitemap": "3.2.1",
 		"wrangler": "3.107.3"
 	}
 }
