@@ -19,6 +19,20 @@ let content = {
 		to: "ivan@gerasimov.dev",
 		label: "ivan@gerasimov.dev",
 	},
+	cv: {
+		link: "/ivan-gerasimov_cv_senior-fullstack-javascript.pdf",
+		label: "CV",
+	},
+	socialLinks: {
+		linkedin: {
+			link: "https://linkedin.com/in/ivan-gerasimov",
+			label: "LinkedIn profile",
+		},
+		github: {
+			link: "https://github.com/ivan-gerasimov-1",
+			label: "GitHub profile",
+		},
+	},
 };
 ---
 
@@ -51,22 +65,18 @@ let content = {
 			<div class="socialLinks">
 				<SocialLink
 					name="linkedIn"
-					url="https://linkedin.com/in/ivan-gerasimov"
-					label="LinkedIn profile"
+					url={content.socialLinks.linkedin.link}
+					label={content.socialLinks.linkedin.label}
 				/>
 
 				<SocialLink
 					name="github"
-					url="https://github.com/ivan-gerasimov-1"
-					label="GitHub profile"
+					url={content.socialLinks.github.link}
+					label={content.socialLinks.github.label}
 				/>
 
-				<Link
-					to="ivan-gerasimov_cv_senior-fullstack-javascript.pdf"
-					target="_blank"
-					download
-				>
-					CV
+				<Link to={content.cv.link} target="_blank" download>
+					{content.cv.label}
 				</Link>
 			</div>
 
