@@ -62,9 +62,7 @@ let content = {
 				/>
 			</div>
 
-			<div class="email">
-				<Link to={content.email.to}>{content.email.label}</Link>
-			</div>
+			<Link to=`mailto:${content.email.to}`>{content.email.label}</Link>
 		</div>
 	</footer>
 </Layout>

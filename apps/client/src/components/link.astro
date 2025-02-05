@@ -2,7 +2,7 @@
 let { to } = Astro.props;
 ---
 
-<a class="link" href=`mailto:${to}`><slot /></a>
+<a class="link" href={to}><slot /></a>
 
 <style>
 	.link {
