@@ -1,8 +1,8 @@
 ---
-let { to, label } = Astro.props;
+let { to } = Astro.props;
 ---
 
-<a class="link" href=`mailto:${to}`>{label}</a>
+<a class="link" href=`mailto:${to}`><slot /></a>
 
 <style>
 	.link {
