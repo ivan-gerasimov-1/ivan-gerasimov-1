@@ -1,6 +1,8 @@
 // @ts-check
 import { defineConfig, passthroughImageService } from "astro/config";
+
 import sitemap from "@astrojs/sitemap";
+import robotsTxt from "astro-robots-txt";
 
 export default defineConfig({
 	site: "https://gerasimov.dev",
@@ -14,5 +16,5 @@ export default defineConfig({
 		locales: ["en", "ru"],
 		defaultLocale: "en",
 	},
-	integrations: [sitemap()],
+	integrations: [sitemap(), robotsTxt()],
 });
