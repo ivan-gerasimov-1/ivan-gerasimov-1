@@ -6,5 +6,11 @@
 		"apps/*"
 	],
 	"author": "Ivan Gerasimov <ivan@gerasimov.dev> (gerasimov.dev)",
-	"license": "UNLICENSED"
+	"license": "UNLICENSED",
+	"scripts": {
+		"dependencies:update": "ncu --deep -u"
+	},
+	"devDependencies": {
+		"npm-check-updates": "17.1.14"
+	}
 }
