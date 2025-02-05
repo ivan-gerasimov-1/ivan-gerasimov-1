@@ -7,7 +7,14 @@ import Divider from "#app/components/divider.astro";
 
 let content = {
 	name: "Ivan Gerasimov",
-	description: "Software Engineer (JavaScript, Fullstack)",
+	role: "Software Engineer (JavaScript, Fullstack)",
+	description: `
+		<strong>Senior Fullstack Engineer with 9 years of experience.</strong> Specializing in
+		development using <strong>TypeScript</strong>, <strong>React</strong> and <strong>Node.js</strong>, as well as web
+		application architecture design, including local-first applications with
+		extensive client-side logic. Experienced in team management, process
+		establishment, and cross-team collaboration in a large-scale product.
+	`,
 	email: {
 		to: "ivan@gerasimov.dev",
 		label: "ivan@gerasimov.dev",
@@ -23,8 +30,10 @@ let content = {
 			<div class="about">
 				<h1 class="name">{content.name}</h1>
 
-				<span class="description">{content.description}</span>
+				<span class="role">{content.role}</span>
 			</div>
+
+			<div class="description" set:html={content.description} />
 		</div>
 	</main>
 
@@ -54,9 +63,14 @@ let content = {
 </Layout>
 
 <style>
+	strong {
+		font-weight: 600;
+	}
+
 	.main {
 		display: flex;
 		justify-content: center;
+		align-items: center;
 
 		margin: auto 0;
 	}
@@ -64,7 +78,7 @@ let content = {
 	.profile {
 		display: grid;
 		grid-template-columns: 1fr auto;
-		column-gap: 2rem;
+		grid-gap: 2rem;
 
 		@media (max-width: 768px) {
 			& {
@@ -91,7 +105,7 @@ let content = {
 		margin: 0;
 
 		font-family: var(--ff-transitional);
-		font-size: 8vw;
+		font-size: clamp(1rem, 8vw, 7rem);
 		font-weight: 800;
 
 		letter-spacing: -0.5px;
@@ -99,7 +113,7 @@ let content = {
 		white-space: nowrap;
 	}
 
-	.description {
+	.role {
 		margin-top: 0.25rem;
 		font-family: var(--ff-monospace);
 		font-size: 1.5rem;
@@ -108,6 +122,17 @@ let content = {
 
 		font-size: clamp(1rem, 2vw, 1.5rem);
 		letter-spacing: -0.5px;
+	}
+
+	.description {
+		max-width: 40rem;
+		grid-column: 2;
+		grid-row: 2;
+		font-family: var(--ff-monospace);
+		font-size: 1rem;
+		line-height: 1.4;
+
+		color: var(--fc-200);
 	}
 
 	.footerContent {
