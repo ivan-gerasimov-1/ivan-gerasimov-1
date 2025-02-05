@@ -17,7 +17,7 @@ let content = {
 
 <Layout>
 	<main class="main">
-		<section class="profile">
+		<div class="profile">
 			<Photo />
 
 			<div class="about">
@@ -25,14 +25,14 @@ let content = {
 
 				<span class="description">{content.description}</span>
 			</div>
-		</section>
+		</div>
 	</main>
 
 	<footer>
 		<Divider />
 
 		<div class="footerContent">
-			<section class="socialLinks">
+			<div class="socialLinks">
 				<SocialLink
 					name="linkedIn"
 					url="https://linkedin.com/in/ivan-gerasimov"
@@ -44,11 +44,11 @@ let content = {
 					url="https://github.com/ivan-gerasimov-1"
 					label="GitHub profile"
 				/>
-			</section>
+			</div>
 
-			<section class="email">
+			<div class="email">
 				<Link to={content.email.to} label={content.email.label} />
-			</section>
+			</div>
 		</div>
 	</footer>
 </Layout>
