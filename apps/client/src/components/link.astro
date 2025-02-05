@@ -2,12 +2,13 @@
 type Props = {
 	to: string;
 	download?: boolean;
+	target?: string;
 };
 
-let { to, download } = Astro.props;
+let { to, download, target } = Astro.props;
 ---
 
-<a class="link" href={to} download={download}><slot /></a>
+<a class="link" href={to} download={download} target={target}><slot /></a>
 
 <style>
 	.link {
