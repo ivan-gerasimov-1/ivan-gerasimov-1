@@ -1,5 +1,37 @@
 ---
+let content = {
+	keywords: [
+		"frontend",
+		"front-end",
+		"front end",
+		"developer",
+		"engineer",
+		"software",
+		"software engineer",
+		"software developer",
+		"javascript",
+		"typescript",
+		"js",
+		"ts",
+		"react",
+		"reactjs",
+		"vue",
+		"vuejs",
+		"vue.js",
+		"node",
+		"node.js",
+		"nodejs",
+		"domain driven design",
+		"ddd",
+		"clean architecture",
+		"solid",
+		"oop",
+		"object oriented programming",
+	].join(", "),
 
+	description: "Ivan Gerasimov | Software Engineer (JavaScript, Fullstack)",
+	title: "Ivan Gerasimov | Software Engineer",
+};
 ---
 
 <!doctype html>
@@ -10,16 +42,10 @@
 
 		<link rel="icon" href="/favicon.ico" />
 
-		<meta
-			name="keywords"
-			content="frontend, front-end, front end, developer, engineer, software, software engineer, software developer, javascript, typescript, js, ts, react, reactjs, vue, vuejs, vue.js, node, node.js, nodejs, domain driven design, ddd, clean architecture, solid, oop, object oriented programming"
-		/>
-		<meta
-			name="description"
-			content="Ivan Gerasimov | Software Engineer (JavaScript, Fullstack)"
-		/>
+		<meta name="keywords" content={content.keywords} />
+		<meta name="description" content={content.description} />
 
-		<title>Ivan Gerasimov | Software Engineer</title>
+		<title>{content.title}</title>
 	</head>
 
 	<body>
