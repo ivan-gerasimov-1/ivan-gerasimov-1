@@ -1,0 +1,23 @@
+---
+type Props = {
+	html?: string;
+};
+
+let { html } = Astro.props;
+---
+
+{
+	html ? (
+		<p class="text" set:html={html} />
+	) : (
+		<p class="text">
+			<slot />
+		</p>
+	)
+}
+
+<style>
+	.text {
+		line-height: 1.6;
+	}
+</style>

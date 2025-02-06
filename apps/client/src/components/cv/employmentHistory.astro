@@ -1,0 +1,103 @@
+---
+import Text from "#app/components/cv/text.astro";
+
+type Props = {
+	items: {
+		company: string;
+		position: string;
+		years: string;
+		additional?: string;
+		summary: string;
+		achievements: string[];
+		skills: string;
+	}[];
+};
+
+let { items } = Astro.props;
+---
+
+{
+	items.map((item) => (
+		<div class="itemContainer">
+			<div class="d-flex f-space-between">
+				<strong>{item.company}</strong>
+				<strong>{item.position}</strong>
+			</div>
+
+			<div class="d-flex f-space-between mt-90">
+				<div class="font-secondary">{item.years}</div>
+
+				{item.additional && <div class="fc-secondary">{item.additional}</div>}
+			</div>
+
+			<div class="mt-100">
+				<Text>{item.summary}</Text>
+
+				<ul class="mt-100">
+					<Text>Key Achievements:</Text>
+
+					{item.achievements.map((achievement) => (
+						<li class="listItem mt-80">
+							<Text>{achievement}</Text>
+						</li>
+					))}
+				</ul>
+
+				<p class="mt-100 font-secondary">{item.skills}</p>
+			</div>
+		</div>
+	))
+}
+
+<style>
+	.itemContainer {
+		margin-top: 1.5rem;
+
+		&:first-child {
+			margin-top: 1rem;
+		}
+	}
+
+	.listItem {
+		position: relative;
+
+		&:before {
+			position: absolute;
+			top: 0.2rem;
+			left: -0.5rem;
+
+			content: "•";
+
+			font-weight: 500;
+		}
+	}
+
+	.d-flex {
+		display: flex;
+	}
+
+	.f-column {
+		flex-direction: column;
+	}
+
+	.f-space-between {
+		justify-content: space-between;
+	}
+
+	.f-end {
+		align-items: flex-end;
+	}
+
+	.font-secondary {
+		font-family: "JetBrains Mono Variable";
+		font-size: 8pt;
+
+		color: var(--c-secondary);
+
+		line-height: 1.35;
+	}
+
+	.fc-secondary {
+		color: var(--c-secondary);
+	}
+</style>

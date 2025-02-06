@@ -1,0 +1,20 @@
+---
+type Props = {
+	title: string;
+};
+
+let { title } = Astro.props;
+---
+
+<h3 class="sectionTitle">{title}</h3>
+
+<div class="mt-110">
+	<slot />
+</div>
+
+<style>
+	.sectionTitle {
+		font-size: 12pt;
+		font-weight: 300;
+	}
+</style>
