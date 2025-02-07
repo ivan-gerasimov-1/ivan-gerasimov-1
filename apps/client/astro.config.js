@@ -19,4 +19,7 @@ export default defineConfig({
 		defaultLocale: "en",
 	},
 	integrations: [sitemap(), robotsTxt()],
+	build: {
+		assets: "assets",
+	},
 });
