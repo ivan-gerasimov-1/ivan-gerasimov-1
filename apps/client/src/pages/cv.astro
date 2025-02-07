@@ -251,6 +251,15 @@ let content = {
 		},
 	],
 };
+
+let sectionTitle = {
+	about: "About",
+	languages: "Languages",
+	employmentHistory: "Employment history",
+	skills: "Skills",
+	education: "Education",
+	additionalActivities: "Additional activities",
+};
 ---
 
 <CvLayout>
@@ -344,7 +353,7 @@ let content = {
 				paddingRight: "0.875rem",
 			}}
 		>
-			<Section title="About">
+			<Section title={sectionTitle.about}>
 				<Text html={content.about} />
 			</Section>
 		</div>
@@ -356,7 +365,7 @@ let content = {
 				gridRow: 2,
 			}}
 		>
-			<Section title="Languages">
+			<Section title={sectionTitle.languages}>
 				<ul>
 					{
 						content.languages.map((language) => (
@@ -376,7 +385,7 @@ let content = {
 				paddingRight: "1rem",
 			}}
 		>
-			<Section title="Employment history">
+			<Section title={sectionTitle.employmentHistory}>
 				<ExperienceList items={content.employmentHistory} />
 			</Section>
 		</div>
@@ -388,7 +397,7 @@ let content = {
 				gridRow: 3,
 			}}
 		>
-			<Section title="Skills">
+			<Section title={sectionTitle.skills}>
 				<ul class="skillPills">
 					{content.skills.map((skill) => <li>{skill}</li>)}
 				</ul>
@@ -396,7 +405,7 @@ let content = {
 
 			<div class="mt-200"></div>
 
-			<Section title="Education">
+			<Section title={sectionTitle.education}>
 				<ul>
 					{
 						content.education.map((item) => (
@@ -417,7 +426,7 @@ let content = {
 				gridRow: 4,
 			}}
 		>
-			<Section title="Additional activities">
+			<Section title={sectionTitle.additionalActivities}>
 				<ExperienceList items={content.additionalActivities} />
 			</Section>
 		</div>
