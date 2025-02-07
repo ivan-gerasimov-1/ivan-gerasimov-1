@@ -240,6 +240,18 @@ let additionalActivities = [
 		`,
 	},
 ];
+
+let education = [
+	{
+		institution:
+			"Samara State Aerospace University, Applied Mathematics and Computer Science",
+		years: "2009—2013",
+	},
+	{
+		institution: "Samara State Aerospace Lyceum",
+		years: "2007—2009",
+	},
+];
 ---
 
 <CvLayout>
@@ -389,6 +401,26 @@ let additionalActivities = [
 					{skills.map((skill) => <li>{skill}</li>)}
 				</ul>
 			</Section>
+
+			<div class="mt-200"></div>
+
+			<Section title="Education">
+				<ul>
+					{
+						education.map((item) => (
+							<li
+								class="listItem mt-90"
+								style={{
+									lineHeight: 1.35,
+								}}
+							>
+								<p>{item.institution}</p>
+								<p class="ff-mono fc-secondary">{item.years}</p>
+							</li>
+						))
+					}
+				</ul>
+			</Section>
 		</div>
 
 		<div
@@ -491,6 +523,11 @@ let additionalActivities = [
 
 			font-weight: 500;
 		}
+	}
+
+	/** @duplicate */
+	.fc-secondary {
+		color: var(--c-secondary);
 	}
 
 	/** @deprecated */
