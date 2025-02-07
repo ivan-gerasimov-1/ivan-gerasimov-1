@@ -2,9 +2,17 @@
 
 ### Hi there 👋
 
+## About
+
+**Senior Fullstack Engineer with 9 years of experience.** Specializing in
+development using **TypeScript**, **React** and **Node.js**, as well as web
+application architecture design, including local-first apps with extensive
+client-side logic. Experienced in team management, process establishment and
+cross-team collaboration in a large-scale product.
+
 ## Current stack
 
-TypeScript | React, React Router, TanStack Query, Vite | Node.js, Fastify
+TypeScript | React, React Router, TanStack Query, Vite, Vitest | Node.js, Hono
 
 ## Technologies and Tools
 
