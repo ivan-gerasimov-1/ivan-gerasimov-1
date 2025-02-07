@@ -136,6 +136,21 @@ let content = {
 		margin-top: 2rem;
 	}
 
+	:global(.listItem) {
+		position: relative;
+
+		line-height: 1.35;
+
+		&:before {
+			position: absolute;
+
+			top: 0.035rem;
+			left: -0.625rem;
+
+			content: "•";
+		}
+	}
+
 	body {
 		margin: 0;
 		padding: 0;
