@@ -7,6 +7,7 @@ import robotsTxt from "astro-robots-txt";
 export default defineConfig({
 	site: "https://gerasimov.dev",
 	trailingSlash: "never",
+	scopedStyleStrategy: "class",
 	experimental: {
 		svg: true,
 	},
