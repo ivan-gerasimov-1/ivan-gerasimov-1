@@ -21,7 +21,7 @@ TypeScript | React, React Router, TanStack Query, Vite, Vitest | Node.js, Hono
 - NestJS, Fastify, Koa, Hono, Express
 - Vite, Webpack, Gulp, Babel
 - HTML, CSS, CSS Modules, SASS, Styled-components, LESS, Stylus, PostCSS
-- git
+- git, GitHub, GitLab, BitBucket
 - npm, yarn
 - Vitest, Jest, Karma, Mocha, Chai, Sinon, Cypress
 - ESLint, Stylelint
