@@ -1,7 +1,7 @@
 ---
 import CvLayout from "#app/layouts/cvLayout.astro";
 
-import EmploymentHistory from "#app/components/cv/employmentHistory.astro";
+import ExperienceList from "#app/components/cv/experienceList.astro";
 import Section from "#app/components/cv/section.astro";
 import Text from "#app/components/cv/text.astro";
 
@@ -385,7 +385,7 @@ let education = [
 			}}
 		>
 			<Section title="Employment history">
-				<EmploymentHistory items={employmentHistory} />
+				<ExperienceList items={employmentHistory} />
 			</Section>
 		</div>
 
@@ -431,7 +431,7 @@ let education = [
 			}}
 		>
 			<Section title="Additional activities">
-				<EmploymentHistory items={additionalActivities} />
+				<ExperienceList items={additionalActivities} />
 			</Section>
 		</div>
 	</main>
