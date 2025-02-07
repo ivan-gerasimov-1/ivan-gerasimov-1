@@ -8,8 +8,8 @@ type Props = {
 		years: string;
 		additional?: string;
 		summary: string;
-		achievements: string[];
-		skills: string;
+		achievements?: string[];
+		skills?: string;
 	}[];
 };
 
@@ -33,17 +33,19 @@ let { items } = Astro.props;
 			<div class="mt-100">
 				<Text>{item.summary}</Text>
 
-				<ul class="mt-100">
-					<Text>Key Achievements:</Text>
+				{item.achievements && (
+					<ul class="mt-100">
+						<Text>Key Achievements:</Text>
 
-					{item.achievements.map((achievement) => (
-						<li class="listItem mt-80">
-							<Text>{achievement}</Text>
-						</li>
-					))}
-				</ul>
+						{item.achievements.map((achievement) => (
+							<li class="listItem mt-80">
+								<Text>{achievement}</Text>
+							</li>
+						))}
+					</ul>
+				)}
 
-				<p class="mt-100 font-secondary">{item.skills}</p>
+				{item.skills && <p class="mt-100 font-secondary">{item.skills}</p>}
 			</div>
 		</div>
 	))
