@@ -20,14 +20,18 @@ let { items } = Astro.props;
 	items.map((item) => (
 		<div class="itemContainer">
 			<div class="d-flex f-space-between">
-				<strong>{item.company}</strong>
-				<strong>{item.position}</strong>
+				<Text bold>{item.company}</Text>
+				<Text bold>{item.position}</Text>
 			</div>
 
-			<div class="d-flex f-space-between mt-90">
-				<div class="font-secondary">{item.years}</div>
+			<div class="d-flex f-space-between">
+				<Text type="secondary">{item.years}</Text>
 
-				{item.additional && <div class="fc-secondary">{item.additional}</div>}
+				{item.additional && (
+					<Text color="secondary" height="secondary">
+						{item.additional}
+					</Text>
+				)}
 			</div>
 
 			<div class="mt-100">
@@ -45,7 +49,11 @@ let { items } = Astro.props;
 					</ul>
 				)}
 
-				{item.skills && <p class="mt-100 font-secondary">{item.skills}</p>}
+				{item.skills && (
+					<Text class="mt-100" type="secondary">
+						{item.skills}
+					</Text>
+				)}
 			</div>
 		</div>
 	))
@@ -58,34 +66,5 @@ let { items } = Astro.props;
 		&:first-child {
 			margin-top: 1rem;
 		}
-	}
-
-	.d-flex {
-		display: flex;
-	}
-
-	.f-column {
-		flex-direction: column;
-	}
-
-	.f-space-between {
-		justify-content: space-between;
-	}
-
-	.f-end {
-		align-items: flex-end;
-	}
-
-	.font-secondary {
-		font-family: var(--ff-mono);
-		font-size: 8pt;
-
-		color: var(--c-secondary);
-
-		line-height: 1.35;
-	}
-
-	.fc-secondary {
-		color: var(--c-secondary);
 	}
 </style>

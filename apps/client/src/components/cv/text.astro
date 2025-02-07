@@ -2,23 +2,46 @@
 type Props = {
 	html?: string;
 	class?: string;
+	bold?: boolean;
+	type?: "primary" | "secondary";
+	color?: "primary" | "secondary";
+	height?: "base" | "primary" | "secondary";
 };
 
-let { html, class: className = [] } = Astro.props;
+let {
+	html,
+	class: className = [],
+	bold = false,
+	type = "primary",
+} = Astro.props;
+
+let color = Astro.props.color ?? type;
+let height = Astro.props.height ?? type;
+
+let classList = [
+	"text",
+	className,
+	`fc-${color}`,
+	`lh-${height}`,
+	{
+		bold,
+		"font-secondary": type === "secondary",
+	},
+];
 ---
 
 {
 	html ? (
-		<p class={`text ${className}`} set:html={html} />
+		<p class:list={classList} set:html={html} />
 	) : (
-		<p class={`text ${className}`}>
+		<p class:list={classList}>
 			<slot />
 		</p>
 	)
 }
 
 <style>
-	.text {
-		line-height: 1.6;
+	.bold {
+		font-weight: var(--fw-110);
 	}
 </style>

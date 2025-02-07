@@ -61,7 +61,7 @@ let content = {
 	</body>
 </html>
 
-<style>
+<style is:global>
 	:root {
 		--c-primary: #1f1f1f;
 		--c-secondary: #666;
@@ -76,6 +76,20 @@ let content = {
 
 		--ff-mono: "JetBrains Mono", monospace;
 		--ff-sans: "Fira Sans", sans-serif;
+
+		--lh-base: 1;
+		--lh-secondary: 1.35;
+		--lh-primary: 1.6;
+
+		--fs-primary-100: 9pt;
+		--fs-primary-110: 12pt;
+		--fs-primary-120: 14pt;
+		--fs-secondary-100: 8pt;
+		--fs-secondary-110: 10pt;
+
+		--fw-90: 300;
+		--fw-100: 400;
+		--fw-110: 500;
 	}
 
 	@media (prefers-color-scheme: dark) {
@@ -88,58 +102,123 @@ let content = {
 		}
 	}
 
-	:global(*),
-	:global(*::after),
-	:global(*::before) {
+	*,
+	*::after,
+	*::before {
 		box-sizing: border-box;
 
 		cursor: default;
 	}
 
-	:global(h1),
-	:global(h2),
-	:global(h3),
-	:global(p),
-	:global(ul),
-	:global(a) {
+	h1,
+	h2,
+	h3,
+	p,
+	ul,
+	a {
 		margin: 0;
 		padding: 0;
 
-		font-weight: 400;
+		font-weight: var(--fw-100);
 	}
 
-	:global(ul) {
+	ul {
 		list-style-type: none;
 	}
 
-	:global(strong) {
-		font-weight: 500;
+	strong {
+		font-weight: var(--fw-110);
 	}
 
-	:global(.mt-80) {
+	.mt-80 {
 		margin-top: 0.125rem;
 	}
 
-	:global(.mt-90) {
+	.mt-90 {
 		margin-top: 0.25rem;
 	}
 
-	:global(.mt-100) {
+	.mt-100 {
 		margin-top: 0.625rem;
 	}
 
-	:global(.mt-110) {
+	.mt-110 {
 		margin-top: 0.75rem;
 	}
 
-	:global(.mt-200) {
+	.mt-200 {
 		margin-top: 2rem;
 	}
 
-	:global(.listItem) {
+	.pt-95 {
+		padding-top: 0.375rem;
+	}
+
+	.pb-95 {
+		padding-bottom: 0.375rem;
+	}
+
+	.pr-120 {
+		padding-right: 0.825rem;
+	}
+
+	.d-flex {
+		display: flex;
+	}
+
+	.f-column {
+		flex-direction: column;
+	}
+
+	.f-space-between {
+		justify-content: space-between;
+	}
+
+	.f-end {
+		align-items: flex-end;
+	}
+
+	.font-secondary {
+		font-family: var(--ff-mono);
+		font-size: var(--fs-secondary-100);
+
+		color: var(--c-secondary);
+
+		line-height: var(--lh-secondary);
+	}
+
+	.fc-primary {
+		color: var(--c-primary);
+	}
+
+	.fc-secondary {
+		color: var(--c-secondary);
+	}
+
+	.fs-primary-120 {
+		font-size: var(--fs-primary-120);
+	}
+
+	.fs-secondary-110 {
+		font-size: var(--fs-secondary-110);
+	}
+
+	.lh-base {
+		line-height: var(--lh-base);
+	}
+
+	.lh-secondary {
+		line-height: var(--lh-secondary);
+	}
+
+	.lh-primary {
+		line-height: var(--lh-primary);
+	}
+
+	.listItem {
 		position: relative;
 
-		line-height: 1.35;
+		line-height: var(--lh-secondary);
 
 		&:before {
 			position: absolute;
@@ -162,11 +241,17 @@ let content = {
 		cursor: default;
 
 		font-family: var(--ff-sans);
-		font-size: 9pt;
-		line-height: 1;
+		font-size: var(--fs-primary-100);
+		line-height: var(--lh-base);
 
 		background-color: var(--c-background);
 
 		color: var(--c-primary);
+	}
+
+	@media print {
+		body {
+			background-color: unset;
+		}
 	}
 </style>
