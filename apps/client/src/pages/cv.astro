@@ -336,7 +336,7 @@ let sectionTitle = {
 				{
 					content.contacts.map((contact) => (
 						<div class="d-flex flex-column f-end mt-100">
-							<p class="contactLabel">{contact.label}</p>
+							<p class="fc-secondary">{contact.label}</p>
 							<p class="mt-90">{contact.contact}</p>
 						</div>
 					))
@@ -507,11 +507,6 @@ let sectionTitle = {
 
 	/** @duplicate */
 	.fc-secondary {
-		color: var(--c-secondary);
-	}
-
-	/** @deprecated */
-	.contactLabel {
 		color: var(--c-secondary);
 	}
 </style>
