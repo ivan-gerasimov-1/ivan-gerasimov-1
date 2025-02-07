@@ -23,7 +23,7 @@ type Props = {
 		}[];
 		languages: {
 			name: string;
-			level: string;
+			level?: string;
 		}[];
 		skills: string[];
 		employmentHistory: {
@@ -160,7 +160,9 @@ let { content, sectionTitle } = Astro.props;
 						content.languages.map((language) => (
 							<li class="listItem mt-90">
 								<Text height="secondary">{language.name}</Text>
-								<Text type="secondary">{language.level}</Text>
+								{language.level && (
+									<Text type="secondary">{language.level}</Text>
+								)}
 							</li>
 						))
 					}
