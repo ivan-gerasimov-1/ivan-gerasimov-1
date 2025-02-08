@@ -3,18 +3,14 @@ import BaseLayout from "#app/layouts/baseLayout.astro";
 
 type Props = {
 	title: string;
-	keywords: string;
 	description: string;
+	keywords: string;
 };
 
-let props = Astro.props;
+let { title, description, keywords } = Astro.props;
 ---
 
-<BaseLayout
-	title={props.title}
-	description={props.description}
-	keywords={props.keywords}
->
+<BaseLayout title={title} description={description} keywords={keywords}>
 	<slot />
 </BaseLayout>
 
