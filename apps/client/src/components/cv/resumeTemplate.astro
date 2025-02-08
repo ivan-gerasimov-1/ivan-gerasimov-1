@@ -65,10 +65,8 @@ let { content, sectionTitle } = Astro.props;
 
 <main class="grid">
 	<div
-		id="photo"
 		style={{
-			gridColumn: 1,
-			gridRow: 1,
+			gridArea: "photo",
 		}}
 	>
 		<img
@@ -81,11 +79,9 @@ let { content, sectionTitle } = Astro.props;
 	</div>
 
 	<Stack
-		id="profile"
 		class="pt-95 pb-95"
 		style={{
-			gridColumn: 2,
-			gridRow: 1,
+			gridArea: "profile",
 		}}
 		justifyContent="between"
 	>
@@ -111,10 +107,8 @@ let { content, sectionTitle } = Astro.props;
 	</Stack>
 
 	<Stack
-		id="contact"
 		style={{
-			gridColumn: 3,
-			gridRow: 1,
+			gridArea: "contact",
 		}}
 		alignItems="end"
 	>
@@ -138,11 +132,9 @@ let { content, sectionTitle } = Astro.props;
 	</Stack>
 
 	<div
-		id="about"
 		class="pr-120"
 		style={{
-			gridColumn: "1 / 3",
-			gridRow: 2,
+			gridArea: "about",
 		}}
 	>
 		<Section title={sectionTitle.about}>
@@ -151,10 +143,8 @@ let { content, sectionTitle } = Astro.props;
 	</div>
 
 	<div
-		id="languages"
 		style={{
-			gridColumn: 3,
-			gridRow: 2,
+			gridArea: "languages",
 		}}
 	>
 		<Section title={sectionTitle.languages}>
@@ -178,8 +168,7 @@ let { content, sectionTitle } = Astro.props;
 		id="employmentHistory"
 		class="pr-120"
 		style={{
-			gridColumn: "1/3",
-			gridRow: 3,
+			gridArea: "employmentHistory",
 		}}
 	>
 		<Section title={sectionTitle.employmentHistory}>
@@ -188,10 +177,8 @@ let { content, sectionTitle } = Astro.props;
 	</div>
 
 	<div
-		id="skills"
 		style={{
-			gridColumn: "3",
-			gridRow: 3,
+			gridArea: "skills",
 		}}
 	>
 		<Section title={sectionTitle.skills}>
@@ -215,10 +202,8 @@ let { content, sectionTitle } = Astro.props;
 	</div>
 
 	<div
-		id="additionalActivities"
 		style={{
-			gridColumn: "1/3",
-			gridRow: 4,
+			gridArea: "additionalActivities",
 		}}
 	>
 		<Section title={sectionTitle.additionalActivities}>
@@ -236,6 +221,11 @@ let { content, sectionTitle } = Astro.props;
 
 		display: grid;
 		grid-template-columns: 1fr 4fr 1.5fr;
+		grid-template-areas:
+			"photo profile contact"
+			"about about languages"
+			"employmentHistory employmentHistory skills"
+			"additionalActivities additionalActivities skills";
 		gap: 1.25rem;
 	}
 
