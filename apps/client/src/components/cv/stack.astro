@@ -6,11 +6,23 @@ type Props = {
 		gridColumn: string | number;
 		gridRow: string | number;
 	};
+	type?: "column" | "line";
 };
 
-let { id, class: className = [], style } = Astro.props;
+let { id, class: className = [], style, type = "column" } = Astro.props;
 ---
 
-<div id={id} class:list={["d-flex", "f-column", className]} style={style}>
+<div
+	id={id}
+	class:list={[
+		"d-flex",
+		type,
+		className,
+		{
+			"f-column": type === "column",
+		},
+	]}
+	style={style}
+>
 	<slot />
 </div>
