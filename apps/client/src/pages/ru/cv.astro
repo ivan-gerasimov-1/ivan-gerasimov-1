@@ -1,7 +1,7 @@
 ---
 import ResumeLayout from "#app/layouts/resumeLayout.astro";
 
-import CvContent from "#app/components/cv/cvContent.astro";
+import ResumeTemplate from "#app/components/cv/resumeTemplate.astro";
 
 let content = {
 	name: "Иван Герасимов",
@@ -285,5 +285,5 @@ let sectionTitle = {
 ---
 
 <ResumeLayout>
-	<CvContent content={content} sectionTitle={sectionTitle} />
+	<ResumeTemplate content={content} sectionTitle={sectionTitle} />
 </ResumeLayout>
