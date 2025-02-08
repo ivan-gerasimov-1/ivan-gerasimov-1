@@ -1,16 +1,32 @@
 ---
+import Optional from "#app/components/cv/optional.astro";
+import Text from "#app/components/cv/text.astro";
+
 type Props<T = unknown> = {
+	class?: string;
+	title?: string;
 	items: T[];
+	spacing: "small" | "medium";
 };
 
-let { items = [] } = Astro.props;
+let { class: className, spacing = "medium", title, items = [] } = Astro.props;
 ---
 
-<ul>
+<ul class={className}>
+	<Optional condition={title}>
+		<Text>{title}</Text>
+	</Optional>
+
 	{
 		items.map(async (item) => (
 			<li
-				class="listItem mt-90"
+				class:list={[
+					"listItem",
+					{
+						["mt-80"]: spacing === "small",
+						["mt-90"]: spacing === "medium",
+					},
+				]}
 				set:html={await Astro.slots.render("default", [item])}
 			/>
 		))
