@@ -3,6 +3,40 @@ import ResumeLayout from "#app/layouts/resumeLayout.astro";
 
 import ResumeTemplate from "#app/components/cv/resumeTemplate.astro";
 
+let meta = {
+	keywords: [
+		"frontend",
+		"front-end",
+		"front end",
+		"developer",
+		"engineer",
+		"software",
+		"software engineer",
+		"software developer",
+		"javascript",
+		"typescript",
+		"js",
+		"ts",
+		"react",
+		"reactjs",
+		"vue",
+		"vuejs",
+		"vue.js",
+		"node",
+		"node.js",
+		"nodejs",
+		"domain driven design",
+		"ddd",
+		"clean architecture",
+		"solid",
+		"oop",
+		"object oriented programming",
+	].join(", "),
+
+	description: "Ivan Gerasimov | Software Engineer, CV",
+	title: "Ivan Gerasimov | CV",
+};
+
 let content = {
 	name: "Иван Герасимов",
 	occupation: "Fullstack Разработчик (JavaScript)",
@@ -284,6 +318,6 @@ let sectionTitle = {
 };
 ---
 
-<ResumeLayout>
+<ResumeLayout {...meta}>
 	<ResumeTemplate content={content} sectionTitle={sectionTitle} />
 </ResumeLayout>

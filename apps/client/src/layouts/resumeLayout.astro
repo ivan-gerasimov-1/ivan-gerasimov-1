@@ -7,42 +7,16 @@ import "@fontsource/fira-sans/500.css";
 
 import "@fontsource/jetbrains-mono/400.css";
 
-let meta = {
-	keywords: [
-		"frontend",
-		"front-end",
-		"front end",
-		"developer",
-		"engineer",
-		"software",
-		"software engineer",
-		"software developer",
-		"javascript",
-		"typescript",
-		"js",
-		"ts",
-		"react",
-		"reactjs",
-		"vue",
-		"vuejs",
-		"vue.js",
-		"node",
-		"node.js",
-		"nodejs",
-		"domain driven design",
-		"ddd",
-		"clean architecture",
-		"solid",
-		"oop",
-		"object oriented programming",
-	].join(", "),
-
-	description: "Ivan Gerasimov | Software Engineer, CV",
-	title: "Ivan Gerasimov | CV",
+type Props = {
+	title: string;
+	description: string;
+	keywords: string;
 };
+
+let { title, description, keywords } = Astro.props;
 ---
 
-<BaseLayout {...meta}>
+<BaseLayout title={title} description={description} keywords={keywords}>
 	<slot />
 </BaseLayout>
 
