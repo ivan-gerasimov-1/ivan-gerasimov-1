@@ -1,39 +1,12 @@
 ---
-let locale = Astro.currentLocale;
-
-let content = {
-	keywords: [
-		"frontend",
-		"front-end",
-		"front end",
-		"developer",
-		"engineer",
-		"software",
-		"software engineer",
-		"software developer",
-		"javascript",
-		"typescript",
-		"js",
-		"ts",
-		"react",
-		"reactjs",
-		"vue",
-		"vuejs",
-		"vue.js",
-		"node",
-		"node.js",
-		"nodejs",
-		"domain driven design",
-		"ddd",
-		"clean architecture",
-		"solid",
-		"oop",
-		"object oriented programming",
-	].join(", "),
-
-	description: "Ivan Gerasimov | Software Engineer (JavaScript, Fullstack)",
-	title: "Ivan Gerasimov | Software Engineer",
+type Props = {
+	title: string;
+	keywords: string;
+	description: string;
 };
+
+let locale = Astro.currentLocale;
+let { title, keywords, description } = Astro.props;
 ---
 
 <!doctype html>
@@ -44,10 +17,10 @@ let content = {
 
 		<link rel="icon" href="/favicon.ico" />
 
-		<meta name="keywords" content={content.keywords} />
-		<meta name="description" content={content.description} />
+		<meta name="keywords" content={keywords} />
+		<meta name="description" content={description} />
 
-		<title>{content.title}</title>
+		<title>{title}</title>
 	</head>
 
 	<body>
@@ -55,50 +28,15 @@ let content = {
 	</body>
 </html>
 
-<style>
-	:root {
-		--white: #f5f5f5;
-		--grey: #b8b4bf;
-		--orange: #fb773c;
-		--black: #25292e;
-
-		--fc-100: var(--white);
-		--fc-200: var(--grey);
-		--fc-300: var(--black);
-		--fc-link: var(--fc-200);
-		--fc-link-hover: var(--orange);
-
-		--clr-body-background: var(--black);
-
-		--ff-transitional: Charter, "Bitstream Charter", "Sitka Text", Cambria,
-			serif;
-		--ff-monospace: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo,
-			Consolas, "DejaVu Sans Mono", monospace;
-	}
-
-	:global(*),
-	:global(*::after),
-	:global(*::before) {
+<style is:global>
+	*,
+	*::after,
+	*::before {
 		box-sizing: border-box;
 	}
 
 	body {
 		margin: 0;
-		padding: 3rem 2rem;
-
-		min-height: 100dvh;
-
-		display: flex;
-		justify-content: space-between;
-		flex-direction: column;
-
-		color: var(--fc-100);
-
-		background-color: var(--clr-body-background);
-		background-image: url("/background.jpg");
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-blend-mode: overlay;
+		padding: 0;
 	}
 </style>

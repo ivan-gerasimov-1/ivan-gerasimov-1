@@ -1,10 +1,44 @@
 ---
-import BaseLayout from "#app/layouts/baseLayout.astro";
+import MainLayout from "#app/layouts/mainLayout.astro";
 
 import Photo from "#app/components/heroPhoto.astro";
 import SocialLink from "#app/components/socialLink.astro";
 import Link from "#app/components/link.astro";
 import Divider from "#app/components/divider.astro";
+
+let meta = {
+	keywords: [
+		"frontend",
+		"front-end",
+		"front end",
+		"developer",
+		"engineer",
+		"software",
+		"software engineer",
+		"software developer",
+		"javascript",
+		"typescript",
+		"js",
+		"ts",
+		"react",
+		"reactjs",
+		"vue",
+		"vuejs",
+		"vue.js",
+		"node",
+		"node.js",
+		"nodejs",
+		"domain driven design",
+		"ddd",
+		"clean architecture",
+		"solid",
+		"oop",
+		"object oriented programming",
+	].join(", "),
+
+	description: "Ivan Gerasimov | Software Engineer (JavaScript, Fullstack)",
+	title: "Ivan Gerasimov | Software Engineer",
+};
 
 let content = {
 	name: "Иван Герасимов",
@@ -38,7 +72,7 @@ let content = {
 };
 ---
 
-<BaseLayout>
+<MainLayout {...meta}>
 	<main class="main">
 		<div class="profile">
 			<Photo />
@@ -85,7 +119,7 @@ let content = {
 			<Link to=`mailto:${content.email.to}`>{content.email.label}</Link>
 		</div>
 	</footer>
-</BaseLayout>
+</MainLayout>
 
 <style>
 	.main {

@@ -1,0 +1,60 @@
+---
+import BaseLayout from "#app/layouts/baseLayout.astro";
+
+type Props = {
+	title: string;
+	keywords: string;
+	description: string;
+};
+
+let props = Astro.props;
+---
+
+<BaseLayout
+	title={props.title}
+	description={props.description}
+	keywords={props.keywords}
+>
+	<slot />
+</BaseLayout>
+
+<style>
+	:root {
+		--white: #f5f5f5;
+		--grey: #b8b4bf;
+		--orange: #fb773c;
+		--black: #25292e;
+
+		--fc-100: var(--white);
+		--fc-200: var(--grey);
+		--fc-300: var(--black);
+		--fc-link: var(--fc-200);
+		--fc-link-hover: var(--orange);
+
+		--clr-body-background: var(--black);
+
+		--ff-transitional: Charter, "Bitstream Charter", "Sitka Text", Cambria,
+			serif;
+		--ff-monospace: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo,
+			Consolas, "DejaVu Sans Mono", monospace;
+	}
+
+	body {
+		min-height: 100vh;
+
+		padding: 3rem 2rem;
+
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+
+		color: var(--fc-100);
+
+		background-color: var(--clr-body-background);
+		background-image: url("/background.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-blend-mode: overlay;
+	}
+</style>

@@ -1,13 +1,13 @@
 ---
+import BaseLayout from "#app/layouts/baseLayout.astro";
+
 import "@fontsource/fira-sans/300.css";
 import "@fontsource/fira-sans/400.css";
 import "@fontsource/fira-sans/500.css";
 
 import "@fontsource/jetbrains-mono/400.css";
 
-let locale = Astro.currentLocale;
-
-let content = {
+let meta = {
 	keywords: [
 		"frontend",
 		"front-end",
@@ -42,24 +42,9 @@ let content = {
 };
 ---
 
-<!doctype html>
-<html lang={locale}>
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-		<link rel="icon" href="/favicon.ico" />
-
-		<meta name="keywords" content={content.keywords} />
-		<meta name="description" content={content.description} />
-
-		<title>{content.title}</title>
-	</head>
-
-	<body>
-		<slot />
-	</body>
-</html>
+<BaseLayout {...meta}>
+	<slot />
+</BaseLayout>
 
 <style is:global>
 	:root {
@@ -102,14 +87,6 @@ let content = {
 		}
 	}
 
-	*,
-	*::after,
-	*::before {
-		box-sizing: border-box;
-
-		cursor: default;
-	}
-
 	h1,
 	h2,
 	h3,
@@ -128,6 +105,26 @@ let content = {
 
 	strong {
 		font-weight: var(--fw-110);
+	}
+
+	body {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+
+		font-family: var(--ff-sans);
+		font-size: var(--fs-primary-100);
+		line-height: var(--lh-base);
+
+		background-color: var(--c-background);
+
+		color: var(--c-primary);
+	}
+
+	@media print {
+		body {
+			background-color: unset;
+		}
 	}
 
 	.mt-80 {
@@ -227,31 +224,6 @@ let content = {
 			left: -0.625rem;
 
 			content: "•";
-		}
-	}
-
-	body {
-		margin: 0;
-		padding: 0;
-
-		display: flex;
-		justify-content: space-between;
-		flex-direction: column;
-
-		cursor: default;
-
-		font-family: var(--ff-sans);
-		font-size: var(--fs-primary-100);
-		line-height: var(--lh-base);
-
-		background-color: var(--c-background);
-
-		color: var(--c-primary);
-	}
-
-	@media print {
-		body {
-			background-color: unset;
 		}
 	}
 </style>
