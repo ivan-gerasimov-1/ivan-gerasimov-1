@@ -1,6 +1,4 @@
 ---
-import CvLayout from "#app/layouts/cvLayout.astro";
-
 import ExperienceList from "#app/components/cv/experienceList.astro";
 import Section from "#app/components/cv/section.astro";
 import Text from "#app/components/cv/text.astro";
@@ -60,171 +58,167 @@ type Props = {
 let { content, sectionTitle } = Astro.props;
 ---
 
-<CvLayout>
-	<main class="grid">
-		<div
-			id="photo"
-			style={{
-				gridColumn: 1,
-				gridRow: 1,
-			}}
-		>
-			<img
-				src={photo.src}
-				width={120}
-				height={120}
-				alt=""
-				class="Ivan Gerasimov, headshot photo"
-			/>
+<main class="grid">
+	<div
+		id="photo"
+		style={{
+			gridColumn: 1,
+			gridRow: 1,
+		}}
+	>
+		<img
+			src={photo.src}
+			width={120}
+			height={120}
+			alt=""
+			class="Ivan Gerasimov, headshot photo"
+		/>
+	</div>
+
+	<div
+		id="profile"
+		class="d-flex f-column f-space-between pt-95 pb-95"
+		style={{
+			gridColumn: 2,
+			gridRow: 1,
+		}}
+	>
+		<div class="d-flex f-column">
+			<h1 class="fs-primary-120">
+				{content.name}
+			</h1>
+
+			<h2 class="mt-90 font-secondary fs-secondary-110">
+				{content.occupation}
+			</h2>
 		</div>
 
-		<div
-			id="profile"
-			class="d-flex f-column f-space-between pt-95 pb-95"
-			style={{
-				gridColumn: 2,
-				gridRow: 1,
-			}}
-		>
-			<div class="d-flex f-column">
-				<h1 class="fs-primary-120">
-					{content.name}
-				</h1>
+		<div class="d-flex f-column">
+			{
+				content.links.map((link) => (
+					<a class="link mt-90" href={link.url}>
+						{link.title}
+					</a>
+				))
+			}
+		</div>
+	</div>
 
-				<h2 class="mt-90 font-secondary fs-secondary-110">
-					{content.occupation}
-				</h2>
-			</div>
+	<div
+		id="contact"
+		class="d-flex f-column f-end"
+		style={{
+			gridColumn: 3,
+			gridRow: 1,
+		}}
+	>
+		<p>{content.location}</p>
 
-			<div class="d-flex f-column">
+		<div class="mt-110">
+			{
+				content.contacts.map((contact) => (
+					<div class="d-flex f-column f-end mt-100">
+						<Text color="secondary" height="base">
+							{contact.label}
+						</Text>
+
+						<Text height="base" class="mt-90">
+							{contact.contact}
+						</Text>
+					</div>
+				))
+			}
+		</div>
+	</div>
+
+	<div
+		id="about"
+		class="pr-120"
+		style={{
+			gridColumn: "1 / 3",
+			gridRow: 2,
+		}}
+	>
+		<Section title={sectionTitle.about}>
+			<Text html={content.about} />
+		</Section>
+	</div>
+
+	<div
+		id="languages"
+		style={{
+			gridColumn: 3,
+			gridRow: 2,
+		}}
+	>
+		<Section title={sectionTitle.languages}>
+			<ul>
 				{
-					content.links.map((link) => (
-						<a class="link mt-90" href={link.url}>
-							{link.title}
-						</a>
+					content.languages.map((language) => (
+						<li class="listItem mt-90">
+							<Text height="secondary">{language.name}</Text>
+							{language.level && <Text type="secondary">{language.level}</Text>}
+						</li>
 					))
 				}
-			</div>
-		</div>
+			</ul>
+		</Section>
+	</div>
 
-		<div
-			id="contact"
-			class="d-flex f-column f-end"
-			style={{
-				gridColumn: 3,
-				gridRow: 1,
-			}}
-		>
-			<p>{content.location}</p>
+	<div
+		id="employmentHistory"
+		class="pr-120"
+		style={{
+			gridColumn: "1/3",
+			gridRow: 3,
+		}}
+	>
+		<Section title={sectionTitle.employmentHistory}>
+			<ExperienceList items={content.employmentHistory} />
+		</Section>
+	</div>
 
-			<div class="mt-110">
+	<div
+		id="skills"
+		style={{
+			gridColumn: "3",
+			gridRow: 3,
+		}}
+	>
+		<Section title={sectionTitle.skills}>
+			<ul class="skillPills font-secondary fc-primary">
+				{content.skills.map((skill) => <li>{skill}</li>)}
+			</ul>
+		</Section>
+
+		<div class="mt-200"></div>
+
+		<Section title={sectionTitle.education}>
+			<ul>
 				{
-					content.contacts.map((contact) => (
-						<div class="d-flex f-column f-end mt-100">
-							<Text color="secondary" height="base">
-								{contact.label}
-							</Text>
-
-							<Text height="base" class="mt-90">
-								{contact.contact}
-							</Text>
-						</div>
+					content.education.map((item) => (
+						<li class="listItem mt-90">
+							<Text height="secondary">{item.institution}</Text>
+							<Text type="secondary">{item.years}</Text>
+						</li>
 					))
 				}
-			</div>
-		</div>
+			</ul>
+		</Section>
+	</div>
 
-		<div
-			id="about"
-			class="pr-120"
-			style={{
-				gridColumn: "1 / 3",
-				gridRow: 2,
-			}}
-		>
-			<Section title={sectionTitle.about}>
-				<Text html={content.about} />
-			</Section>
-		</div>
-
-		<div
-			id="languages"
-			style={{
-				gridColumn: 3,
-				gridRow: 2,
-			}}
-		>
-			<Section title={sectionTitle.languages}>
-				<ul>
-					{
-						content.languages.map((language) => (
-							<li class="listItem mt-90">
-								<Text height="secondary">{language.name}</Text>
-								{language.level && (
-									<Text type="secondary">{language.level}</Text>
-								)}
-							</li>
-						))
-					}
-				</ul>
-			</Section>
-		</div>
-
-		<div
-			id="employmentHistory"
-			class="pr-120"
-			style={{
-				gridColumn: "1/3",
-				gridRow: 3,
-			}}
-		>
-			<Section title={sectionTitle.employmentHistory}>
-				<ExperienceList items={content.employmentHistory} />
-			</Section>
-		</div>
-
-		<div
-			id="skills"
-			style={{
-				gridColumn: "3",
-				gridRow: 3,
-			}}
-		>
-			<Section title={sectionTitle.skills}>
-				<ul class="skillPills font-secondary fc-primary">
-					{content.skills.map((skill) => <li>{skill}</li>)}
-				</ul>
-			</Section>
-
-			<div class="mt-200"></div>
-
-			<Section title={sectionTitle.education}>
-				<ul>
-					{
-						content.education.map((item) => (
-							<li class="listItem mt-90">
-								<Text height="secondary">{item.institution}</Text>
-								<Text type="secondary">{item.years}</Text>
-							</li>
-						))
-					}
-				</ul>
-			</Section>
-		</div>
-
-		<div
-			id="additionalActivities"
-			style={{
-				gridColumn: "1/3",
-				gridRow: 4,
-			}}
-		>
-			<Section title={sectionTitle.additionalActivities}>
-				<ExperienceList items={content.additionalActivities} />
-			</Section>
-		</div>
-	</main>
-</CvLayout>
+	<div
+		id="additionalActivities"
+		style={{
+			gridColumn: "1/3",
+			gridRow: 4,
+		}}
+	>
+		<Section title={sectionTitle.additionalActivities}>
+			<ExperienceList items={content.additionalActivities} />
+		</Section>
+	</div>
+</main>
 
 <style>
 	.grid {
