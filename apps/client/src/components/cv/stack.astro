@@ -1,0 +1,16 @@
+---
+type Props = {
+	id?: string;
+	class?: string;
+	style?: {
+		gridColumn: number;
+		gridRow: number;
+	};
+};
+
+let { id, class: className = [], style } = Astro.props;
+---
+
+<div id={id} class:list={["d-flex", "f-column", className]} style={style}>
+	<slot />
+</div>
