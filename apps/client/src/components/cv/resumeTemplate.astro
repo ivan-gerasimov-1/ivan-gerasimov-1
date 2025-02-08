@@ -229,6 +229,19 @@ let { content, sectionTitle } = Astro.props;
 		gap: 1.25rem;
 	}
 
+	@media (max-width: 48rem) {
+		.grid {
+			grid-template-columns: 1fr auto;
+			grid-template-areas:
+				"profile photo"
+				"languages contact"
+				"about about"
+				"employmentHistory employmentHistory"
+				"additionalActivities additionalActivities"
+				"skills skills";
+		}
+	}
+
 	.photo {
 		border-radius: 15%;
 	}
