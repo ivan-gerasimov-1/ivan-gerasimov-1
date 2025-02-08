@@ -8,7 +8,7 @@ type Props = {
 	};
 	type?: "column" | "line";
 	alignItems?: "end";
-	justifyContent?: "spaceBetween";
+	justifyContent?: "between";
 };
 
 let {
@@ -30,7 +30,7 @@ let {
 		{
 			"f-column": type === "column",
 			"f-end": alignItems === "end",
-			"f-space-between": justifyContent === "spaceBetween",
+			"f-space-between": justifyContent === "between",
 		},
 	]}
 	style={style}

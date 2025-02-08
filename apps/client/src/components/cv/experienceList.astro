@@ -33,12 +33,12 @@ let content = {
 {
 	items.map((item) => (
 		<div class="itemContainer">
-			<Stack type="line" justifyContent="spaceBetween">
+			<Stack type="line" justifyContent="between">
 				<Text bold>{item.company}</Text>
 				<Text bold>{item.position}</Text>
 			</Stack>
 
-			<Stack type="line" justifyContent="spaceBetween">
+			<Stack type="line" justifyContent="between">
 				<Text type="secondary">{item.years}</Text>
 
 				<Optional condition={item.additional}>
