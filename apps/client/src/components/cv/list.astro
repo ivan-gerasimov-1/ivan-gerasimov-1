@@ -1,0 +1,35 @@
+---
+type Props<T = unknown> = {
+	items: T[];
+};
+
+let { items = [] } = Astro.props;
+---
+
+<ul>
+	{
+		items.map(async (item) => (
+			<li
+				class="listItem mt-90"
+				set:html={await Astro.slots.render("default", [item])}
+			/>
+		))
+	}
+</ul>
+
+<style>
+	.listItem {
+		position: relative;
+
+		line-height: var(--lh-secondary);
+
+		&:before {
+			position: absolute;
+
+			top: 0.035rem;
+			left: -0.625rem;
+
+			content: "•";
+		}
+	}
+</style>
