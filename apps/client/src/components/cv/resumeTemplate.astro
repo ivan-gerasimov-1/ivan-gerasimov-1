@@ -116,9 +116,9 @@ let { content, sectionTitle } = Astro.props;
 		}}
 		alignItems="end"
 	>
-		<p>{content.location}</p>
+		<Text>{content.location}</Text>
 
-		<div class="mt-110">
+		<div class="mt-90">
 			{
 				content.contacts.map((contact) => (
 					<Stack class="mt-100" alignItems="end">
