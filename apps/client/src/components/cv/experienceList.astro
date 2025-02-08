@@ -1,4 +1,5 @@
 ---
+import Optional from "#app/components/cv/optional.astro";
 import Stack from "#app/components/cv/stack.astro";
 import Text from "#app/components/cv/text.astro";
 
@@ -39,33 +40,33 @@ let content = {
 			<Stack type="line" justifyContent="spaceBetween">
 				<Text type="secondary">{item.years}</Text>
 
-				{item.additional && (
+				<Optional condition={item.additional}>
 					<Text color="secondary" height="secondary">
 						{item.additional}
 					</Text>
-				)}
+				</Optional>
 			</Stack>
 
 			<div class="mt-100">
 				<Text>{item.summary}</Text>
 
-				{item.achievements && (
+				<Optional condition={item.achievements}>
 					<ul class="mt-100">
 						<Text>{content.achievementsSectionTitle}</Text>
 
-						{item.achievements.map((achievement) => (
+						{item.achievements?.map((achievement) => (
 							<li class="listItem mt-80">
 								<Text>{achievement}</Text>
 							</li>
 						))}
 					</ul>
-				)}
+				</Optional>
 
-				{item.skills && (
+				<Optional condition={item.skills}>
 					<Text class="mt-100" type="secondary">
 						{item.skills}
 					</Text>
-				)}
+				</Optional>
 			</div>
 		</div>
 	))

@@ -1,4 +1,6 @@
 ---
+import Optional from "#app/components/cv/optional.astro";
+
 type Props = {
 	items: string[];
 };
@@ -6,15 +8,11 @@ type Props = {
 let { items } = Astro.props;
 ---
 
-{
-	items && (
-		<ul class="pills font-secondary fc-primary">
-			{items.map((item) => (
-				<li>{item}</li>
-			))}
-		</ul>
-	)
-}
+<Optional condition={items.length}>
+	<ul class="pills font-secondary fc-primary">
+		{items.map((item) => <li>{item}</li>)}
+	</ul>
+</Optional>
 
 <style>
 	.pills {
