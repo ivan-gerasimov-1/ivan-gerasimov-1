@@ -1,4 +1,5 @@
 ---
+import List from "#app/components/cv/list.astro";
 import Optional from "#app/components/cv/optional.astro";
 import Stack from "#app/components/cv/stack.astro";
 import Text from "#app/components/cv/text.astro";
@@ -51,15 +52,14 @@ let content = {
 				<Text>{item.summary}</Text>
 
 				<Optional condition={item.achievements}>
-					<ul class="mt-100">
-						<Text>{content.achievementsSectionTitle}</Text>
-
-						{item.achievements?.map((achievement) => (
-							<li class="listItem mt-80">
-								<Text>{achievement}</Text>
-							</li>
-						))}
-					</ul>
+					<List
+						class="mt-100"
+						title={content.achievementsSectionTitle}
+						items={item.achievements}
+						spacing="small"
+					>
+						{(achievement: string) => <Text>{achievement}</Text>}
+					</List>
 				</Optional>
 
 				<Optional condition={item.skills}>
