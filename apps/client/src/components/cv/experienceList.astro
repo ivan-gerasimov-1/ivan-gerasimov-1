@@ -1,4 +1,5 @@
 ---
+import Stack from "#app/components/cv/stack.astro";
 import Text from "#app/components/cv/text.astro";
 
 type TLocale = "en" | "ru";
@@ -30,12 +31,12 @@ let content = {
 {
 	items.map((item) => (
 		<div class="itemContainer">
-			<div class="d-flex f-space-between">
+			<Stack type="line" class="f-space-between">
 				<Text bold>{item.company}</Text>
 				<Text bold>{item.position}</Text>
-			</div>
+			</Stack>
 
-			<div class="d-flex f-space-between">
+			<Stack type="line" class="f-space-between">
 				<Text type="secondary">{item.years}</Text>
 
 				{item.additional && (
@@ -43,7 +44,7 @@ let content = {
 						{item.additional}
 					</Text>
 				)}
-			</div>
+			</Stack>
 
 			<div class="mt-100">
 				<Text>{item.summary}</Text>
