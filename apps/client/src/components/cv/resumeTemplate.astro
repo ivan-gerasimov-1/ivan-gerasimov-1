@@ -1,12 +1,14 @@
 ---
 import ExperienceList from "#app/components/cv/experienceList.astro";
 import Link from "#app/components/cv/link.astro";
+import List from "#app/components/cv/list.astro";
+import Optional from "#app/components/cv/optional.astro";
 import Pills from "#app/components/cv/pills.astro";
 import Section from "#app/components/cv/section.astro";
+import Stack from "#app/components/cv/stack.astro";
 import Text from "#app/components/cv/text.astro";
 
 import photo from "#app/assets/ivan-gerasimov_photo.webp";
-import Stack from "#app/components/cv/stack.astro";
 
 type Props = {
 	content: {
@@ -156,16 +158,19 @@ let { content, sectionTitle } = Astro.props;
 		}}
 	>
 		<Section title={sectionTitle.languages}>
-			<ul>
+			<List items={content.languages}>
 				{
-					content.languages.map((language) => (
-						<li class="listItem mt-90">
+					(language: { name: string; level?: string }) => (
+						<>
 							<Text height="secondary">{language.name}</Text>
-							{language.level && <Text type="secondary">{language.level}</Text>}
-						</li>
-					))
+
+							<Optional condition={language.level}>
+								<Text type="secondary">{language.level}</Text>
+							</Optional>
+						</>
+					)
 				}
-			</ul>
+			</List>
 		</Section>
 	</div>
 
@@ -196,16 +201,16 @@ let { content, sectionTitle } = Astro.props;
 		<div class="mt-200"></div>
 
 		<Section title={sectionTitle.education}>
-			<ul>
+			<List items={content.education}>
 				{
-					content.education.map((item) => (
-						<li class="listItem mt-90">
+					(item: { institution: string; years: string }) => (
+						<>
 							<Text height="secondary">{item.institution}</Text>
 							<Text type="secondary">{item.years}</Text>
-						</li>
-					))
+						</>
+					)
 				}
-			</ul>
+			</List>
 		</Section>
 	</div>
 
