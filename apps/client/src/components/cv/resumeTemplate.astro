@@ -1,8 +1,9 @@
 ---
 import ExperienceList from "#app/components/cv/experienceList.astro";
+import Link from "#app/components/cv/link.astro";
+import Pills from "#app/components/cv/pills.astro";
 import Section from "#app/components/cv/section.astro";
 import Text from "#app/components/cv/text.astro";
-import Link from "#app/components/cv/link.astro";
 
 import photo from "#app/assets/ivan-gerasimov_photo.webp";
 
@@ -187,9 +188,7 @@ let { content, sectionTitle } = Astro.props;
 		}}
 	>
 		<Section title={sectionTitle.skills}>
-			<ul class="skillPills font-secondary fc-primary">
-				{content.skills.map((skill) => <li>{skill}</li>)}
-			</ul>
+			<Pills items={content.skills} />
 		</Section>
 
 		<div class="mt-200"></div>
@@ -235,24 +234,5 @@ let { content, sectionTitle } = Astro.props;
 
 	.photo {
 		border-radius: 15%;
-	}
-
-	.skillPills {
-		display: flex;
-		flex-wrap: wrap;
-
-		gap: 0.25rem;
-
-		& li {
-			flex-grow: 1;
-
-			padding: 0.25rem 0.375rem;
-
-			background-color: var(--c-pill);
-
-			border-radius: 5px;
-
-			text-align: center;
-		}
 	}
 </style>
