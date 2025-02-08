@@ -1,6 +1,7 @@
 ---
 import Text from "#app/components/cv/text.astro";
 
+type TLocale = "en" | "ru";
 type Props = {
 	items: {
 		company: string;
@@ -14,6 +15,16 @@ type Props = {
 };
 
 let { items } = Astro.props;
+let locale: TLocale = (Astro.currentLocale ?? "en") as TLocale;
+
+let achievementsSectionTitleI18n: Record<TLocale, string> = {
+	en: "Key Achievements:",
+	ru: "Основные достижения:",
+};
+
+let content = {
+	achievementsSectionTitle: achievementsSectionTitleI18n[locale],
+};
 ---
 
 {
@@ -39,7 +50,7 @@ let { items } = Astro.props;
 
 				{item.achievements && (
 					<ul class="mt-100">
-						<Text>Key Achievements:</Text>
+						<Text>{content.achievementsSectionTitle}</Text>
 
 						{item.achievements.map((achievement) => (
 							<li class="listItem mt-80">
