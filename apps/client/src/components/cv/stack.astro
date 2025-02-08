@@ -7,9 +7,18 @@ type Props = {
 		gridRow: string | number;
 	};
 	type?: "column" | "line";
+	alignItems?: "end";
+	justifyContent?: "spaceBetween";
 };
 
-let { id, class: className = [], style, type = "column" } = Astro.props;
+let {
+	id,
+	class: className = [],
+	style,
+	type = "column",
+	alignItems,
+	justifyContent,
+} = Astro.props;
 ---
 
 <div
@@ -20,9 +29,29 @@ let { id, class: className = [], style, type = "column" } = Astro.props;
 		className,
 		{
 			"f-column": type === "column",
+			"f-end": alignItems === "end",
+			"f-space-between": justifyContent === "spaceBetween",
 		},
 	]}
 	style={style}
 >
 	<slot />
 </div>
+
+<style>
+	.d-flex {
+		display: flex;
+	}
+
+	.f-column {
+		flex-direction: column;
+	}
+
+	.f-end {
+		align-items: flex-end;
+	}
+
+	.f-space-between {
+		justify-content: space-between;
+	}
+</style>
