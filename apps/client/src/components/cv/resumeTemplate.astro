@@ -222,8 +222,11 @@ let { content, sectionTitle } = Astro.props;
 
 <style>
 	.grid {
-		max-width: 210mm;
-		/* max-height: 297mm; */
+		/**
+		 * @description
+		 * 49.6rem is around 210mm in length, which is the width of an A4 pape
+		 */
+		max-width: 49.6rem;
 
 		margin: 0 auto;
 		padding: 2.5rem 1.5rem;
@@ -235,7 +238,11 @@ let { content, sectionTitle } = Astro.props;
 
 	@media print {
 		.grid {
-			padding: 0 0.75rem;
+			/**
+			 * @description
+			 * 0.125in on the left is required for list item bullets
+			 */
+			padding: 0 0 0 0.125in;
 		}
 	}
 
