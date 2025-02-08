@@ -80,11 +80,12 @@ let { content, sectionTitle } = Astro.props;
 
 	<Stack
 		id="profile"
-		class="f-space-between pt-95 pb-95"
+		class="pt-95 pb-95"
 		style={{
 			gridColumn: 2,
 			gridRow: 1,
 		}}
+		justifyContent="spaceBetween"
 	>
 		<Stack>
 			<h1 class="fs-primary-120">
@@ -109,18 +110,18 @@ let { content, sectionTitle } = Astro.props;
 
 	<Stack
 		id="contact"
-		class="f-end"
 		style={{
 			gridColumn: 3,
 			gridRow: 1,
 		}}
+		alignItems="end"
 	>
 		<p>{content.location}</p>
 
 		<div class="mt-110">
 			{
 				content.contacts.map((contact) => (
-					<Stack class="f-end mt-100">
+					<Stack class="mt-100" alignItems="end">
 						<Text color="secondary" height="base">
 							{contact.label}
 						</Text>

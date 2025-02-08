@@ -31,12 +31,12 @@ let content = {
 {
 	items.map((item) => (
 		<div class="itemContainer">
-			<Stack type="line" class="f-space-between">
+			<Stack type="line" justifyContent="spaceBetween">
 				<Text bold>{item.company}</Text>
 				<Text bold>{item.position}</Text>
 			</Stack>
 
-			<Stack type="line" class="f-space-between">
+			<Stack type="line" justifyContent="spaceBetween">
 				<Text type="secondary">{item.years}</Text>
 
 				{item.additional && (
