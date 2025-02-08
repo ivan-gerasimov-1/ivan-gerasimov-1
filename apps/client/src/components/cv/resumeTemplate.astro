@@ -2,6 +2,7 @@
 import ExperienceList from "#app/components/cv/experienceList.astro";
 import Section from "#app/components/cv/section.astro";
 import Text from "#app/components/cv/text.astro";
+import Link from "#app/components/cv/link.astro";
 
 import photo from "#app/assets/ivan-gerasimov_photo.webp";
 
@@ -96,9 +97,9 @@ let { content, sectionTitle } = Astro.props;
 		<div class="d-flex f-column mt-110">
 			{
 				content.links.map((link) => (
-					<a class="link mt-90" href={link.url}>
+					<Link class="mt-90" url={link.url}>
 						{link.title}
-					</a>
+					</Link>
 				))
 			}
 		</div>
@@ -234,18 +235,6 @@ let { content, sectionTitle } = Astro.props;
 
 	.photo {
 		border-radius: 15%;
-	}
-
-	.link {
-		color: inherit;
-
-		text-decoration: none;
-
-		&:hover {
-			color: var(--c-link);
-
-			cursor: pointer;
-		}
 	}
 
 	.skillPills {
