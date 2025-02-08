@@ -98,11 +98,11 @@ let { name, role, description, email, cv, socialLinks } = Astro.props;
 		grid-template-columns: 1fr auto;
 		grid-gap: 2rem;
 
-		@media (max-width: 768px) {
-			& {
-				display: flex;
-				flex-direction: column;
-			}
+		max-width:
+
+		@media (max-width: 48rem) {
+			display: flex;
+			flex-direction: column;
 		}
 	}
 
@@ -111,10 +111,8 @@ let { name, role, description, email, cv, socialLinks } = Astro.props;
 		flex-direction: column;
 		justify-content: flex-end;
 
-		@media (max-width: 768px) {
-			& {
-				margin-top: 1rem;
-			}
+		@media (max-width: 48rem) {
+			margin-top: 1rem;
 		}
 	}
 
