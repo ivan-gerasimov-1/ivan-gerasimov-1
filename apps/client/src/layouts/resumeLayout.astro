@@ -58,6 +58,15 @@ let { title, description, keywords } = Astro.props;
 		--resume-width: 49.6rem;
 	}
 
+	html[lang="ru"] {
+		/**
+		 * @description
+		 * Slightly lower line height for Russian text to fit the first two
+		 * companies on one page
+		 */
+		--lh-primary: 1.49;
+	}
+
 	@media (prefers-color-scheme: dark) {
 		:root {
 			--c-primary: #fafafa;
