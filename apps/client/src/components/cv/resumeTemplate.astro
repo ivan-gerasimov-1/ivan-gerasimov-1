@@ -6,6 +6,7 @@ import Section from "#app/components/cv/section.astro";
 import Text from "#app/components/cv/text.astro";
 
 import photo from "#app/assets/ivan-gerasimov_photo.webp";
+import Stack from "#app/components/cv/stack.astro";
 
 type Props = {
 	content: {
@@ -77,15 +78,15 @@ let { content, sectionTitle } = Astro.props;
 		/>
 	</div>
 
-	<div
+	<Stack
 		id="profile"
-		class="d-flex f-column f-space-between pt-95 pb-95"
+		class="f-space-between pt-95 pb-95"
 		style={{
 			gridColumn: 2,
 			gridRow: 1,
 		}}
 	>
-		<div class="d-flex f-column">
+		<Stack>
 			<h1 class="fs-primary-120">
 				{content.name}
 			</h1>
@@ -93,9 +94,9 @@ let { content, sectionTitle } = Astro.props;
 			<h2 class="mt-90 font-secondary fs-secondary-110">
 				{content.occupation}
 			</h2>
-		</div>
+		</Stack>
 
-		<div class="d-flex f-column mt-110">
+		<Stack class="mt-110">
 			{
 				content.links.map((link) => (
 					<Link class="mt-90" url={link.url}>
@@ -103,12 +104,12 @@ let { content, sectionTitle } = Astro.props;
 					</Link>
 				))
 			}
-		</div>
-	</div>
+		</Stack>
+	</Stack>
 
-	<div
+	<Stack
 		id="contact"
-		class="d-flex f-column f-end"
+		class="f-end"
 		style={{
 			gridColumn: 3,
 			gridRow: 1,
@@ -119,7 +120,7 @@ let { content, sectionTitle } = Astro.props;
 		<div class="mt-110">
 			{
 				content.contacts.map((contact) => (
-					<div class="d-flex f-column f-end mt-100">
+					<Stack class="f-end mt-100">
 						<Text color="secondary" height="base">
 							{contact.label}
 						</Text>
@@ -127,11 +128,11 @@ let { content, sectionTitle } = Astro.props;
 						<Text height="base" class="mt-90">
 							{contact.contact}
 						</Text>
-					</div>
+					</Stack>
 				))
 			}
 		</div>
-	</div>
+	</Stack>
 
 	<div
 		id="about"
