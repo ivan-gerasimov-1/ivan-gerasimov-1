@@ -1,0 +1,9 @@
+---
+type Props = {
+	condition: unknown;
+};
+
+let { condition } = Astro.props;
+---
+
+{condition && <slot />}
