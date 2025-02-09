@@ -2,6 +2,7 @@
 import { Image } from "astro:assets";
 
 import photo from "#app/assets/ivan-gerasimov_headshot-photo.jpeg";
+import placeholder from "#app/assets/ivan-gerasimov_headshot-photo_placeholder.webp?inline";
 
 let content = {
 	alt: "Ivan Gerasimov, headshot photo",
@@ -15,6 +16,9 @@ let content = {
 	width={130}
 	quality={90}
 	densities={[1, 1.5, 2, 2.5, 3]}
+	style={{
+		"--placeholder-url": `url(${placeholder})`,
+	}}
 />
 
 <style>
@@ -23,6 +27,7 @@ let content = {
 		box-shadow: 0 0 0 5px var(--white);
 
 		background-color: var(--white);
-		background-image: url("/ivan-gerasimov_headshot-photo_placeholder.webp");
+		background-image: var(--placeholder-url);
+		background-size: cover;
 	}
 </style>
