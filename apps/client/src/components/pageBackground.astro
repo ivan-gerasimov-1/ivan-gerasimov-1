@@ -2,6 +2,7 @@
 import { Image } from "astro:assets";
 
 import background from "#app/assets/background.jpg";
+import noiseInline from "#app/assets/noise.webp?inline";
 import noise from "#app/assets/noise.webp";
 ---
 
@@ -9,7 +10,7 @@ import noise from "#app/assets/noise.webp";
 	<div
 		class="noise"
 		style={{
-			"--background-url": `url(${noise.src})`,
+			"--background-url": `url(${noiseInline})`,
 			"--background-size": `${noise.width / 2}px`,
 		}}
 	>
