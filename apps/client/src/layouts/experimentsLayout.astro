@@ -1,0 +1,44 @@
+---
+import BaseLayout from "#app/layouts/baseLayout.astro";
+
+type Props = {
+	title: string;
+	description: string;
+	keywords: string;
+};
+
+let { title, description, keywords } = Astro.props;
+---
+
+<BaseLayout title={title} description={description} keywords={keywords}>
+	<main>
+		<h1>Experiments</h1>
+
+		<slot />
+	</main>
+</BaseLayout>
+
+<style>
+	:root {
+		--white: #f5f5f5;
+		--black: #25292e;
+
+		--fc-100: var(--black);
+
+		--clr-body-background: var(--white);
+
+		--ff-monospace: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo,
+			Consolas, "DejaVu Sans Mono", monospace;
+	}
+
+	body {
+		padding: 2rem;
+		color: var(--fc-100);
+
+		background-color: var(--clr-body-background);
+
+		cursor: default;
+
+		font-family: var(--ff-monospace);
+	}
+</style>

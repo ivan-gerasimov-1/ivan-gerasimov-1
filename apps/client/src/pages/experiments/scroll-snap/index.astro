@@ -1,0 +1,50 @@
+---
+import ExperimentsLayout from "#app/layouts/experimentsLayout.astro";
+
+import { meta } from "#app/pages/experiments/meta";
+---
+
+<ExperimentsLayout {...meta}>
+	<article>
+		<h2>Scroll Snap</h2>
+
+		<section>
+			<div class="cardContainer">
+				<div class="card">Card 1</div>
+				<div class="card">Card 2</div>
+				<div class="card">Card 3</div>
+				<div class="card">Card 4</div>
+				<div class="card">Card 5</div>
+			</div>
+		</section>
+	</article>
+</ExperimentsLayout>
+
+<style>
+	.cardContainer {
+		display: flex;
+
+		height: 250px;
+		width: 300px;
+
+		overflow-x: scroll;
+
+		scroll-snap-type: inline mandatory;
+	}
+
+	.card {
+		flex-shrink: 0;
+
+		width: 200px;
+		height: 200px;
+
+		margin: 25px;
+		padding: 25px 20px;
+
+		border-radius: 25px;
+
+		background-color: #ff6b6b;
+
+		scroll-snap-align: center;
+	}
+</style>
