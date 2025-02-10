@@ -31,6 +31,14 @@ type Props = {
 let { name, role, description, email, cv, socialLinks } = Astro.props;
 ---
 
+<header class="header">
+	<nav id="nav" class="nav">
+		<Link class="navItem" to="/cv">
+			<span class="navItemLabel">CV</span>
+		</Link>
+	</nav>
+</header>
+
 <main class="main">
 	<div class="profile">
 		<Photo />
@@ -79,6 +87,68 @@ let { name, role, description, email, cv, socialLinks } = Astro.props;
 </footer>
 
 <style>
+	.header {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	.navItemLabel {
+		display: inline-flex;
+
+		transition: transform 0.15s ease-in-out;
+	}
+
+	.nav > .link {
+		position: relative;
+
+		padding: 0.75rem 2rem;
+
+		transition:
+			background-color 0.15s ease,
+			color 0.15s ease;
+
+		border: 1px solid rgba(255, 255, 255, 0.125);
+		border-radius: 0.875rem;
+
+		font-family: var(--ff-monospace);
+		font-size: 1rem;
+
+		cursor: default;
+
+		&:hover {
+			color: inherit;
+			background-color: rgba(255, 255, 255, 0.125);
+
+			&:after {
+				opacity: 1;
+
+				transform: translateX(5px);
+			}
+
+			& > .navItemLabel {
+				transform: translateX(-5px);
+			}
+		}
+
+		&:before {
+			display: none;
+		}
+
+		&:after {
+			position: absolute;
+			right: 25px;
+			top: 25%;
+
+			content: "→";
+
+			opacity: 0;
+
+			transition:
+				transform 0.15s ease-in-out,
+				opacity 0.15s ease-in-out;
+		}
+	}
+
 	.main {
 		display: flex;
 		justify-content: center;
