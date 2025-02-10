@@ -1,0 +1,90 @@
+---
+import ExperimentsLayout from "#app/layouts/experimentsLayout.astro";
+
+import { meta } from "#app/pages/experiments/meta";
+---
+
+<ExperimentsLayout {...meta}>
+	<article>
+		<h2>Button Gradient Border</h2>
+
+		<section>
+			<button>Hello, Gradient!</button>
+		</section>
+	</article>
+</ExperimentsLayout>
+
+<style>
+	button {
+		position: relative;
+
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+
+		padding: 1rem 2rem;
+
+		appearance: none;
+
+		border: 2px solid transparent;
+		border-radius: 50px;
+
+		background-color: #26355d;
+
+		transition: all 0.15s ease-in-out;
+
+		color: white;
+
+		&::before {
+			position: absolute;
+			width: 103%;
+			height: 110%;
+
+			content: "";
+
+			border-radius: inherit;
+
+			background-image: linear-gradient(to bottom right, #af47d2, #ffdb00);
+
+			transition: all 0.15s ease-in-out;
+
+			z-index: -2;
+		}
+
+		&::after {
+			position: absolute;
+			width: 108%;
+			height: 124%;
+
+			content: "";
+
+			border-radius: inherit;
+
+			background-image: linear-gradient(to bottom right, #ffdb00, #af47d2);
+
+			transition: all 0.15s ease-in-out;
+
+			z-index: -1;
+		}
+
+		&:hover {
+			transform: scale(1.05);
+			color: #26355d;
+
+			border: 2px solid black;
+
+			&::before {
+				transform: rotate(-8deg);
+				filter: blur(5px);
+			}
+
+			&::after {
+				transform: rotate(4deg);
+				filter: blur(5px);
+				box-shadow:
+					20px -5px 50px -12px #af47d2,
+					-20px 5px 50px -12px #ffdb00;
+			}
+		}
+	}
+</style>
