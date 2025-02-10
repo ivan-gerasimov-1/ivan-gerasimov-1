@@ -1,14 +1,21 @@
 ---
 type Props = {
+	class?: string;
+
 	to: string;
 	download?: boolean;
 	target?: string;
 };
 
-let { to, download, target } = Astro.props;
+let { class: className, to, download, target } = Astro.props;
 ---
 
-<a class="link" href={to} download={download} target={target}><slot /></a>
+<a
+	class:list={["link", className]}
+	href={to}
+	download={download}
+	target={target}><slot /></a
+>
 
 <style>
 	.link {
