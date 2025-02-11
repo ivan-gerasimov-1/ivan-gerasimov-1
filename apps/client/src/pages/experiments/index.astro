@@ -5,13 +5,17 @@ import { meta } from "#app/pages/experiments/meta.ts";
 ---
 
 <ExperimentsLayout {...meta}>
-	<ul>
-		<li><a href="/experiments/scroll-snap">Scroll Snap</a></li>
-		<li>
-			<a href="/experiments/button-gradient-border">Button Gradient Border</a>
-		</li>
-		<li>
-			<a href="/experiments/animated-border">Animated Border</a>
-		</li>
-	</ul>
+	<nav>
+		<a href="/experiments/scroll-snap">Scroll Snap</a>
+		<a href="/experiments/button-gradient-border">Button Gradient Border</a>
+		<a href="/experiments/animated-border">Animated Border</a>
+	</nav>
 </ExperimentsLayout>
+
+<style>
+	nav {
+		display: flex;
+		flex-direction: column;
+		gap: 0.625rem;
+	}
+</style>
