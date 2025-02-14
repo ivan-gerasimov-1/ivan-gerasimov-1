@@ -1,4 +1,6 @@
 ---
+import "@fontsource/noto-serif-display/900.css";
+
 import BaseLayout from "#app/layouts/baseLayout.astro";
 
 import PageBackground from "#app/components/pageBackground.astro";
@@ -39,8 +41,8 @@ let { title, description, keywords } = Astro.props;
 		 */
 		--breakpoint-m: 48rem; /** 768px */
 
-		--ff-transitional: Charter, "Bitstream Charter", "Sitka Text", Cambria,
-			serif;
+		--ff-transitional: "Noto Serif Display", Charter, "Bitstream Charter",
+			"Sitka Text", Cambria, serif;
 		--ff-monospace: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo,
 			Consolas, "DejaVu Sans Mono", monospace;
 	}
