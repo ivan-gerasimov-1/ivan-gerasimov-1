@@ -1,5 +1,7 @@
 ---
 import "@fontsource/noto-serif-display/900.css";
+import "@fontsource/jetbrains-mono/400.css";
+import "@fontsource/jetbrains-mono/700.css";
 
 import BaseLayout from "#app/layouts/baseLayout.astro";
 
@@ -43,8 +45,8 @@ let { title, description, keywords } = Astro.props;
 
 		--ff-transitional: "Noto Serif Display", Charter, "Bitstream Charter",
 			"Sitka Text", Cambria, serif;
-		--ff-monospace: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo,
-			Consolas, "DejaVu Sans Mono", monospace;
+		--ff-monospace: "JetBrains Mono", ui-monospace, "Cascadia Code",
+			"Source Code Pro", Menlo, Consolas, "DejaVu Sans Mono", monospace;
 	}
 
 	body {
