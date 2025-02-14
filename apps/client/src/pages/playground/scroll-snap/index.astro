@@ -4,19 +4,15 @@ import PlaygroundLayout from "#app/layouts/playgroundLayout.astro";
 import { meta } from "#app/pages/playground/meta.ts";
 ---
 
-<PlaygroundLayout {...meta}>
+<PlaygroundLayout {...meta} playgroundTitle="Scroll Snap">
 	<article>
-		<h2>Scroll Snap</h2>
-
-		<section>
-			<div class="cardContainer">
-				<div class="card">Card 1</div>
-				<div class="card">Card 2</div>
-				<div class="card">Card 3</div>
-				<div class="card">Card 4</div>
-				<div class="card">Card 5</div>
-			</div>
-		</section>
+		<div class="cardContainer">
+			<div class="card">Card 1</div>
+			<div class="card">Card 2</div>
+			<div class="card">Card 3</div>
+			<div class="card">Card 4</div>
+			<div class="card">Card 5</div>
+		</div>
 	</article>
 </PlaygroundLayout>
 

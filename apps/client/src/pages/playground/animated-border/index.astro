@@ -4,13 +4,9 @@ import PlaygroundLayout from "#app/layouts/playgroundLayout.astro";
 import { meta } from "#app/pages/playground/meta.ts";
 ---
 
-<PlaygroundLayout {...meta}>
+<PlaygroundLayout {...meta} playgroundTitle="Animated Border">
 	<article>
-		<h2>Animated Border</h2>
-
-		<section>
-			<div class="card"></div>
-		</section>
+		<div class="card"></div>
 	</article>
 
 	<style>
