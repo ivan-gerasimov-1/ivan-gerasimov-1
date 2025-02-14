@@ -1,0 +1,21 @@
+---
+import PlaygroundLayout from "#app/layouts/playgroundLayout.astro";
+
+import { meta } from "#app/pages/playground/meta.ts";
+---
+
+<PlaygroundLayout {...meta}>
+	<nav>
+		<a href="/playground/scroll-snap">Scroll Snap</a>
+		<a href="/playground/button-gradient-border">Button Gradient Border</a>
+		<a href="/playground/animated-border">Animated Border</a>
+	</nav>
+</PlaygroundLayout>
+
+<style>
+	nav {
+		display: flex;
+		flex-direction: column;
+		gap: 0.625rem;
+	}
+</style>

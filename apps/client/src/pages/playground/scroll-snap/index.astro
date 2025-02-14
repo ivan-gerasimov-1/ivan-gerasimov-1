@@ -1,10 +1,10 @@
 ---
-import ExperimentsLayout from "#app/layouts/experimentsLayout.astro";
+import PlaygroundLayout from "#app/layouts/playgroundLayout.astro";
 
-import { meta } from "#app/pages/experiments/meta";
+import { meta } from "#app/pages/playground/meta.ts";
 ---
 
-<ExperimentsLayout {...meta}>
+<PlaygroundLayout {...meta}>
 	<article>
 		<h2>Scroll Snap</h2>
 
@@ -18,7 +18,7 @@ import { meta } from "#app/pages/experiments/meta";
 			</div>
 		</section>
 	</article>
-</ExperimentsLayout>
+</PlaygroundLayout>
 
 <style>
 	.cardContainer {
