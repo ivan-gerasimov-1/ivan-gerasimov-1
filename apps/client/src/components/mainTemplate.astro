@@ -1,8 +1,14 @@
 ---
-import Photo from "#app/components/heroPhoto.astro";
-import SocialLink from "#app/components/socialLink.astro";
-import Link from "#app/components/link.astro";
 import Divider from "#app/components/divider.astro";
+import Photo from "#app/components/heroPhoto.astro";
+import Link from "#app/components/link.astro";
+import SocialLink from "#app/components/socialLink.astro";
+
+import Arm from "#app/assets/arm.svg";
+import Connio from "#app/assets/connio.svg";
+import EFResearch from "#app/assets/ef-research.svg";
+import FundraiseUp from "#app/assets/fundraise-up.svg";
+import PostcardAndTag from "#app/assets/postcard-and-tag.svg";
 
 type Props = {
 	name: string;
@@ -50,6 +56,7 @@ let { name, role, description, email, cv, socialLinks } = Astro.props;
 		</div>
 
 		<div class="description" set:html={description} />
+
 		<div class="jobPlaces">
 			<div
 				class="jobPlace"
@@ -58,9 +65,14 @@ let { name, role, description, email, cv, socialLinks } = Astro.props;
 					"grid-row": "1/2",
 				}}
 			>
-				Fundraise Up
-				<span class="jobYears">2021—2024</span>
+				<div class="jobPlaceDescription">
+					Fundraise Up
+					<span class="jobYears">2021—2024</span>
+				</div>
+
+				<FundraiseUp class="jobPlaceLogo" width="24px" height="24px" />
 			</div>
+
 			<div
 				class="jobPlace"
 				style={{
@@ -68,9 +80,14 @@ let { name, role, description, email, cv, socialLinks } = Astro.props;
 					"grid-row": "1/2",
 				}}
 			>
-				Connio
-				<span class="jobYears">2018—2021</span>
+				<div class="jobPlaceDescription">
+					Connio
+					<span class="jobYears">2018—2021</span>
+				</div>
+
+				<Connio class="jobPlaceLogo" width="24px" height="24px" />
 			</div>
+
 			<div
 				class="jobPlace"
 				style={{
@@ -78,9 +95,14 @@ let { name, role, description, email, cv, socialLinks } = Astro.props;
 					"grid-row": "2/3",
 				}}
 			>
-				Arm
-				<span class="jobYears">2017—2018</span>
+				<div class="jobPlaceDescription">
+					Arm
+					<span class="jobYears">2017—2018</span>
+				</div>
+
+				<Arm class="jobPlaceLogo" width="24px" height="24px" />
 			</div>
+
 			<div
 				class="jobPlace"
 				style={{
@@ -88,9 +110,14 @@ let { name, role, description, email, cv, socialLinks } = Astro.props;
 					"grid-row": "2/3",
 				}}
 			>
-				E&F Research
-				<span class="jobYears">2016—2017</span>
+				<div class="jobPlaceDescription">
+					E&F Research
+					<span class="jobYears">2016—2017</span>
+				</div>
+
+				<EFResearch class="jobPlaceLogo" width="24px" height="24px" />
 			</div>
+
 			<div
 				class="jobPlace"
 				style={{
@@ -98,8 +125,12 @@ let { name, role, description, email, cv, socialLinks } = Astro.props;
 					"grid-row": "2/3",
 				}}
 			>
-				Postcard&Tag
-				<span class="jobYears">2015—2016</span>
+				<div class="jobPlaceDescription">
+					Postcard&Tag
+					<span class="jobYears">2015—2016</span>
+				</div>
+
+				<PostcardAndTag class="jobPlaceLogo" width="24px" height="24px" />
 			</div>
 		</div>
 	</div>
@@ -281,8 +312,7 @@ let { name, role, description, email, cv, socialLinks } = Astro.props;
 
 	.jobPlace {
 		display: flex;
-		flex-direction: column;
-		flex-grow: 1;
+		gap: 2rem;
 
 		padding: 0.75rem 0.625rem;
 
@@ -307,12 +337,22 @@ let { name, role, description, email, cv, socialLinks } = Astro.props;
 		}
 	}
 
+	.jobPlaceDescription {
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+	}
+
 	.jobYears {
 		margin-top: 0.25rem;
 
 		font-size: 0.625rem;
 
 		opacity: 0.625;
+	}
+
+	.jobPlaceLogo {
+		flex-grow: 0;
 	}
 
 	.footer {
