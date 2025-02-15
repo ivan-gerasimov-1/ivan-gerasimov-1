@@ -7,7 +7,11 @@ import { meta } from "#app/pages/playground/meta.ts";
 ---
 
 <PlaygroundLayout {...meta} playgroundTitle="…">
-	<EmptySpace width="50%" />
+	<EmptySpace class="emptySpace" width="50%" />
 </PlaygroundLayout>
 
-<style></style>
+<style>
+	.emptySpace {
+		filter: grayscale(1);
+	}
+</style>
