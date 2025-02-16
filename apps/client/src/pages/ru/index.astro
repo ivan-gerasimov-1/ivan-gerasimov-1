@@ -37,7 +37,34 @@ let meta = {
 	title: "Иван Герасимов | Software Engineer",
 };
 
-let content = {
+let content: {
+	name: string;
+	role: string;
+	description: string;
+	email: {
+		to: string;
+		label: string;
+	};
+	cv: {
+		link: string;
+		label: string;
+	};
+	socialLinks: {
+		linkedin: {
+			link: string;
+			label: string;
+		};
+		github: {
+			link: string;
+			label: string;
+		};
+	};
+	companies: {
+		id: "fundraiseUp" | "connio" | "arm" | "efResearch" | "postcardAndTag";
+		name: string;
+		years: string;
+	}[];
+} = {
 	name: "Иван Герасимов",
 	role: "Fullstack Разработчик (JavaScript)",
 	description: `
@@ -66,6 +93,33 @@ let content = {
 			label: "Профиль GitHub",
 		},
 	},
+	companies: [
+		{
+			id: "fundraiseUp",
+			name: "Fundraise Up",
+			years: "2021—2024",
+		},
+		{
+			id: "connio",
+			name: "Connio",
+			years: "2018—2021",
+		},
+		{
+			id: "arm",
+			name: "ARM",
+			years: "2017—2018",
+		},
+		{
+			id: "efResearch",
+			name: "EF Research",
+			years: "2016—2017",
+		},
+		{
+			id: "postcardAndTag",
+			name: "Postcard & Tag",
+			years: "2015—2016",
+		},
+	],
 };
 ---
 

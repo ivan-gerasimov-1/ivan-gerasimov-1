@@ -28,9 +28,15 @@ type Props = {
 			label: string;
 		};
 	};
+	companies: {
+		id: "fundraiseUp" | "connio" | "arm" | "efResearch" | "postcardAndTag";
+		name: string;
+		years: string;
+	}[];
 };
 
-let { name, role, description, email, cv, socialLinks } = Astro.props;
+let { name, role, description, email, cv, socialLinks, companies } =
+	Astro.props;
 ---
 
 <header class="header">
@@ -54,75 +60,25 @@ let { name, role, description, email, cv, socialLinks } = Astro.props;
 		<div class="description" set:html={description} />
 
 		<div class="jobPlaces">
-			<div
-				class="jobPlace"
-				style={{
-					gridArea: "fundraiseUp",
-				}}
-			>
-				<div class="jobPlaceDescription">
-					Fundraise Up
-					<span class="jobYears">2021—2024</span>
-				</div>
+			{
+				companies.map((company) => {
+					return (
+						<div
+							class="jobPlace"
+							style={{
+								gridArea: company.id,
+							}}
+						>
+							<div class="jobPlaceDescription">
+								{company.name}
+								<span class="jobYears">{company.years}</span>
+							</div>
 
-				<Icon name="fundraiseUp" width="24px" height="24px" />
-			</div>
-
-			<div
-				class="jobPlace"
-				style={{
-					gridArea: "connio",
-				}}
-			>
-				<div class="jobPlaceDescription">
-					Connio
-					<span class="jobYears">2018—2021</span>
-				</div>
-
-				<Icon name="connio" width="24px" height="24px" />
-			</div>
-
-			<div
-				class="jobPlace"
-				style={{
-					gridArea: "arm",
-				}}
-			>
-				<div class="jobPlaceDescription">
-					Arm
-					<span class="jobYears">2017—2018</span>
-				</div>
-
-				<Icon name="arm" width="24px" height="24px" />
-			</div>
-
-			<div
-				class="jobPlace"
-				style={{
-					gridArea: "efResearch",
-				}}
-			>
-				<div class="jobPlaceDescription">
-					E&F Research
-					<span class="jobYears">2016—2017</span>
-				</div>
-
-				<Icon name="efResearch" width="24px" height="24px" />
-			</div>
-
-			<div
-				class="jobPlace"
-				style={{
-					gridArea: "postcardAndTag",
-				}}
-			>
-				<div class="jobPlaceDescription">
-					Postcard&Tag
-					<span class="jobYears">2015—2016</span>
-				</div>
-
-				<Icon name="postcardAndTag" width="24px" height="24px" />
-			</div>
+							<Icon name={company.id} width="24px" height="24px" />
+						</div>
+					);
+				})
+			}
 		</div>
 	</div>
 </main>
