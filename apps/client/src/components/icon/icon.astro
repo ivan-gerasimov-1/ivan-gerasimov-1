@@ -14,17 +14,33 @@ type Props = {
 	class?: string;
 	width?: string | number;
 	height?: string | number;
+	hasHover?: boolean;
 };
 
-let { name, class: className, width = "100%", height = "100%" } = Astro.props;
+let {
+	name,
+	class: className,
+	width = "100%",
+	height = "100%",
+	hasHover = false,
+} = Astro.props;
 
 let TargetIcon = EIcon[name];
 ---
 
-<TargetIcon class={className} width={width} height={height} />
+<TargetIcon
+	class:list={[
+		{
+			hover: hasHover,
+		},
+		className,
+	]}
+	width={width}
+	height={height}
+/>
 
 <style>
-	svg {
+	.hover {
 		transition: all 0.15s ease-in-out;
 
 		will-change: transform;
