@@ -58,7 +58,11 @@ let { name, role, description, email, cv, socialLinks } = Astro.props;
 		<div class="description" set:html={description} />
 
 		<div class="jobPlaces">
+			<!-- WIP -->
 			<div
+				id="fruTrigger"
+				tabindex="0"
+				role="button"
 				class="jobPlace"
 				style={{
 					"grid-column": "1/4",
@@ -134,6 +138,21 @@ let { name, role, description, email, cv, socialLinks } = Astro.props;
 			</div>
 		</div>
 	</div>
+
+	<dialog id="fru" class="dialog">
+		<div
+			style={{
+				display: "flex",
+				justifyContent: "space-between",
+				alignItems: "center",
+			}}
+		>
+			<h3>Fundraise Up</h3>
+			<button id="closeDialog" type="button">×</button>
+		</div>
+		<pre>Fullstack Developer</pre>
+		<pre>2021-2024</pre>
+	</dialog>
 </main>
 
 <footer class="footer">
@@ -162,7 +181,94 @@ let { name, role, description, email, cv, socialLinks } = Astro.props;
 	</div>
 </footer>
 
+<script>
+	let trigger = document.getElementById("fruTrigger");
+
+	trigger?.addEventListener("click", () => {
+		let dialog = document.getElementById("fru") as HTMLDialogElement | null;
+		let close = document.getElementById(
+			"closeDialog",
+		) as HTMLButtonElement | null;
+
+		close?.addEventListener("click", () => {
+			dialog?.close();
+		});
+
+		requestAnimationFrame(() => {
+			dialog?.showModal();
+		});
+	});
+</script>
+
 <style>
+	.dialog {
+		width: clamp(400px, 62.5%, 1024px);
+
+		border: none;
+		border-radius: 16px;
+
+		color: var(--fc-100);
+
+		background-color: rgba(0, 0, 0, 0);
+		backdrop-filter: blur(0);
+		opacity: 0;
+		filter: blur(16px);
+		transform: translateY(50px);
+
+		transition:
+			opacity 0.15s ease-in-out,
+			background-color 0.15s ease-in-out,
+			backdrop-filter 0.15s ease-in-out,
+			transform 0.15s ease-in-out,
+			filter 0.15s ease-in-out,
+			overlay 0.15s ease-out allow-discrete,
+			display 0.15s ease-out allow-discrete;
+		transition-delay: 0.075s;
+
+		&:open {
+			opacity: 1;
+			filter: blur(0);
+			transform: translateY(0);
+			background-color: rgba(0, 0, 0, 0.375);
+			backdrop-filter: blur(8px);
+		}
+
+		&:focus {
+			outline: none;
+		}
+
+		&::backdrop {
+			background-color: rgba(0, 0, 0, 0);
+			backdrop-filter: blur(0px);
+			transition:
+				display 0.15s ease-out allow-discrete,
+				overlay 0.15s ease-out allow-discrete,
+				background-color 0.15s ease-in-out,
+				backdrop-filter 0.15s ease-in-out;
+		}
+
+		&:open::backdrop {
+			background-color: rgba(0, 0, 0, 0.375);
+			backdrop-filter: blur(8px);
+		}
+	}
+	@starting-style {
+		.dialog:open {
+			filter: blur(16px);
+			opacity: 0;
+			transform: translateY(50px);
+			background-color: rgba(0, 0, 0, 0);
+			backdrop-filter: blur(0);
+		}
+	}
+
+	@starting-style {
+		.dialog:open::backdrop {
+			background-color: rgb(0 0 0 / 0%);
+			backdrop-filter: blur(0px);
+		}
+	}
+
 	.header {
 		display: flex;
 		justify-content: flex-end;
