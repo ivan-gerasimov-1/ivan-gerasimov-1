@@ -2,11 +2,30 @@
 import GitHub from "./icons/github.svg";
 import LinkedIn from "./icons/linkedin.svg";
 
-type TIconName = "github" | "linkedIn";
+import Arm from "./icons/arm.svg";
+import Connio from "./icons/connio.svg";
+import EFResearch from "./icons/ef-research.svg";
+import FundraiseUp from "./icons/fundraise-up.svg";
+import PostcardAndTag from "./icons/postcard-and-tag.svg";
+
+type TIconName =
+	| "github"
+	| "linkedIn"
+	| "arm"
+	| "connio"
+	| "efResearch"
+	| "fundraiseUp"
+	| "postcardAndTag";
 
 const EIcon = {
 	github: GitHub,
 	linkedIn: LinkedIn,
+
+	arm: Arm,
+	connio: Connio,
+	efResearch: EFResearch,
+	fundraiseUp: FundraiseUp,
+	postcardAndTag: PostcardAndTag,
 } as const;
 
 type Props = {
