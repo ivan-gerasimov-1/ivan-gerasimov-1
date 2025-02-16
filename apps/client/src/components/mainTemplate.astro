@@ -59,19 +59,19 @@ let { name, role, description, email, cv, socialLinks, companies } =
 
 		<div class="description" set:html={description} />
 
-		<div class="jobPlaces">
+		<div class="companies">
 			{
 				companies.map((company) => {
 					return (
 						<div
-							class="jobPlace"
+							class="company"
 							style={{
 								gridArea: company.id,
 							}}
 						>
-							<div class="jobPlaceDescription">
+							<div class="companyInfo">
 								{company.name}
-								<span class="jobYears">{company.years}</span>
+								<span class="companyYears">{company.years}</span>
 							</div>
 
 							<Icon name={company.id} width="24px" height="24px" />
@@ -239,7 +239,7 @@ let { name, role, description, email, cv, socialLinks, companies } =
 		grid-row: 2;
 	}
 
-	.jobPlaces {
+	.companies {
 		display: grid;
 		grid-template-columns: repeat(6, 1fr);
 		grid-template-rows: repeat(2, 1fr);
@@ -261,7 +261,7 @@ let { name, role, description, email, cv, socialLinks, companies } =
 		}
 	}
 
-	.jobPlace {
+	.company {
 		display: flex;
 		gap: 2rem;
 
@@ -288,13 +288,13 @@ let { name, role, description, email, cv, socialLinks, companies } =
 		}
 	}
 
-	.jobPlaceDescription {
+	.companyInfo {
 		display: flex;
 		flex-direction: column;
 		flex-grow: 1;
 	}
 
-	.jobYears {
+	.companyYears {
 		margin-top: 0.25rem;
 
 		font-size: 0.625rem;
