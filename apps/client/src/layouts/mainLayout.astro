@@ -1,7 +1,8 @@
 ---
 import BaseLayout from "#app/layouts/baseLayout.astro";
 
-import PageBackground from "#app/components/pageBackground.astro";
+import BackgroundNoise from "#app/components/backgroundNoise.astro";
+import BackgroundImage from "#app/components/backgroundImage.astro";
 
 import type { TPageMeta } from "#app/i18n/types.ts";
 
@@ -11,7 +12,9 @@ let { title, description, keywords } = Astro.props;
 ---
 
 <BaseLayout title={title} description={description} keywords={keywords}>
-	<PageBackground />
+	<BackgroundNoise>
+		<BackgroundImage />
+	</BackgroundNoise>
 
 	<slot />
 </BaseLayout>

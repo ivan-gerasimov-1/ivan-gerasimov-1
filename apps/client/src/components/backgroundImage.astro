@@ -1,0 +1,26 @@
+---
+import { Image } from "astro:assets";
+
+import background from "#app/assets/background.jpg";
+---
+
+<Image
+	class="gradient"
+	src={background}
+	alt="Background"
+	quality={1}
+	width={256}
+/>
+
+<style>
+	.gradient {
+		width: 100%;
+		height: 100%;
+
+		object-fit: cover;
+
+		mix-blend-mode: overlay;
+
+		filter: blur(6px);
+	}
+</style>
