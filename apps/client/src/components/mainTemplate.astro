@@ -6,34 +6,9 @@ import SocialLink from "#app/components/socialLink.astro";
 
 import Icon from "#app/components/icon/icon.astro";
 
-type Props = {
-	name: string;
-	role: string;
-	description: string;
-	email: {
-		to: string;
-		label: string;
-	};
-	cv: {
-		link: string;
-		label: string;
-	};
-	socialLinks: {
-		linkedin: {
-			link: string;
-			label: string;
-		};
-		github: {
-			link: string;
-			label: string;
-		};
-	};
-	companies: {
-		id: "fundraiseUp" | "connio" | "arm" | "efResearch" | "postcardAndTag";
-		name: string;
-		years: string;
-	}[];
-};
+import type { TMainContent } from "#app/i18n/main/types.ts";
+
+type Props = TMainContent;
 
 let { name, role, description, email, cv, socialLinks, companies } =
 	Astro.props;
