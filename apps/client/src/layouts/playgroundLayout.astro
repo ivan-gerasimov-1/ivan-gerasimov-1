@@ -2,7 +2,7 @@
 import BaseLayout from "#app/layouts/baseLayout.astro";
 
 import Divider from "#app/components/divider.astro";
-import PlaygroundBackground from "#app/components/playgroundBackground.astro";
+import BackgroundNoise from "#app/components/backgroundNoise.astro";
 
 import type { TPageMeta } from "#app/i18n/types.ts";
 
@@ -14,7 +14,7 @@ let { title, description, keywords, playgroundTitle } = Astro.props;
 ---
 
 <BaseLayout title={title} description={description} keywords={keywords}>
-	<PlaygroundBackground />
+	<BackgroundNoise />
 
 	<aside>
 		<nav>
