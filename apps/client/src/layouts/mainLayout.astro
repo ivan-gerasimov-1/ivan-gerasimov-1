@@ -3,11 +3,9 @@ import BaseLayout from "#app/layouts/baseLayout.astro";
 
 import PageBackground from "#app/components/pageBackground.astro";
 
-type Props = {
-	title: string;
-	description: string;
-	keywords: string;
-};
+import type { TPageMeta } from "#app/i18n/types.ts";
+
+type Props = TPageMeta;
 
 let { title, description, keywords } = Astro.props;
 ---

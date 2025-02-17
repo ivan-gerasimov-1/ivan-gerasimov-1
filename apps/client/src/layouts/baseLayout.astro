@@ -1,9 +1,7 @@
 ---
-type Props = {
-	title: string;
-	keywords: string;
-	description: string;
-};
+import type { TPageMeta } from "#app/i18n/types.ts";
+
+type Props = TPageMeta;
 
 let locale = Astro.currentLocale;
 let { title, keywords, description } = Astro.props;

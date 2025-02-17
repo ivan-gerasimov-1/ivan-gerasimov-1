@@ -4,10 +4,9 @@ import BaseLayout from "#app/layouts/baseLayout.astro";
 import Divider from "#app/components/divider.astro";
 import PlaygroundBackground from "#app/components/playgroundBackground.astro";
 
-type Props = {
-	title: string;
-	description: string;
-	keywords: string;
+import type { TPageMeta } from "#app/i18n/types.ts";
+
+type Props = TPageMeta & {
 	playgroundTitle: string;
 };
 
