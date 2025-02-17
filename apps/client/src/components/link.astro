@@ -14,8 +14,10 @@ let { class: className, to, download, target } = Astro.props;
 	class:list={["link", className]}
 	href={to}
 	download={download}
-	target={target}><slot /></a
+	target={target}
 >
+	<slot />
+</a>
 
 <style>
 	.link {
