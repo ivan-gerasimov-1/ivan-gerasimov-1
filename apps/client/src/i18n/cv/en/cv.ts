@@ -1,35 +1,10 @@
 import type { TCVContent, TSectionTitle } from "#app/i18n/cv/types.ts";
 import type { TPageMeta } from "#app/i18n/types.ts";
 
+import { keywords } from "#app/i18n/keywords/en/keywords.ts";
+
 export const meta: TPageMeta = {
-	keywords: [
-		"frontend",
-		"front-end",
-		"front end",
-		"developer",
-		"engineer",
-		"software",
-		"software engineer",
-		"software developer",
-		"javascript",
-		"typescript",
-		"js",
-		"ts",
-		"react",
-		"reactjs",
-		"vue",
-		"vuejs",
-		"vue.js",
-		"node",
-		"node.js",
-		"nodejs",
-		"domain driven design",
-		"ddd",
-		"clean architecture",
-		"solid",
-		"oop",
-		"object oriented programming",
-	].join(", "),
+	keywords: keywords.join(", "),
 
 	description: "Ivan Gerasimov | Software Engineer, CV",
 	title: "Ivan Gerasimov | CV",
