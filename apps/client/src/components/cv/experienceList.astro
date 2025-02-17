@@ -4,7 +4,8 @@ import Optional from "#app/components/cv/optional.astro";
 import Stack from "#app/components/cv/stack.astro";
 import Text from "#app/components/cv/text.astro";
 
-type TLocale = "en" | "ru";
+import type { TLocale } from "#app/i18n/types.ts";
+
 type Props = {
 	items: {
 		company: string;
