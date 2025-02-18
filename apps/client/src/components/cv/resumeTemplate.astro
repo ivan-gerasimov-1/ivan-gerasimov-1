@@ -80,7 +80,7 @@ let { content, sectionTitle } = Astro.props;
 						</Text>
 
 						<Text height="base" class="mt-90">
-							{contact.contact}
+							<Link url={contact.url}>{contact.contact}</Link>
 						</Text>
 					</Stack>
 				))
