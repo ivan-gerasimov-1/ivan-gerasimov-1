@@ -49,10 +49,12 @@ export const content: TCVContent = {
 		{
 			label: "Email",
 			contact: "ivan@gerasimov.dev",
+			url: "mailto:ivan@gerasimov.dev",
 		},
 		{
 			label: "Telegram",
 			contact: "@IvanGerasimow",
+			url: "https://t.me/IvanGerasimow",
 		},
 	],
 

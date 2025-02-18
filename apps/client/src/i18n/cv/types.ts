@@ -10,6 +10,7 @@ export type TCVContent = {
 	contacts: {
 		label: string;
 		contact: string;
+		url: string;
 	}[];
 	languages: {
 		name: string;
