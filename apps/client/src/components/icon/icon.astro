@@ -1,4 +1,6 @@
 ---
+import Home from "./icons/home.svg";
+
 import GitHub from "./icons/github.svg";
 import LinkedIn from "./icons/linkedin.svg";
 
@@ -9,6 +11,7 @@ import FundraiseUp from "./icons/fundraise-up.svg";
 import PostcardAndTag from "./icons/postcard-and-tag.svg";
 
 type TIconName =
+	| "home"
 	| "github"
 	| "linkedIn"
 	| "arm"
@@ -18,6 +21,8 @@ type TIconName =
 	| "postcardAndTag";
 
 const EIcon = {
+	home: Home,
+
 	github: GitHub,
 	linkedIn: LinkedIn,
 
