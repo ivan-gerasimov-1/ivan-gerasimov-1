@@ -1,11 +1,11 @@
 ---
-import type { TLocale } from "#app/i18n/types.ts";
-
 import Icon from "#app/components/icon/icon.astro";
 
-import { createBoundTranslate } from "#app/components/navigationBar/i18n/translate.ts";
-import { content } from "#app/components/navigationBar/content.ts";
-import { navigationBarI18nDictionary } from "#app/components/navigationBar/i18n/dictionary.ts";
+import { navigationBarI18nDictionary } from "#app/i18n/navigationBar/dictionary.ts";
+import { createBoundTranslate } from "#app/i18n/translate.ts";
+import type { TLocale } from "#app/i18n/types.ts";
+
+import { content } from "#app/i18n/navigationBar/content.ts";
 
 let locale = (Astro.currentLocale ?? "en") as TLocale;
 

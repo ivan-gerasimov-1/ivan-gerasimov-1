@@ -1,4 +1,4 @@
-import type { TNavigationBarI18n } from "#app/components/navigationBar/i18n/types.ts";
+import type { TNavigationBarI18n } from "#app/i18n/navigationBar/types.ts";
 import type { TLocale } from "#app/i18n/types.ts";
 
 import { navigationBarI18n as en } from "./en";
