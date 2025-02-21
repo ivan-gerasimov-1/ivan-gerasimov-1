@@ -1,6 +1,7 @@
 ---
 import Icon from "#app/components/icon/icon.astro";
 
+import { createI18nLink } from "#app/i18n/i18nLink.ts";
 import { navigationBarI18nDictionary } from "#app/i18n/navigationBar/dictionary.ts";
 import { createBoundTranslate } from "#app/i18n/translate.ts";
 import type { TLocale } from "#app/i18n/types.ts";
@@ -24,7 +25,7 @@ let t = createBoundTranslate(locale, navigationBarI18nDictionary);
 							disabled: link.isDisabled,
 						},
 					]}
-					href={link.url}
+					href={createI18nLink(link.url, locale)}
 				>
 					{link.type === "icon" && (
 						<Icon name={link.icon} width="20px" height="20px" />
