@@ -2,7 +2,7 @@ export type TLink = {
 	id: string;
 	type: "text" | "icon";
 	url: string;
-	icon?: "home" | never;
+	icon?: string | never;
 	label?: string | never;
 	isActive: boolean;
 	isDisabled: boolean;
@@ -15,6 +15,6 @@ export type TLink = {
 	| {
 			type: "text";
 			icon?: never;
-			label: string;
+			label: "CV" | "About" | "Blog" | "Playground";
 	  }
 );

@@ -5,4 +5,5 @@ export const navigationBarI18n: TNavigationBarI18n = {
 	About: "Обо мне",
 	Blog: "Блог",
 	Playground: "Песочница",
+	Soon: "Скоро",
 };

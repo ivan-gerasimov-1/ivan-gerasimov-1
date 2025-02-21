@@ -3,20 +3,16 @@ import type { TLocale } from "#app/i18n/types.ts";
 
 import Icon from "#app/components/icon/icon.astro";
 
-import type { TLink } from "#app/components/navigationBar/types.ts";
-
 import { createBoundTranslate } from "#app/components/navigationBar/i18n/translate.ts";
-import { getI18nLinks } from "#app/components/navigationBar/i18n/content.ts";
+import { content } from "#app/components/navigationBar/content.ts";
 
 let locale = (Astro.currentLocale ?? "en") as TLocale;
 let t = createBoundTranslate(locale);
-
-let links: TLink[] = getI18nLinks(t);
 ---
 
 <nav class="nav">
 	{
-		links.map((link) => {
+		content.links.map((link) => {
 			return (
 				<a
 					class:list={[
@@ -32,12 +28,14 @@ let links: TLink[] = getI18nLinks(t);
 						<Icon name={link.icon} width="20px" height="20px" />
 					)}
 
-					<span
-						class="navItemLabel"
-						data-disabled-label={link.isDisabled ? "Soon" : ""}
-					>
-						{link.label}
-					</span>
+					{link.type === "text" && (
+						<span
+							class="navItemLabel"
+							data-disabled-label={link.isDisabled ? t("Soon") : undefined}
+						>
+							{t(link.label)}
+						</span>
+					)}
 				</a>
 			);
 		})
