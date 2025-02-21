@@ -14,6 +14,7 @@ let t = createBoundTranslate(locale, navigationBarI18nDictionary);
 ---
 
 <nav class="nav">
+	<div class="selector"></div>
 	{
 		content.links.map((link) => {
 			return (
@@ -45,6 +46,44 @@ let t = createBoundTranslate(locale, navigationBarI18nDictionary);
 	}
 </nav>
 
+<script>
+	let nav: HTMLElement | null = document.querySelector(".nav");
+	let navLinks: NodeListOf<HTMLElement> | null =
+		document.querySelectorAll(".navLink");
+
+	nav?.addEventListener("mouseleave", () => {
+		requestAnimationFrame(() => {
+			nav?.style.setProperty("--selector-opacity", "0");
+			nav?.style.setProperty("--selector-scale", "0.875");
+
+			setTimeout(() => {
+				nav?.style.setProperty("--selector-transition-property", "opacity");
+			}, 250);
+		});
+	});
+
+	for (let navLink of navLinks) {
+		navLink?.addEventListener("mouseenter", (event) => {
+			let target = event.target as HTMLElement;
+
+			requestAnimationFrame(() => {
+				nav?.style.setProperty("--selector-start", target.offsetLeft + "px");
+				nav?.style.setProperty("--selector-width", target.offsetWidth + "px");
+
+				requestAnimationFrame(() => {
+					nav?.style.setProperty(
+						"--selector-transition-property",
+						"width, transform, opacity",
+					);
+
+					nav?.style.setProperty("--selector-scale", "1");
+					nav?.style.setProperty("--selector-opacity", "1");
+				});
+			});
+		});
+	}
+</script>
+
 <style>
 	.nav {
 		--spacing-m: 0.375rem;
@@ -70,6 +109,14 @@ let t = createBoundTranslate(locale, navigationBarI18nDictionary);
 		--border-100: 1px solid var(--c-border);
 
 		--transition-100: 0.15s ease-in-out;
+
+		--selector-start: var(--spacing-m);
+		--selector-width: 2rem;
+		--selector-opacity: 0;
+		--selector-transition-property: opacity;
+		--selector-scale: 0.875;
+
+		position: relative;
 
 		display: flex;
 
@@ -106,34 +153,6 @@ let t = createBoundTranslate(locale, navigationBarI18nDictionary);
 		color: inherit;
 		cursor: default;
 
-		&:hover {
-			&:not(.active)::after {
-				opacity: 1;
-
-				transform: scale(1);
-			}
-		}
-
-		&::after {
-			position: absolute;
-
-			inset: 0;
-
-			content: "";
-
-			opacity: 0;
-
-			background-color: var(--c-white_7-5);
-
-			border-radius: var(--br-inner);
-
-			transition:
-				transform var(--transition-100),
-				opacity var(--transition-100);
-
-			transform: scale(0.875);
-		}
-
 		@media (max-width: 48rem) {
 			& {
 				padding-inline: var(--spacing-l);
@@ -166,5 +185,30 @@ let t = createBoundTranslate(locale, navigationBarI18nDictionary);
 
 			color: var(--fc-100_25);
 		}
+	}
+
+	.selector {
+		position: absolute;
+
+		top: var(--spacing-m);
+		bottom: var(--spacing-m);
+		left: 0;
+
+		width: var(--selector-width);
+
+		opacity: var(--selector-opacity);
+
+		background-color: var(--c-white_7-5);
+
+		border-radius: var(--br-inner);
+
+		transition: none 0.25s cubic-bezier(0.4, 1.3, 0.9, 1);
+		transition-property: var(--selector-transition-property);
+
+		transform: translateX(var(--selector-start)) scale(var(--selector-scale));
+
+		pointer-events: none;
+
+		will-change: transform, opacity, width;
 	}
 </style>
