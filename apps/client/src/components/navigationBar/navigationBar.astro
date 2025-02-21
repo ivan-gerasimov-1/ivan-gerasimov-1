@@ -1,65 +1,22 @@
 ---
+import type { TLocale } from "#app/i18n/types.ts";
+
 import Icon from "#app/components/icon/icon.astro";
 
-let links = [
-	{
-		id: "home",
-		type: "icon",
-		url: "/",
-		icon: "home",
-		isActive: true,
-		isDisabled: false,
-	},
-	{
-		id: "cv",
-		type: "text",
-		url: "/cv",
-		label: "CV",
-		isActive: false,
-		isDisabled: false,
-	},
-	{
-		id: "about",
-		type: "text",
-		url: "/about",
-		label: "About",
-		isActive: false,
-		isDisabled: true,
-	},
-	{
-		id: "blog",
-		type: "text",
-		url: "/blog",
-		label: "Blog",
-		isActive: false,
-		isDisabled: true,
-	},
-	{
-		id: "playground",
-		type: "text",
-		url: "/playground",
-		label: "Playground",
-		isActive: false,
-		isDisabled: true,
-	},
-];
+import type { TLink } from "#app/components/navigationBar/types.ts";
+
+import { createBoundTranslate } from "#app/components/navigationBar/i18n/translate.ts";
+import { getI18nLinks } from "#app/components/navigationBar/i18n/content.ts";
+
+let locale = (Astro.currentLocale ?? "en") as TLocale;
+let t = createBoundTranslate(locale);
+
+let links: TLink[] = getI18nLinks(t);
 ---
 
 <nav class="nav">
 	{
 		links.map((link) => {
-			if (link.type === "icon") {
-				return (
-					<a
-						class:list={["navLink", { active: link.isActive }]}
-						href={link.url}
-					>
-						{/* @ts-expect-error */}
-						<Icon name={link.icon} width="20px" height="20px" />
-					</a>
-				);
-			}
-
 			return (
 				<a
 					class:list={[
@@ -71,6 +28,10 @@ let links = [
 					]}
 					href={link.url}
 				>
+					{link.type === "icon" && (
+						<Icon name={link.icon} width="20px" height="20px" />
+					)}
+
 					<span
 						class="navItemLabel"
 						data-disabled-label={link.isDisabled ? "Soon" : ""}

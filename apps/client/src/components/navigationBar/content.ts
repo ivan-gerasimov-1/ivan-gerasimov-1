@@ -1,0 +1,42 @@
+export let links = [
+	{
+		id: "home",
+		type: "icon",
+		url: "/",
+		icon: "home",
+		isActive: true,
+		isDisabled: false,
+	},
+	{
+		id: "cv",
+		type: "text",
+		url: "/cv",
+		label: "CV",
+		isActive: false,
+		isDisabled: false,
+	},
+	{
+		id: "about",
+		type: "text",
+		url: "/about",
+		label: "About",
+		isActive: false,
+		isDisabled: true,
+	},
+	{
+		id: "blog",
+		type: "text",
+		url: "/blog",
+		label: "Blog",
+		isActive: false,
+		isDisabled: true,
+	},
+	{
+		id: "playground",
+		type: "text",
+		url: "/playground",
+		label: "Playground",
+		isActive: false,
+		isDisabled: true,
+	},
+] as const;
