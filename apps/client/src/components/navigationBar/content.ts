@@ -20,14 +20,6 @@ export let content = {
 			isDisabled: false,
 		},
 		{
-			id: "about",
-			type: "text",
-			url: "/about",
-			label: "About",
-			isActive: false,
-			isDisabled: true,
-		},
-		{
 			id: "blog",
 			type: "text",
 			url: "/blog",

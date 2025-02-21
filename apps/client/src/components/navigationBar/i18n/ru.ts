@@ -2,7 +2,6 @@ import type { TNavigationBarI18n } from "#app/components/navigationBar/i18n/type
 
 export const navigationBarI18n: TNavigationBarI18n = {
 	CV: "Резюме",
-	About: "Обо мне",
 	Blog: "Блог",
 	Playground: "Песочница",
 	Soon: "Скоро",
