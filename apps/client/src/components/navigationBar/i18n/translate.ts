@@ -1,19 +1,18 @@
 import type { TLocale } from "#app/i18n/types.ts";
 
-import { navigationBarI18nDictionary } from "#app/components/navigationBar/i18n/dictionary.ts";
-import type { TNavigationBarI18nKeys } from "#app/components/navigationBar/i18n/types.ts";
-
-export function translate(
-	key: TNavigationBarI18nKeys,
-	locale: TLocale
+export function translate<TKeys extends string>(
+	key: TKeys,
+	locale: TLocale,
+	dictionary: Record<TLocale, Record<TKeys, string>>
 ): string {
-	return navigationBarI18nDictionary[locale][key];
+	return dictionary[locale][key];
 }
 
-export function createBoundTranslate(
-	locale: TLocale
-): (key: TNavigationBarI18nKeys) => string {
-	return function (key: TNavigationBarI18nKeys): string {
-		return translate(key, locale);
+export function createBoundTranslate<TKeys extends string>(
+	locale: TLocale,
+	dictionary: Record<TLocale, Record<TKeys, string>>
+): (key: TKeys) => string {
+	return function (key: TKeys): string {
+		return translate(key, locale, dictionary);
 	};
 }
