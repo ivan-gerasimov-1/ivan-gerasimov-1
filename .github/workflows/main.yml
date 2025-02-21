@@ -54,7 +54,6 @@ jobs:
           CLOUDFLARE_ACCOUNT_ID: "op://Savee/Cloudflare Wrangler/Account ID"
           CLOUDFLARE_API_TOKEN: "op://Savee/Cloudflare Wrangler/API Token"
 
-
       - name: Install dependencies
         run: |
           npm ci
@@ -68,7 +67,7 @@ jobs:
       - name: Deploy
         uses: cloudflare/wrangler-action@v3
         with:
-          wranglerVersion: '3.107.3'
+          wranglerVersion: "3.109.2"
           apiToken: ${{ env.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ env.CLOUDFLARE_ACCOUNT_ID }}
           workingDirectory: "apps/client"
