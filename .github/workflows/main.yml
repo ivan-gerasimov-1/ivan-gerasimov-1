@@ -68,7 +68,7 @@ jobs:
           path: apps/client/dist
 
       - name: Deploy
-        uses: cloudflare/wrangler-action@v3
+        uses: cloudflare/wrangler-action@v3.14.0
         with:
           wranglerVersion: "3.109.2"
           apiToken: ${{ env.CLOUDFLARE_API_TOKEN }}
