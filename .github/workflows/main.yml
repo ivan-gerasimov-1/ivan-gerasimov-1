@@ -1,5 +1,9 @@
 name: Build and Deploy
 
+permissions:
+  contents: write
+  pull-requests: read
+
 on:
   push:
     branches:
