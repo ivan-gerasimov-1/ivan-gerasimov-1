@@ -21,9 +21,12 @@ jobs:
           node-version: "22.14.0"
           cache: "npm"
 
-      - name: Install dependencies and build the project
+      - name: Install dependencies
         run: |
           npm ci
+
+      - name: Build the project
+        run: |
           npm --workspace=@gerasimov/client run build
 
       - name: Upload build artifact
