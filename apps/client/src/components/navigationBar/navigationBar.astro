@@ -141,7 +141,6 @@ let t = createBoundTranslate(locale, navigationBarI18nDictionary);
 
 		display: flex;
 
-		/* gap: var(--spacing-m); */
 		padding: var(--spacing-m);
 
 		font-family: var(--ff-monospace);
@@ -157,6 +156,8 @@ let t = createBoundTranslate(locale, navigationBarI18nDictionary);
 		background-color: var(--c-background);
 
 		backdrop-filter: blur(100px);
+
+		overflow: hidden;
 	}
 
 	.navLink {
@@ -181,7 +182,25 @@ let t = createBoundTranslate(locale, navigationBarI18nDictionary);
 		}
 
 		&.active {
-			background-color: var(--c-white_7-5);
+			&::after {
+				position: absolute;
+
+				content: "";
+
+				top: calc(12.5% + 12.5px);
+				left: calc(50% - 12.5px);
+
+				width: 25px;
+				height: 25px;
+
+				border-radius: 100%;
+
+				background-color: oklch(from var(--white) l c h / 50%);
+
+				filter: blur(12px);
+
+				z-index: -1;
+			}
 		}
 
 		&.disabled {
