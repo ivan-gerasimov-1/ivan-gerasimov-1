@@ -8,7 +8,12 @@ import type { TLocale } from "#app/i18n/types.ts";
 
 import { content } from "#app/i18n/navigationBar/content.ts";
 
+type Props = {
+	active: string;
+};
+
 let locale = (Astro.currentLocale ?? "en") as TLocale;
+let { active } = Astro.props;
 
 let t = createBoundTranslate(locale, navigationBarI18nDictionary);
 ---
@@ -22,7 +27,7 @@ let t = createBoundTranslate(locale, navigationBarI18nDictionary);
 					class:list={[
 						"navLink",
 						{
-							active: link.isActive,
+							active: active === link.id,
 							disabled: link.isDisabled,
 						},
 					]}
