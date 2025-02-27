@@ -51,17 +51,6 @@ let t = createBoundTranslate(locale, navigationBarI18nDictionary);
 	let navLinks: NodeListOf<HTMLElement> | null =
 		document.querySelectorAll(".navLink");
 
-	nav?.addEventListener("mouseleave", () => {
-		requestAnimationFrame(() => {
-			nav?.style.setProperty("--selector-opacity", "0");
-			nav?.style.setProperty("--selector-scale", "0.875");
-
-			setTimeout(() => {
-				nav?.style.setProperty("--selector-transition-property", "opacity");
-			}, 250);
-		});
-	});
-
 	for (let navLink of navLinks) {
 		navLink?.addEventListener("mouseenter", (event) => {
 			let target = event.target as HTMLElement;
@@ -79,6 +68,24 @@ let t = createBoundTranslate(locale, navigationBarI18nDictionary);
 					nav?.style.setProperty("--selector-scale", "1");
 					nav?.style.setProperty("--selector-opacity", "1");
 				});
+			});
+		});
+
+		navLink?.addEventListener("mouseleave", (event) => {
+			let currentTarget = event.currentTarget as HTMLElement;
+			let relatedTarget = event.relatedTarget as HTMLElement;
+
+			if (relatedTarget && relatedTarget.tagName === currentTarget.tagName) {
+				return;
+			}
+
+			requestAnimationFrame(() => {
+				nav?.style.setProperty("--selector-opacity", "0");
+				nav?.style.setProperty("--selector-scale", "0.875");
+
+				setTimeout(() => {
+					nav?.style.setProperty("--selector-transition-property", "opacity");
+				}, 250);
 			});
 		});
 	}
@@ -120,7 +127,7 @@ let t = createBoundTranslate(locale, navigationBarI18nDictionary);
 
 		display: flex;
 
-		gap: var(--spacing-m);
+		/* gap: var(--spacing-m); */
 		padding: var(--spacing-m);
 
 		font-family: var(--ff-monospace);
