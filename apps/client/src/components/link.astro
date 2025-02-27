@@ -3,17 +3,31 @@ type Props = {
 	class?: string;
 
 	to: string;
-	download?: boolean;
+	download?: boolean | string;
 	target?: string;
 };
 
 let { class: className, to, download, target } = Astro.props;
+
+let downloadAttr = getDownloadAttr(download);
+
+function getDownloadAttr(download?: boolean | string) {
+	if (typeof download === "string") {
+		return download;
+	}
+
+	if (!download) {
+		return undefined;
+	}
+
+	return "";
+}
 ---
 
 <a
 	class:list={["link", className]}
 	href={to}
-	download={download}
+	download={downloadAttr}
 	target={target}
 >
 	<slot />
