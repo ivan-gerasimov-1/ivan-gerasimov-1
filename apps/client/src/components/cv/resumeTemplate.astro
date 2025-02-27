@@ -7,6 +7,7 @@ import Pills from "#app/components/cv/pills.astro";
 import Section from "#app/components/cv/section.astro";
 import Stack from "#app/components/cv/stack.astro";
 import Text from "#app/components/cv/text.astro";
+import NavigationBar from "#app/components/navigationBar/navigationBar.astro";
 
 import photo from "#app/assets/ivan-gerasimov_photo.webp";
 
@@ -19,6 +20,10 @@ type Props = {
 
 let { content, sectionTitle } = Astro.props;
 ---
+
+<header class="header no-print">
+	<NavigationBar active="cv" />
+</header>
 
 <main class="grid">
 	<div
@@ -170,6 +175,15 @@ let { content, sectionTitle } = Astro.props;
 </main>
 
 <style>
+	.header {
+		position: sticky;
+		top: 0;
+
+		margin: 0 auto 0 auto;
+
+		z-index: 1;
+	}
+
 	.grid {
 		max-width: var(--resume-width);
 
