@@ -47,47 +47,61 @@ let t = createBoundTranslate(locale, navigationBarI18nDictionary);
 </nav>
 
 <script>
+	function setSelector(root: HTMLElement, target: HTMLElement) {
+		requestAnimationFrame(() => {
+			root.style.setProperty("--selector-start", target.offsetLeft + "px");
+			root.style.setProperty("--selector-width", target.offsetWidth + "px");
+
+			requestAnimationFrame(() => {
+				root.style.setProperty(
+					"--selector-transition-property",
+					"width, transform, opacity",
+				);
+
+				root.style.setProperty("--selector-scale", "1");
+				root.style.setProperty("--selector-opacity", "1");
+			});
+		});
+	}
+
+	function resetSelector(
+		root: HTMLElement,
+		currentTarget: HTMLElement,
+		relatedTarget: HTMLElement,
+	) {
+		if (relatedTarget && relatedTarget.tagName === currentTarget.tagName) {
+			return;
+		}
+
+		requestAnimationFrame(() => {
+			root.style.setProperty("--selector-opacity", "0");
+			root.style.setProperty("--selector-scale", "0.875");
+
+			setTimeout(() => {
+				root.style.setProperty("--selector-transition-property", "opacity");
+			}, 250);
+		});
+	}
+
 	let nav: HTMLElement | null = document.querySelector(".nav");
 	let navLinks: NodeListOf<HTMLElement> | null =
 		document.querySelectorAll(".navLink");
 
-	for (let navLink of navLinks) {
-		navLink?.addEventListener("mouseenter", (event) => {
-			let target = event.target as HTMLElement;
+	if (nav && navLinks.length > 0) {
+		for (let navLink of navLinks) {
+			navLink.addEventListener("mouseenter", (event) => {
+				let target = event.target as HTMLElement;
 
-			requestAnimationFrame(() => {
-				nav?.style.setProperty("--selector-start", target.offsetLeft + "px");
-				nav?.style.setProperty("--selector-width", target.offsetWidth + "px");
-
-				requestAnimationFrame(() => {
-					nav?.style.setProperty(
-						"--selector-transition-property",
-						"width, transform, opacity",
-					);
-
-					nav?.style.setProperty("--selector-scale", "1");
-					nav?.style.setProperty("--selector-opacity", "1");
-				});
+				setSelector(nav, target);
 			});
-		});
 
-		navLink?.addEventListener("mouseleave", (event) => {
-			let currentTarget = event.currentTarget as HTMLElement;
-			let relatedTarget = event.relatedTarget as HTMLElement;
+			navLink.addEventListener("mouseleave", (event) => {
+				let currentTarget = event.currentTarget as HTMLElement;
+				let relatedTarget = event.relatedTarget as HTMLElement;
 
-			if (relatedTarget && relatedTarget.tagName === currentTarget.tagName) {
-				return;
-			}
-
-			requestAnimationFrame(() => {
-				nav?.style.setProperty("--selector-opacity", "0");
-				nav?.style.setProperty("--selector-scale", "0.875");
-
-				setTimeout(() => {
-					nav?.style.setProperty("--selector-transition-property", "opacity");
-				}, 250);
+				resetSelector(nav, currentTarget, relatedTarget);
 			});
-		});
+		}
 	}
 </script>
 
