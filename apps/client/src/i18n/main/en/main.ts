@@ -56,12 +56,12 @@ export const content: TMainContent = {
 		},
 		{
 			id: "efResearch",
-			name: "EF Research",
+			name: "E&F Research",
 			years: "2016—2017",
 		},
 		{
 			id: "postcardAndTag",
-			name: "Postcard & Tag",
+			name: "Postcard&Tag",
 			years: "2015—2016",
 		},
 	],
