@@ -23,6 +23,6 @@
 	"devDependencies": {
 		"@astrojs/sitemap": "3.2.1",
 		"astro-robots-txt": "1.0.0",
-		"wrangler": "3.112.0"
+		"wrangler": "3.113.0"
 	}
 }
