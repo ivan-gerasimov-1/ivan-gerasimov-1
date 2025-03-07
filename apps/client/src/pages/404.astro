@@ -1,0 +1,177 @@
+---
+import MainLayout from "#app/layouts/mainLayout.astro";
+
+import Divider from "#app/components/divider.astro";
+import Icon from "#app/components/icon/icon.astro";
+import Link from "#app/components/link.astro";
+import NavigationBar from "#app/components/navigationBar/navigationBar.astro";
+
+import { keywords } from "#app/i18n/keywords/ru/keywords.ts";
+import type { TPageMeta } from "#app/i18n/types.ts";
+
+export const metaRu: TPageMeta = {
+	keywords: keywords.join(", "),
+	description: "Страница, которую вы ищете, не найдена",
+	title: "Иван Герасимов | Страница не найдена",
+};
+
+export const metaEn: TPageMeta = {
+	keywords: keywords.join(", "),
+	description: "The page you are looking for was not found",
+	title: "Ivan Gerasimov | Page not found",
+};
+
+export type TContent = {
+	title: string;
+	description: string;
+	action: {
+		text: string;
+		link: string;
+	};
+	copyright: string;
+};
+
+export const contentRu: TContent = {
+	title: "Страница не найдена",
+	description:
+		"Кажется, вы заблудились в цифровом пространстве. Страница, которую вы ищете, не существует или была перемещена.",
+	action: {
+		text: "Вернуться на главную",
+		link: "/",
+	},
+	copyright: `© Иван Герасимов, ${new Date().getFullYear()}`,
+};
+
+export const contentEn: TContent = {
+	title: "Page not found",
+	description:
+		"It seems you've wandered into the digital wilderness. The page you're looking for doesn't exist or has been moved.",
+	action: {
+		text: "Return home",
+		link: "/",
+	},
+	copyright: `© Ivan Gerasimov, ${new Date().getFullYear()}`,
+};
+
+export const meta: TPageMeta = metaEn;
+
+export const content: TContent = contentEn;
+---
+
+<MainLayout {...meta}>
+	<header class="header">
+		<NavigationBar active="home" />
+	</header>
+
+	<main class="main">
+		<div class="notFoundContainer">
+			<div class="errorCode">404</div>
+
+			<h1 class="title">{content.title}</h1>
+
+			<p class="description">
+				{content.description}
+			</p>
+
+			<div class="actionContainer">
+				<Link to={content.action.link} class="homeLink">
+					<Icon name="home" width="20px" height="20px" />
+					<span>{content.action.text}</span>
+				</Link>
+			</div>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<Divider />
+		<div class="footerContent">
+			<p class="footerText">{content.copyright}</p>
+		</div>
+	</footer>
+</MainLayout>
+
+<style>
+	.header {
+		position: sticky;
+		top: 0;
+		margin: 0 auto;
+	}
+
+	.main {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		min-height: 70vh;
+		margin: 2rem;
+		font-family: var(--ff-monospace);
+
+		@media (max-width: 48rem) {
+			& {
+				margin: 1rem;
+			}
+		}
+	}
+
+	.notFoundContainer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		max-width: 40rem;
+	}
+
+	.errorCode {
+		font-family: var(--ff-transitional);
+		font-size: clamp(4rem, 15vw, 12rem);
+		font-weight: 900;
+		line-height: 1;
+		color: var(--fc-100);
+		letter-spacing: -3px;
+		margin-bottom: 1rem;
+	}
+
+	.title {
+		font-family: var(--ff-transitional);
+		font-size: clamp(1.5rem, 5vw, 3rem);
+		font-weight: 900;
+		color: var(--fc-100);
+		margin: 0 0 1.5rem 0;
+		letter-spacing: -1px;
+	}
+
+	.description {
+		font-size: 1rem;
+		line-height: 1.5;
+		color: var(--fc-200);
+		margin-bottom: 2rem;
+	}
+
+	.actionContainer {
+		display: flex;
+		gap: 1rem;
+	}
+
+	.homeLink {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+	}
+
+	.footer {
+		margin-top: auto;
+		padding: 0 2rem 2rem;
+	}
+
+	.footerContent {
+		display: flex;
+		justify-content: center;
+		padding-top: 1rem;
+	}
+
+	.footerText {
+		font-family: var(--ff-monospace);
+		font-size: 0.75rem;
+		color: var(--fc-200);
+	}
+</style>
