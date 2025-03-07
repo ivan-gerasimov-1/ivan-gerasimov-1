@@ -64,8 +64,8 @@ export const content: TContent = contentEn;
 	</header>
 
 	<main class="main">
-		<div class="notFoundContainer">
-			<div class="errorCode">404</div>
+		<section class="notFoundContainer">
+			<p class="errorCode">404</p>
 
 			<h1 class="title">{content.title}</h1>
 
@@ -79,7 +79,7 @@ export const content: TContent = contentEn;
 					<span>{content.action.text}</span>
 				</Link>
 			</div>
-		</div>
+		</section>
 	</main>
 
 	<footer class="footer">
@@ -122,6 +122,8 @@ export const content: TContent = contentEn;
 	}
 
 	.errorCode {
+		margin: 0;
+		padding: 0;
 		font-family: var(--ff-transitional);
 		font-size: clamp(4rem, 15vw, 12rem);
 		font-weight: 900;
