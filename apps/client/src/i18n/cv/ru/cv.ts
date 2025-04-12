@@ -113,8 +113,8 @@ export const content: TCVContent = {
 			years: "Март 2025 — По настоящее время",
 			summary: "",
 			skills: `
-			#react #zustand #react-query #vitest #testing-library #vite #webpack
-			#framer #node.js #sentry
+			#javascript #typescript #react #zustand #tanstack-query #react-query
+			#vite #vitest #testing-library #webpack #node.js #framer #sentry
 			`,
 		},
 		{
