@@ -110,6 +110,17 @@ export const content: TCVContent = {
 
 	employmentHistory: [
 		{
+			company: "Apliteni, Estonia",
+			position: "Frontend Engineer",
+			years: "March 2025 — Present",
+			additional: "",
+			summary: "",
+			skills: `
+			#react #zustand #react-query #vitest #testing-library #vite #webpack
+			#framer #node.js #sentry
+			`,
+		},
+		{
 			company: "Fundraise Up, USA",
 			position: "Fullstack Engineer",
 			years: "January 2021 — February 2024",
