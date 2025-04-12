@@ -21,7 +21,13 @@ export type TMainContent = {
 		};
 	};
 	companies: {
-		id: "fundraiseUp" | "connio" | "arm" | "efResearch" | "postcardAndTag";
+		id:
+			| "apliteni"
+			| "fundraiseUp"
+			| "connio"
+			| "arm"
+			| "efResearch"
+			| "postcardAndTag";
 		name: string;
 		years: string;
 	}[];

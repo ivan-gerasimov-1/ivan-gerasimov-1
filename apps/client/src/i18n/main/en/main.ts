@@ -40,6 +40,11 @@ export const content: TMainContent = {
 	},
 	companies: [
 		{
+			id: "apliteni",
+			name: "Apliteni",
+			years: "2025—Present",
+		},
+		{
 			id: "fundraiseUp",
 			name: "Fundraise Up",
 			years: "2021—2024",
