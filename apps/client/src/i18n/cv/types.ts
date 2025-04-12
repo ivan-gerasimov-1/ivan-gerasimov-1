@@ -21,10 +21,10 @@ export type TCVContent = {
 		company: string;
 		position: string;
 		years: string;
-		additional: string;
+		additional?: string;
 		summary: string;
-		achievements: string[];
-		skills: string;
+		achievements?: string[];
+		skills?: string;
 	}[];
 	additionalActivities: {
 		company: string;
