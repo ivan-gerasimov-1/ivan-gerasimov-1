@@ -12,7 +12,7 @@ cross-team collaboration in a large-scale product.
 
 ## Current stack
 
-TypeScript | React, React Router, TanStack Query, Vite, Vitest | Node.js, Hono
+TypeScript | React, React Router, TanStack Query, Zustand, Vite, Vitest | Node.js, Hono
 
 ## Skills
 
