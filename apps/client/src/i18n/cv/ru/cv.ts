@@ -21,9 +21,9 @@ export const sectionTitle: TSectionTitle = {
 
 export const content: TCVContent = {
 	name: "Иван Герасимов",
-	occupation: "Fullstack Разработчик (JavaScript)",
+	occupation: "Software Engineer | Frontend",
 	about: `
-		<strong>Senior Fullstack разработчик с 9 годами опыта.</strong>
+		<strong>Software Engineer с 9 годами опыта.</strong>
 		Специализируюсь на разработке с использованием <strong>TypeScript</strong>,
 		<strong>React</strong> и <strong>Node.js</strong>, а также на проектировании
 		архитектуры веб-приложений, включая local-first с большим количеством логики
