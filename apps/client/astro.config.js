@@ -8,9 +8,6 @@ export default defineConfig({
 	site: "https://gerasimov.dev",
 	trailingSlash: "never",
 	scopedStyleStrategy: "class",
-	experimental: {
-		svg: true,
-	},
 	i18n: {
 		locales: ["en", "ru"],
 		defaultLocale: "en",
