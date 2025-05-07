@@ -30,7 +30,7 @@ export const content: TCVContent = {
 	extensive client-side logic. Experienced in team management, process
 	establishment and cross-team collaboration in a large-scale product.
 	`,
-	location: "Tbilisi, Georgia",
+	location: "Belgrade, Serbia",
 	links: [
 		{
 			url: "https://gerasimov.dev",
