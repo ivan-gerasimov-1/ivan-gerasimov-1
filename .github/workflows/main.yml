@@ -75,7 +75,7 @@ jobs:
         uses: cloudflare/wrangler-action@392082e81ffbcb9ebdde27400634aa004b35ea37 # v3.14.0
 
         with:
-          wranglerVersion: "4.14.3"
+          wranglerVersion: "4.15.2"
           apiToken: ${{ env.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ env.CLOUDFLARE_ACCOUNT_ID }}
           workingDirectory: "apps/client"
