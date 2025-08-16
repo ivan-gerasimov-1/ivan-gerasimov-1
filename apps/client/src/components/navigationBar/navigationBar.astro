@@ -123,8 +123,8 @@ let t = createBoundTranslate(locale, navigationBarI18nDictionary);
 		--c-white_5: oklch(from var(--white) l c h / 5%);
 		--c-white_2-5: oklch(from var(--white) l c h / 2.5%);
 
-		--fc-100_50: oklch(from var(--fc-100) l c h / 50%);
-		--fc-100_25: oklch(from var(--fc-100) l c h / 25%);
+		--color-font-100_50: oklch(from var(--color-font-100) l c h / 50%);
+		--color-font-100_25: oklch(from var(--color-font-100) l c h / 25%);
 
 		--c-border: var(--c-white_5);
 		--c-background: var(--c-white_2-5);
@@ -211,7 +211,7 @@ let t = createBoundTranslate(locale, navigationBarI18nDictionary);
 		&.disabled {
 			pointer-events: none;
 
-			color: var(--fc-100_50);
+			color: var(--color-font-100_50);
 		}
 	}
 
@@ -228,7 +228,7 @@ let t = createBoundTranslate(locale, navigationBarI18nDictionary);
 
 			font-size: var(--fs-xs);
 
-			color: var(--fc-100_25);
+			color: var(--color-font-100_25);
 		}
 	}
 

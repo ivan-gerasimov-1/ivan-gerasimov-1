@@ -85,10 +85,9 @@ let { title, description, keywords } = Astro.props;
 		--orange: var(--color-orange-600);
 		--black: oklch(28.5% 0.01 255);
 
-		--fc-100: var(--white);
-		--fc-200: var(--grey);
-		--fc-300: var(--black);
-		--fc-link: var(--fc-200);
+		--color-font-100: var(--white);
+		--color-font-200: var(--grey);
+		--fc-link: var(--color-font-200);
 		--fc-link-hover: var(--orange);
 
 		--clr-body-background: var(--black);
@@ -106,7 +105,7 @@ let { title, description, keywords } = Astro.props;
 	}
 
 	body {
-		color: var(--fc-100);
+		color: var(--color-font-100);
 
 		background-color: var(--clr-body-background);
 	}
