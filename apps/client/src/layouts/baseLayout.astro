@@ -28,25 +28,7 @@ let { title, keywords, description } = Astro.props;
 			data-website-id="0cf95b61-ae80-4f60-891e-8e4ffcc76d5f"></script>
 	</head>
 
-	<body>
+	<body class="antialiased cursor-default">
 		<slot />
 	</body>
 </html>
-
-<style is:global>
-	*,
-	*::after,
-	*::before {
-		box-sizing: border-box;
-	}
-
-	body {
-		margin: 0;
-		padding: 0;
-
-		cursor: default;
-
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: antialiased;
-	}
-</style>
