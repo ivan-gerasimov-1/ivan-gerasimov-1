@@ -14,15 +14,15 @@
 		"astro": "astro"
 	},
 	"dependencies": {
-		"@fontsource-variable/jetbrains-mono": "5.2.5",
-		"@fontsource/fira-sans": "5.2.5",
-		"@fontsource/jetbrains-mono": "5.2.5",
+		"@fontsource-variable/jetbrains-mono": "5.2.6",
+		"@fontsource/fira-sans": "5.2.6",
+		"@fontsource/jetbrains-mono": "5.2.6",
 		"@fontsource/noto-serif-display": "5.2.7",
-		"astro": "5.7.13"
+		"astro": "5.13.2"
 	},
 	"devDependencies": {
-		"@astrojs/sitemap": "3.4.0",
+		"@astrojs/sitemap": "3.5.0",
 		"astro-robots-txt": "1.0.0",
-		"wrangler": "4.15.2"
+		"wrangler": "4.30.0"
 	}
 }
