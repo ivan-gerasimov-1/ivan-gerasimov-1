@@ -12,7 +12,7 @@ let { title, description, keywords } = Astro.props;
 ---
 
 <BaseLayout
-	class="flex flex-col justify-between"
+	class="flex flex-col justify-between color-font-100"
 	title={title}
 	description={description}
 	keywords={keywords}
@@ -80,17 +80,17 @@ let { title, description, keywords } = Astro.props;
 	}
 
 	:root {
-		--white: var(--color-zinc-100);
-		--grey: oklch(80% 0 300);
-		--orange: var(--color-orange-600);
-		--black: oklch(28.5% 0.01 255);
+		--color-white: var(--color-zinc-100);
+		--color-grey: oklch(80% 0 300);
+		--color-orange: var(--color-orange-600);
+		--color-black: oklch(28.5% 0.01 255);
 
-		--color-font-100: var(--white);
-		--color-font-200: var(--grey);
-		--fc-link: var(--color-font-200);
-		--fc-link-hover: var(--orange);
+		--color-font-100: var(--color-white);
+		--color-font-200: var(--color-grey);
+		--color-font-link: var(--color-font-200);
+		--color-font-link-hover: var(--color-orange);
 
-		--clr-body-background: var(--black);
+		--color-body-background: var(--color-black);
 
 		/**
 		 * @description
@@ -107,6 +107,6 @@ let { title, description, keywords } = Astro.props;
 	body {
 		color: var(--color-font-100);
 
-		background-color: var(--clr-body-background);
+		background-color: var(--color-body-background);
 	}
 </style>

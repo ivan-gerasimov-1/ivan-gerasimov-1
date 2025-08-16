@@ -62,12 +62,12 @@ let { title, description, keywords, playgroundTitle } = Astro.props;
 	}
 
 	:root {
-		--white: #f5f5f5;
-		--black: #25292e;
+		--color-white: #f5f5f5;
+		--color-black: #25292e;
 
-		--color-font-100: var(--white);
+		--color-font-100: var(--color-white);
 
-		--clr-body-background: var(--black);
+		--color-body-background: var(--color-black);
 
 		--ff-monospace: "JetBrains Mono Variable", ui-monospace, "Cascadia Code",
 			"Source Code Pro", Menlo, Consolas, "DejaVu Sans Mono", monospace;
@@ -82,7 +82,7 @@ let { title, description, keywords, playgroundTitle } = Astro.props;
 
 		color: var(--color-font-100);
 
-		background-color: var(--clr-body-background);
+		background-color: var(--color-body-background);
 
 		font-family: var(--ff-monospace);
 	}
