@@ -18,7 +18,9 @@
 		"@fontsource/fira-sans": "5.2.6",
 		"@fontsource/jetbrains-mono": "5.2.6",
 		"@fontsource/noto-serif-display": "5.2.7",
-		"astro": "5.13.2"
+		"@tailwindcss/vite": "4.1.12",
+		"astro": "5.13.2",
+		"tailwindcss": "4.1.12"
 	},
 	"devDependencies": {
 		"@astrojs/sitemap": "3.5.0",
