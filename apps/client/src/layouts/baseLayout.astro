@@ -1,12 +1,15 @@
 ---
 import type { TPageMeta } from "#app/i18n/types.ts";
+import { cn } from "#app/utils/cn.ts";
 
 import "../styles/global.css";
 
-type Props = TPageMeta;
+type Props = TPageMeta & {
+	class?: string;
+};
 
 let locale = Astro.currentLocale;
-let { title, keywords, description } = Astro.props;
+let { title, keywords, description, class: className } = Astro.props;
 ---
 
 <!doctype html>
@@ -28,7 +31,7 @@ let { title, keywords, description } = Astro.props;
 			data-website-id="0cf95b61-ae80-4f60-891e-8e4ffcc76d5f"></script>
 	</head>
 
-	<body class="antialiased cursor-default">
+	<body class={cn("antialiased cursor-default", className)}>
 		<slot />
 	</body>
 </html>
