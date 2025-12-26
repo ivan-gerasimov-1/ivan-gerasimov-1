@@ -1,4 +1,4 @@
-[![CI](https://github.com/EvanJ0hnson/EvanJ0hnson/actions/workflows/main.yml/badge.svg?branch=master)](https://github.com/EvanJ0hnson/EvanJ0hnson/actions/workflows/main.yml)
+[![CI](https://github.com/ivan-gerasimov-1/ivan-gerasimov-1/actions/workflows/main.yml/badge.svg?branch=master)](https://github.com/ivan-gerasimov-1/ivan-gerasimov-1/actions/workflows/main.yml)
 
 ### Hi there 👋
 
