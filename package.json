@@ -11,6 +11,6 @@
 		"dependencies:update": "ncu --deep -u"
 	},
 	"devDependencies": {
-		"npm-check-updates": "18.0.2"
+		"npm-check-updates": "19.2.0"
 	}
 }
