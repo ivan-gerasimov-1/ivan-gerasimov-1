@@ -23,34 +23,15 @@ let {
 <div
 	id={id}
 	class:list={[
-		"d-flex",
-		type,
+		"flex",
 		className,
 		{
-			"f-column": type === "column",
-			"f-end": alignItems === "end",
-			"f-space-between": justifyContent === "between",
+			"flex-col": type === "column",
+			"items-end": alignItems === "end",
+			"justify-between": justifyContent === "between",
 		},
 	]}
 	style={style}
 >
 	<slot />
 </div>
-
-<style>
-	.d-flex {
-		display: flex;
-	}
-
-	.f-column {
-		flex-direction: column;
-	}
-
-	.f-end {
-		align-items: flex-end;
-	}
-
-	.f-space-between {
-		justify-content: space-between;
-	}
-</style>
