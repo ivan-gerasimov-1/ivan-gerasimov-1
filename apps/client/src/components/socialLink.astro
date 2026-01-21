@@ -11,7 +11,7 @@ let { name, url, label } = Astro.props;
 ---
 
 <a
-	class="socialLink"
+	class="flex text-current appearance-none"
 	href={url}
 	target="_blank"
 	rel="noopener"
@@ -19,13 +19,3 @@ let { name, url, label } = Astro.props;
 >
 	<Icon name={name} hasHover />
 </a>
-
-<style>
-	a {
-		display: flex;
-
-		color: currentColor;
-
-		appearance: none;
-	}
-</style>
