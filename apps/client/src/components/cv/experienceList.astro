@@ -31,54 +31,46 @@ let content = {
 };
 ---
 
-{
-	items.map((item) => (
-		<div class="itemContainer">
-			<Stack type="line" justifyContent="between">
-				<Text bold>{item.company}</Text>
-				<Text bold>{item.position}</Text>
-			</Stack>
+<Stack class="gap-6 mt-4">
+	{
+		items.map((item) => (
+			<div>
+				<Stack type="line" justifyContent="between">
+					<Text bold>{item.company}</Text>
+					<Text bold>{item.position}</Text>
+				</Stack>
 
-			<Stack type="line" justifyContent="between">
-				<Text type="secondary">{item.years}</Text>
+				<Stack type="line" justifyContent="between">
+					<Text type="secondary">{item.years}</Text>
 
-				<Optional condition={item.additional}>
-					<Text color="secondary" height="secondary">
-						{item.additional}
-					</Text>
-				</Optional>
-			</Stack>
+					<Optional condition={item.additional}>
+						<Text color="secondary" height="secondary">
+							{item.additional}
+						</Text>
+					</Optional>
+				</Stack>
 
-			<div class="mt-100">
-				<Text>{item.summary}</Text>
+				<div class="mt-100">
+					<Text>{item.summary}</Text>
 
-				<Optional condition={item.achievements}>
-					<List
-						class="mt-100"
-						title={content.achievementsSectionTitle}
-						items={item.achievements}
-						spacing="small"
-					>
-						{(achievement: string) => <Text>{achievement}</Text>}
-					</List>
-				</Optional>
+					<Optional condition={item.achievements}>
+						<List
+							class="mt-100"
+							title={content.achievementsSectionTitle}
+							items={item.achievements}
+							spacing="small"
+						>
+							{(achievement: string) => <Text>{achievement}</Text>}
+						</List>
+					</Optional>
 
-				<Optional condition={item.skills}>
-					<Text class="mt-100" type="secondary">
-						{item.skills}
-					</Text>
-				</Optional>
+					<Optional condition={item.skills}>
+						<Text class="mt-100" type="secondary">
+							{item.skills}
+						</Text>
+					</Optional>
+				</div>
 			</div>
-		</div>
-	))
-}
-
-<style>
-	.itemContainer {
-		margin-top: 1.5rem;
-
-		&:first-child {
-			margin-top: 1rem;
-		}
+		))
 	}
-</style>
+</Stack>
