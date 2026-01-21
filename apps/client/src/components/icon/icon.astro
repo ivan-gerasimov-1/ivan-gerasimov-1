@@ -58,24 +58,11 @@ let TargetIcon = EIcon[name];
 <TargetIcon
 	class:list={[
 		{
-			hover: hasHover,
+			"transition will-change-transform hover:text-(--color-orange) hover:scale-95":
+				hasHover,
 		},
 		className,
 	]}
 	width={width}
 	height={height}
 />
-
-<style>
-	.hover {
-		transition: all 0.15s ease-in-out;
-
-		will-change: transform;
-
-		&:hover {
-			color: var(--color-orange);
-
-			transform: scale(0.9);
-		}
-	}
-</style>
