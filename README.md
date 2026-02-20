@@ -4,7 +4,7 @@
 
 ## About
 
-**Senior Frontend Engineer with 9 years of experience.** Specializing in
+**Product Engineer with 9 years of experience.** Specializing in
 development using **TypeScript**, **React** and **Node.js**, as well as web
 application architecture design, including local-first apps with extensive
 client-side logic. Experienced in team management, process establishment and
@@ -12,7 +12,7 @@ cross-team collaboration in a large-scale product.
 
 ## Current stack
 
-TypeScript | React, React Router, TanStack Query, Zustand, Vite, Vitest | Node.js, Hono
+TypeScript | React, TanStack Router, TanStack Query, Zustand, Vite, Vitest | Node.js, Hono
 
 ## Skills
 
