@@ -130,7 +130,7 @@ export const content: TCVContent = {
 			company: "Fundraise Up, USA",
 			position: "Fullstack Engineer",
 			years: "January 2021 — February 2024",
-			additional: "Team Lead, Tech Lead",
+			additional: "Engineering Team Lead, Tech Lead",
 			summary: `
 				I was a part of the checkout team - the core product used daily by
 				millions of people (3M DAU by the end of 2022). Over 1.5 years, grew
