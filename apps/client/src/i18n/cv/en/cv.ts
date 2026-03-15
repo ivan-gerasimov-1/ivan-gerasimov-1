@@ -115,12 +115,30 @@ export const content: TCVContent = {
 			years: "March 2025 — Present",
 			additional: "",
 			summary: `
-				As part of a cross-functional engineering team, I contributed to a wide
-				range of initiatives — from user-facing payment experiences to internal
-				tools and dashboards used across the company, as well as
-				HR process automation. I collaborated with different teams, gathered
-				business requirements, prepared technical documentation, and led delivery.
+				As part of a cross-functional engineering team, I contributed to
+				a wide range of initiatives — from user-facing payment experiences
+				to internal tools and dashboards used across the company, as well as
+				HR process automation. I collaborated with different teams,
+				gathered business requirements, prepared technical documentation,
+				and led delivery.
 			`,
+			achievements: [
+				`
+					Redesigned the payment flow so new providers could be added faster
+					and with less effort
+				`,
+				`
+					Implemented a new internal dashboard that cut support task completion
+					time by 50%
+				`,
+				`
+					Added payment verification to the trial flow, significantly reducing
+					the risk of fraudulent sign-ups
+				`,
+				`
+					Modernized the build pipeline, reducing deployment time by 80%
+				`,
+			],
 			skills: `
 				#javascript #typescript #react #zustand #tanstack-query #react-query
 				#vite #vitest #testing-library #webpack #node.js #framer #sentry
