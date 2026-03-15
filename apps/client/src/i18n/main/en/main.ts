@@ -14,7 +14,7 @@ export const content: TMainContent = {
 	name: "Ivan Gerasimov",
 	role: "Product Engineer",
 	description: `
-		<strong>Product Engineer</strong> with <strong>10 years ofexperience
+		<strong>Product Engineer</strong> with <strong>10 years of experience
 		</strong> building web applications with <strong>TypeScript</strong>,
 		<strong>React</strong> and <strong>Node.js</strong>.
 		I focus on architecture, rich client-side logic and local-first apps.
