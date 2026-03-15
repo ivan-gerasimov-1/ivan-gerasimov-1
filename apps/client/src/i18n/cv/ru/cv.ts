@@ -111,14 +111,15 @@ export const content: TCVContent = {
 			company: "Apliteni, Эстония",
 			position: "Frontend-разработчик",
 			years: "Март 2025 — По настоящее время",
-			summary: "",
-			skills: `
+			summary: `
 			В составе кросс-функциональной инженерной команды я участвовал в широком
 			спектре инициатив — от пользовательских платежных сценариев до внутренних
 			инструментов и дашбордов, используемых по всей компании, а также
 			автоматизации HR-процессов. Я взаимодействовал с разными командами,
 			собирал бизнес-требования, готовил техническую документацию и отвечал за
 			доведение решений до результата.
+			`,
+			skills: `
 			#javascript #typescript #react #zustand #tanstack-query #react-query
 			#vite #vitest #testing-library #webpack #node.js #framer #sentry
 			`,
