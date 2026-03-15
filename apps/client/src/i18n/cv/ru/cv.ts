@@ -23,12 +23,12 @@ export const content: TCVContent = {
 	name: "Иван Герасимов",
 	occupation: "Product Engineer",
 	about: `
-		<strong>Software Engineer с 9 годами опыта.</strong>
-		Специализируюсь на разработке с использованием <strong>TypeScript</strong>,
-		<strong>React</strong> и <strong>Node.js</strong>, а также на проектировании
-		архитектуры веб-приложений, включая local-first с большим количеством логики
-		на клиенте. Имею опыт управления командой, выстраивания процессов и
-		кросс-командного взаимодействия в крупном продукте.
+		<strong>Продуктовый инженер</strong> с <strong>10-летним опытом разработки
+		</strong> веб-приложений на <strong>TypeScript</strong>, <strong>React
+		</strong> и <strong>Node.js</strong>. Специализируюсь на архитектуре,
+		сложной клиентской логике и local-first приложениях. Есть опыт управления
+		командой, улучшения инженерных процессов и работы на стыке команд в крупных
+		продуктовых командах.
 	`,
 	location: "Белград, Сербия",
 	links: [
