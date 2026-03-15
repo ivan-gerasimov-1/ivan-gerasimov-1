@@ -14,11 +14,12 @@ export const content: TMainContent = {
 	name: "Ivan Gerasimov",
 	role: "Product Engineer",
 	description: `
-		<strong>Product Engineer with 9 years of experience.</strong> Specializing in
-		development using <strong>TypeScript</strong>, <strong>React</strong> and <strong>Node.js</strong>, as well as web
-		application architecture design, including local-first apps with
-		extensive client-side logic. Experienced in team management, process
-		establishment and cross-team collaboration in a large-scale product.
+		<strong>Product Engineer</strong> with <strong>10 years ofexperience
+		</strong> building web applications with <strong>TypeScript</strong>,
+		<strong>React</strong> and <strong>Node.js</strong>.
+		I focus on architecture, rich client-side logic and local-first apps.
+		I also have experience in team leadership, improving engineering processes,
+		and working across teams in large-scale products.
 	`,
 	email: {
 		to: "ivan@gerasimov.dev",
@@ -42,7 +43,7 @@ export const content: TMainContent = {
 		{
 			id: "apliteni",
 			name: "Apliteni",
-			years: "2025—Present",
+			years: "2025—2026",
 		},
 		{
 			id: "fundraiseUp",

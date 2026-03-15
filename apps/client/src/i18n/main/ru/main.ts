@@ -6,20 +6,20 @@ import { keywords } from "#app/i18n/keywords/ru/keywords.ts";
 export const meta: TPageMeta = {
 	keywords: keywords.join(", "),
 
-	description: "Иван Герасимов | Senior Frontend Developer (Fullstack)",
-	title: "Иван Герасимов | Software Engineer",
+	description: "Иван Герасимов | Продуктовый инженер",
+	title: "Иван Герасимов | Продуктовый инженер",
 };
 
 export const content: TMainContent = {
 	name: "Иван Герасимов",
 	role: "Product Engineer",
 	description: `
-		<strong>Product Engineer, 9 лет опыта.</strong>
-		Специализируюсь на разработке с использованием <strong>TypeScript</strong>,
-		<strong>React</strong> и <strong>Node.js</strong>, а также на
-		проектировании архитектуры веб-приложений, включая local-first с большим
-		количеством логики на клиенте. Имею опыт управления командой, выстраивания
-		процессов и кросс-командного взаимодействия в крупном продукте.
+		<strong>Продуктовый инженер</strong> с <strong>10-летним опытом разработки
+		</strong> веб-приложений на <strong>TypeScript</strong>, <strong>React
+		</strong> и <strong>Node.js</strong>. Специализируюсь на архитектуре,
+		сложной клиентской логике и local-first приложениях. Есть опыт управления
+		командой, улучшения инженерных процессов и работы на стыке команд в крупных
+		продуктовых командах.
 	`,
 	email: {
 		to: "ivan@gerasimov.dev",
@@ -43,7 +43,7 @@ export const content: TMainContent = {
 		{
 			id: "apliteni",
 			name: "Apliteni",
-			years: "2025—Present",
+			years: "2025—2026",
 		},
 		{
 			id: "fundraiseUp",
