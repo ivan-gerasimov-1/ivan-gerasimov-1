@@ -6,7 +6,7 @@ import { keywords } from "#app/i18n/keywords/ru/keywords.ts";
 export const meta: TPageMeta = {
 	keywords: keywords.join(", "),
 
-	description: "Резюме Senior Frontend Developer — Иван Герасимов",
+	description: "Резюме Product Engineer — Иван Герасимов",
 	title: "Иван Герасимов | Резюме",
 };
 
@@ -21,7 +21,7 @@ export const sectionTitle: TSectionTitle = {
 
 export const content: TCVContent = {
 	name: "Иван Герасимов",
-	occupation: "Software Engineer | Frontend",
+	occupation: "Product Engineer",
 	about: `
 		<strong>Software Engineer с 9 годами опыта.</strong>
 		Специализируюсь на разработке с использованием <strong>TypeScript</strong>,
@@ -109,19 +109,19 @@ export const content: TCVContent = {
 	employmentHistory: [
 		{
 			company: "Apliteni, Эстония",
-			position: "Frontend-разработчик",
+			position: "Product Engineer",
 			years: "Март 2025 — По настоящее время",
 			summary: `
-			В составе кросс-функциональной инженерной команды я участвовал в широком
-			спектре инициатив — от пользовательских платежных сценариев до внутренних
-			инструментов и дашбордов, используемых по всей компании, а также
-			автоматизации HR-процессов. Я взаимодействовал с разными командами,
-			собирал бизнес-требования, готовил техническую документацию и отвечал за
-			доведение решений до результата.
+				В составе кросс-функциональной инженерной команды я участвовал в широком
+				спектре инициатив — от пользовательских платежных сценариев до внутренних
+				инструментов и дашбордов, используемых по всей компании, а также
+				автоматизации HR-процессов. Я взаимодействовал с разными командами,
+				собирал бизнес-требования, готовил техническую документацию и отвечал за
+				доведение решений до результата.
 			`,
 			skills: `
-			#javascript #typescript #react #zustand #tanstack-query #react-query
-			#vite #vitest #testing-library #webpack #node.js #framer #sentry
+				#javascript #typescript #react #zustand #tanstack-query #react-query
+				#vite #vitest #testing-library #webpack #node.js #framer #sentry
 			`,
 		},
 		{

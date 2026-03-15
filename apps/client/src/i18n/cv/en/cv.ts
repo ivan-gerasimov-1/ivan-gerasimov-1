@@ -6,7 +6,7 @@ import { keywords } from "#app/i18n/keywords/en/keywords.ts";
 export const meta: TPageMeta = {
 	keywords: keywords.join(", "),
 
-	description: "Ivan Gerasimov | Software Engineer, CV",
+	description: "Ivan Gerasimov | Product Engineer, CV",
 	title: "Ivan Gerasimov | CV",
 };
 
@@ -21,7 +21,7 @@ export const sectionTitle: TSectionTitle = {
 
 export const content: TCVContent = {
 	name: "Ivan Gerasimov",
-	occupation: "Software Engineer | Frontend",
+	occupation: "Product Engineer | Frontend",
 	about: `
 	<strong>Software Engineer with 9 years of experience.</strong>
 	Specializing in development using <strong>TypeScript</strong>,
@@ -111,19 +111,19 @@ export const content: TCVContent = {
 	employmentHistory: [
 		{
 			company: "Apliteni, Estonia",
-			position: "Frontend Engineer",
+			position: "Product Engineer",
 			years: "March 2025 — Present",
 			additional: "",
 			summary: `
-			As part of a cross-functional engineering team, I contributed to a wide
-			range of initiatives — from user-facing payment experiences to internal
-			tools and dashboards used across the company, as well as
-			HR process automation. I collaborated with different teams, gathered
-			business requirements, prepared technical documentation, and led delivery.
+				As part of a cross-functional engineering team, I contributed to a wide
+				range of initiatives — from user-facing payment experiences to internal
+				tools and dashboards used across the company, as well as
+				HR process automation. I collaborated with different teams, gathered
+				business requirements, prepared technical documentation, and led delivery.
 			`,
 			skills: `
-			#javascript #typescript #react #zustand #tanstack-query #react-query
-			#vite #vitest #testing-library #webpack #node.js #framer #sentry
+				#javascript #typescript #react #zustand #tanstack-query #react-query
+				#vite #vitest #testing-library #webpack #node.js #framer #sentry
 			`,
 		},
 		{
@@ -132,39 +132,39 @@ export const content: TCVContent = {
 			years: "January 2021 — February 2024",
 			additional: "Team Lead, Tech Lead",
 			summary: `
-			I was a part of the checkout team - the core product used daily by
-			millions of people (3M DAU by the end of 2022). Over 1.5 years, grew
-			from a developer to leading a team of 5 people. Designed frontend
-			application architecture, planned new feature implementations, wrote
-			technical documentation, and managed the team.
+				I was a part of the checkout team - the core product used daily by
+				millions of people (3M DAU by the end of 2022). Over 1.5 years, grew
+				from a developer to leading a team of 5 people. Designed frontend
+				application architecture, planned new feature implementations, wrote
+				technical documentation, and managed the team.
 			`,
 			achievements: [
 				`
-				Led the implementation of internationalization across the
-				company's entire stack: designed frontend/backend architecture,
-				coordinated 4 development teams, and established a continuous
-				delivery process for new translations to production. The company
-				began expansion into markets beyond the US and Canada
+					Led the implementation of internationalization across the
+					company's entire stack: designed frontend/backend architecture,
+					coordinated 4 development teams, and established a continuous
+					delivery process for new translations to production. The company
+					began expansion into markets beyond the US and Canada
 				`,
 				`
-				Designed local-first architecture and migrated the product from
-				Vue to React. After successful MVP, became the team lead of the
-				group that completed development and implementation, becoming
-				the core product development team. Clean architecture enabled
-				complete separation of business logic from UI, improving
-				stability and accelerating releases
+					Designed local-first architecture and migrated the product from
+					Vue to React. After successful MVP, became the team lead of the
+					group that completed development and implementation, becoming
+					the core product development team. Clean architecture enabled
+					complete separation of business logic from UI, improving
+					stability and accelerating releases
 				`,
 				`
-				Launched a new product based on extracted checkout business
-				logic with minimal changes. This allowed clients to choose
-				different checkout versions without increasing development
-				complexity and time
+					Launched a new product based on extracted checkout business
+					logic with minimal changes. This allowed clients to choose
+					different checkout versions without increasing development
+					complexity and time
 				`,
 			],
 			skills: `
-			#react #testing-library #vue #vuex #storybook #webpack #node.js #koa
-			#nestjs #mongodb #clickhouse #sentry #stripe #domain-driven-design
-			#clean-architecture
+				#react #testing-library #vue #vuex #storybook #webpack #node.js #koa
+				#nestjs #mongodb #clickhouse #sentry #stripe #domain-driven-design
+				#clean-architecture
 			`,
 		},
 		{
@@ -173,21 +173,21 @@ export const content: TCVContent = {
 			years: "June 2018 — January 2021",
 			additional: "",
 			summary: `
-			Joined the company as a UI Developer for a specific project, but graduallytook over all frontend development, including Node.js. Worked both under the guidance of a Lead UI Developer and led a team of three developers. In the final year, worked directly with the founder and CTO, participating in discussions related to the user interface and overall product development.
+				Joined the company as a UI Developer for a specific project, but graduallytook over all frontend development, including Node.js. Worked both under the guidance of a Lead UI Developer and led a team of three developers. In the final year, worked directly with the founder and CTO, participating in discussions related to the user interface and overall product development.
 			`,
 			achievements: [
 				`
-				Optimized the company's main application, reducing memory consumption from several gigabytes to hundreds of megabytes
+					Optimized the company's main application, reducing memory consumption from several gigabytes to hundreds of megabytes
 				`,
 				`
-				Designed and launched additional company projects tailored to individual client business needs
+					Designed and launched additional company projects tailored to individual client business needs
 				`,
 				`
-				Developed a VS Code extension that integrated core functionality of the main application, significantly simplifying client workflows
+					Developed a VS Code extension that integrated core functionality of the main application, significantly simplifying client workflows
 				`,
 			],
 			skills: `
-			#react #react-router #redux #redux-thunk #react-hook-form #node.js #angularjs #vue #express.js #koa #vscode-extension #node-red #docker #pm2 #gocd
+				#react #react-router #redux #redux-thunk #react-hook-form #node.js #angularjs #vue #express.js #koa #vscode-extension #node-red #docker #pm2 #gocd
 			`,
 		},
 		{
@@ -196,21 +196,21 @@ export const content: TCVContent = {
 			years: "May 2017 — June 2018",
 			additional: "",
 			summary: `
-			As a Lead Developer, collaborated with ARM's development and management teams to create the user interface for Kigen - a new platform for enterprise eSIM management.
+				As a Lead Developer, collaborated with ARM's development and management teams to create the user interface for Kigen - a new platform for enterprise eSIM management.
 			`,
 			achievements: [
 				`
-				Designed the application foundation and created an MVP for presentations, which secured funding and enabled further project development
+					Designed the application foundation and created an MVP for presentations, which secured funding and enabled further project development
 				`,
 				`
-				Coordinated the work of three UI developers
+					Coordinated the work of three UI developers
 				`,
 				`
-				Delivered multiple releases over a year, bringing the UI to a state that met ARM's internal customer requirements
+					Delivered multiple releases over a year, bringing the UI to a state that met ARM's internal customer requirements
 				`,
 			],
 			skills: `
-			#react #react-router #redux-saga #styled-components #node.js #koa #web-sockets
+				#react #react-router #redux-saga #styled-components #node.js #koa #web-sockets
 			`,
 		},
 		{
@@ -219,24 +219,24 @@ export const content: TCVContent = {
 			years: "April 2016 — May 2017",
 			additional: "",
 			summary: `
-			Focused on developing user interfaces for various projects. Core tech stack included AngularJS, React Native, and Cordova. Created interfaces adapted for different platforms and client business requirements.
+				Focused on developing user interfaces for various projects. Core tech stack included AngularJS, React Native, and Cordova. Created interfaces adapted for different platforms and client business requirements.
 			`,
 			achievements: [
 				`
-				Mobile app in React Native for company incident response
+					Mobile app in React Native for company incident response
 				`,
 				`
-				Dashboard for Canadian Cricket League to assist with team and event organization
+					Dashboard for Canadian Cricket League to assist with team and event organization
 				`,
 				`
-				Dashboard for oil trading company
+					Dashboard for oil trading company
 				`,
 				`
-				Cordova-based app for field staff (object photography, geolocation, time tracking)
+					Cordova-based app for field staff (object photography, geolocation, time tracking)
 				`,
 			],
 			skills: `
-			#angularjs #react #react-native #redux #gulp #webpack #node.js #cordova #gocd
+				#angularjs #react #react-native #redux #gulp #webpack #node.js #cordova #gocd
 			`,
 		},
 		{
@@ -245,24 +245,24 @@ export const content: TCVContent = {
 			years: "August 2015 — January 2016",
 			additional: "",
 			summary: `
-			Started my career as a UI Developer, focusing on HTML/CSS development. Gradually transitioned to refactoring legacy JavaScript code, and then to developing new features using AngularJS and partially React.
+				Started my career as a UI Developer, focusing on HTML/CSS development. Gradually transitioned to refactoring legacy JavaScript code, and then to developing new features using AngularJS and partially React.
 			`,
 			achievements: [
 				`
-				Improved project's markup quality by making it more structured
+					Improved project's markup quality by making it more structured
 				`,
 				`
-				Integrated Mixpanel analytics service into the project
+					Integrated Mixpanel analytics service into the project
 				`,
 				`
-				Designed and developed a hotel booking module
+					Designed and developed a hotel booking module
 				`,
 				`
-				Optimized Gulp.js build process, reducing build time from 1.5 minutes to tens of seconds
+					Optimized Gulp.js build process, reducing build time from 1.5 minutes to tens of seconds
 				`,
 			],
 			skills: `
-			#angularjs #gulp #react #webpack #html #css #pug #less
+				#angularjs #gulp #react #webpack #html #css #pug #less
 			`,
 		},
 	],
@@ -273,9 +273,9 @@ export const content: TCVContent = {
 			position: "Meetup Organizer",
 			years: "2019 — 2022",
 			summary: `
-			Organized more than 5 meetups for frontend developers as part
-			of the SPB Frontend team. Each meetup attracted between
-			100 and 200 participants
+				Organized more than 5 meetups for frontend developers as part
+				of the SPB Frontend team. Each meetup attracted between
+				100 and 200 participants
 			`,
 		},
 	],
