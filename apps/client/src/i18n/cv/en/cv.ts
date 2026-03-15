@@ -116,6 +116,11 @@ export const content: TCVContent = {
 			additional: "",
 			summary: "",
 			skills: `
+			As part of a cross-functional engineering team, I contributed to a wide
+			range of initiatives — from user-facing payment experiences to internal
+			tools and dashboards used across the company, as well as
+			HR process automation. I collaborated with different teams, gathered
+			business requirements, prepared technical documentation, and led delivery.
 			#javascript #typescript #react #zustand #tanstack-query #react-query
 			#vite #vitest #testing-library #webpack #node.js #framer #sentry
 			`,
