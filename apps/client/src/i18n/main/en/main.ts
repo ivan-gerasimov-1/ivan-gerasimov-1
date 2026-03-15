@@ -6,15 +6,15 @@ import { keywords } from "#app/i18n/keywords/en/keywords.ts";
 export const meta: TPageMeta = {
 	keywords: keywords.join(", "),
 
-	description: "Ivan Gerasimov | Software Engineer (JavaScript, Fullstack)",
-	title: "Ivan Gerasimov | Software Engineer",
+	description: "Ivan Gerasimov | Product Engineer",
+	title: "Ivan Gerasimov | Product Engineer",
 };
 
 export const content: TMainContent = {
 	name: "Ivan Gerasimov",
-	role: "Software Engineer (JavaScript, Fullstack)",
+	role: "Product Engineer",
 	description: `
-		<strong>Senior Fullstack Engineer with 9 years of experience.</strong> Specializing in
+		<strong>Product Engineer with 9 years of experience.</strong> Specializing in
 		development using <strong>TypeScript</strong>, <strong>React</strong> and <strong>Node.js</strong>, as well as web
 		application architecture design, including local-first apps with
 		extensive client-side logic. Experienced in team management, process

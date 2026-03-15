@@ -12,9 +12,9 @@ export const meta: TPageMeta = {
 
 export const content: TMainContent = {
 	name: "Иван Герасимов",
-	role: "Fullstack Разработчик (JavaScript)",
+	role: "Product Engineer",
 	description: `
-		<strong>Senior Fullstack разработчик с 9 годами опыта.</strong>
+		<strong>Product Engineer, 9 лет опыта.</strong>
 		Специализируюсь на разработке с использованием <strong>TypeScript</strong>,
 		<strong>React</strong> и <strong>Node.js</strong>, а также на
 		проектировании архитектуры веб-приложений, включая local-first с большим
