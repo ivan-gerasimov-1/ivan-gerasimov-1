@@ -21,7 +21,7 @@ export const sectionTitle: TSectionTitle = {
 
 export const content: TCVContent = {
 	name: "Ivan Gerasimov",
-	occupation: "Product Engineer | Frontend",
+	occupation: "Product Engineer",
 	about: `
 	<strong>Software Engineer with 9 years of experience.</strong>
 	Specializing in development using <strong>TypeScript</strong>,
