@@ -147,7 +147,7 @@ export const content: TCVContent = {
 			],
 			skills: `
 				#react #zustand #tanstack-query #vite #vitest #testing-library #node.js
-				#sentry #framer
+				#sentry
 			`,
 		},
 		{
@@ -187,9 +187,9 @@ export const content: TCVContent = {
 				`,
 			],
 			skills: `
-				#react #testing-library #sass #css-modules #vue #vuex #storybook #webpack
+				#react #testing-library #css-modules #sass #vue #vuex #storybook #webpack
 				#node.js #koa #nestjs #mongodb #clickhouse #sentry #stripe
-				#domain-driven-design #clean-architecture
+				#ddd #clean-architecture
 			`,
 		},
 		{
@@ -215,7 +215,7 @@ export const content: TCVContent = {
 			skills: `
 				#react #react-router #redux #redux-thunk #react-hook-form #css-modules
 				#sass #node.js #angularjs #vue #express.js #koa #vscode-extension
-				#node-red #docker #pm2
+				#node-red #docker
 			`,
 		},
 		{
@@ -269,7 +269,7 @@ export const content: TCVContent = {
 				`,
 			],
 			skills: `
-				#angularjs #react #react-native #css-modules #sass #redux #gulp #webpack
+				#angularjs #react #react-native #css-modules #sass #redux #webpack
 				#node.js #cordova
 			`,
 		},
