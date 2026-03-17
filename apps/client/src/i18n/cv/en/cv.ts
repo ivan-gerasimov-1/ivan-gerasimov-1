@@ -118,6 +118,8 @@ export const content: TCVContent = {
 			position: "Product Engineer",
 			years: "March 2025 — Present",
 			additional: "",
+			description:
+				"Product company building digital tools for marketing, operations, and internal business processes",
 			summary: `
 				As part of a cross-functional engineering team, I contributed to
 				a wide range of initiatives — from user-facing payment experiences
@@ -153,6 +155,7 @@ export const content: TCVContent = {
 			position: "Fullstack Engineer",
 			years: "January 2021 — February 2024",
 			additional: "Engineering Team Lead, Tech Lead",
+			description: "Fundraising platform for nonprofits",
 			summary: `
 				I was a part of the checkout team - the core product used daily by
 				millions of people (3M DAU by the end of 2022). Over 1.5 years, grew
@@ -194,6 +197,7 @@ export const content: TCVContent = {
 			position: "Frontend Engineer",
 			years: "June 2018 — January 2021",
 			additional: "",
+			description: "IoT platform for connected products and industrial systems",
 			summary: `
 				Joined the company as a UI Developer for a specific project, but graduallytook over all frontend development, including Node.js. Worked both under the guidance of a Lead UI Developer and led a team of three developers. In the final year, worked directly with the founder and CTO, participating in discussions related to the user interface and overall product development.
 			`,
@@ -219,6 +223,8 @@ export const content: TCVContent = {
 			position: "Frontend Engineer",
 			years: "May 2017 — June 2018",
 			additional: "",
+			description:
+				"Enterprise eSIM platform for managing connected devices at scale",
 			summary: `
 				As a Lead Developer, collaborated with ARM's development and management teams to create the user interface for Kigen - a new platform for enterprise eSIM management.
 			`,
@@ -243,6 +249,8 @@ export const content: TCVContent = {
 			position: "Frontend Engineer",
 			years: "April 2016 — May 2017",
 			additional: "",
+			description:
+				"Engineering company building custom web and mobile solutions across multiple industries",
 			summary: `
 				Focused on developing user interfaces for various projects. Core tech stack included AngularJS, React Native, and Cordova. Created interfaces adapted for different platforms and client business requirements.
 			`,
@@ -270,6 +278,8 @@ export const content: TCVContent = {
 			position: "Frontend Engineer",
 			years: "August 2015 — January 2016",
 			additional: "",
+			description:
+				"Product company building web experiences for travel and hospitality",
 			summary: `
 				Started my career as a UI Developer, focusing on HTML/CSS development. Gradually transitioned to refactoring legacy JavaScript code, and then to developing new features using AngularJS and partially React.
 			`,

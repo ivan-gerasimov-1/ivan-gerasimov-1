@@ -19,6 +19,7 @@ export type TCVContent = {
 	skills: string[];
 	employmentHistory: {
 		company: string;
+		description: string;
 		position: string;
 		years: string;
 		additional?: string;

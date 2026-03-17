@@ -11,6 +11,7 @@ type Props = {
 		company: string;
 		position: string;
 		years: string;
+		description: string;
 		additional?: string;
 		summary: string;
 		achievements?: string[];
@@ -48,6 +49,10 @@ let content = {
 							{item.additional}
 						</Text>
 					</Optional>
+				</Stack>
+
+				<Stack class="mt-90">
+					<Text type="secondary">{item.description}</Text>
 				</Stack>
 
 				<div class="mt-100">
