@@ -137,8 +137,8 @@ export const content: TCVContent = {
 				`,
 			],
 			skills: `
-				#javascript #typescript #react #zustand #tanstack-query #react-query
-				#vite #vitest #testing-library #webpack #node.js #framer #sentry
+				#react #zustand #tanstack-query #vite #vitest #testing-library #node.js
+				#sentry #framer
 			`,
 		},
 		{
@@ -174,9 +174,9 @@ export const content: TCVContent = {
 				`,
 			],
 			skills: `
-				#react #testing-library #vue #vuex #storybook #webpack #node.js #koa
-				#nestjs #mongodb #clickhouse #sentry #stripe #domain-driven-design
-				#clean-architecture
+				#react #testing-library #sass #css-modules #vue #vuex #storybook #webpack
+				#node.js #koa #nestjs #mongodb #clickhouse #sentry #stripe
+				#domain-driven-design #clean-architecture
 			`,
 		},
 		{
@@ -207,9 +207,9 @@ export const content: TCVContent = {
 				`,
 			],
 			skills: `
-				#react #react-router #redux #redux-thunk #react-hook-form #node.js
-				#angularjs #vue #express.js #koa #vscode-extension #node-red #docker
-				#pm2 #gocd
+				#react #react-router #redux #redux-thunk #react-hook-form #css-modules
+				#sass #node.js #angularjs #vue #express.js #koa #vscode-extension
+				#node-red #docker #pm2
 			`,
 		},
 		{
@@ -236,7 +236,8 @@ export const content: TCVContent = {
 				`,
 			],
 			skills: `
-				#react #react-router #redux-saga #styled-components #node.js #koa #web-sockets
+				#react #react-router #redux-saga #styled-components #node.js #koa
+				#web-sockets
 			`,
 		},
 		{
@@ -265,7 +266,8 @@ export const content: TCVContent = {
 				`,
 			],
 			skills: `
-				#angularjs #react #react-native #redux #gulp #webpack #node.js #cordova #gocd
+				#angularjs #react #react-native #css-modules #sass #redux #gulp #webpack
+				#node.js #cordova
 			`,
 		},
 		{
@@ -294,7 +296,7 @@ export const content: TCVContent = {
 				`,
 			],
 			skills: `
-				#angularjs #gulp #react #webpack #html #css #pug #less
+				#angularjs #gulp #react #webpack #html #css #less
 			`,
 		},
 	],
