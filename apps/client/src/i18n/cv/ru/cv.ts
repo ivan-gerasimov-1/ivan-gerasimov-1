@@ -72,6 +72,7 @@ export const content: TCVContent = {
 		"TypeScript",
 		"React",
 		"TanStack Query",
+		"TanStack Router",
 		"Zustand",
 		"Redux",
 		"Vue",
@@ -101,9 +102,12 @@ export const content: TCVContent = {
 		"Domain Driven Design",
 		"Local-First",
 		"Frontend",
-		"Backend",
 		"Fullstack",
 		"CI/CD",
+		"AI Agents",
+		"Claude",
+		"Claude Code",
+		"Codex",
 	],
 
 	employmentHistory: [
