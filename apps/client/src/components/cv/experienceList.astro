@@ -35,7 +35,7 @@ let content = {
 <Stack class="gap-6 mt-4">
 	{
 		items.map((item) => (
-			<div>
+			<div class="item">
 				<Stack type="line" justifyContent="between">
 					<Text bold>{item.company}</Text>
 					<Text bold>{item.position}</Text>
@@ -79,3 +79,11 @@ let content = {
 		))
 	}
 </Stack>
+
+<style>
+	@media print {
+		.item {
+			break-inside: avoid;
+		}
+	}
+</style>
