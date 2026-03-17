@@ -26,7 +26,7 @@ export const content: TMainContent = {
 		label: "ivan@gerasimov.dev",
 	},
 	cv: {
-		link: "/ivan-gerasimov_cv_senior-fullstack-javascript_ru.pdf",
+		link: "/ivan-gerasimov_cv_senior-product-engineer_ru.pdf",
 		label: "Скачать резюме",
 	},
 	socialLinks: {
