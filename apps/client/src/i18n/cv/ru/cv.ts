@@ -71,7 +71,7 @@ export const content: TCVContent = {
 		"JavaScript",
 		"TypeScript",
 		"React",
-		"TanStack/Query",
+		"TanStack Query",
 		"Zustand",
 		"Redux",
 		"Vue",
