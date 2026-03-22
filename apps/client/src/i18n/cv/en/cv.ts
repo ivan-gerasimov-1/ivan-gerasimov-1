@@ -23,12 +23,12 @@ export const content: TCVContent = {
 	name: "Ivan Gerasimov",
 	occupation: "Product Engineer",
 	about: `
-		<strong>Product Engineer</strong> with <strong>10 years of experience
-		</strong> building web applications with <strong>TypeScript</strong>,
-		<strong>React</strong> and <strong>Node.js</strong>.
-		I focus on architecture, rich client-side logic and local-first apps.
-		I also have experience in team leadership, improving engineering processes,
-		and working across teams in large-scale products.
+		I build web applications that work like real software with domain models,
+		offline capability and architecture that survives past the first pivot.
+		<strong>10 years</strong> across startups in fintech, IoT, nonprofit and
+		enterprise. <strong>TypeScript</strong>, <strong>React</strong>,
+		<strong>Node.js</strong>. Equally comfortable leading a team technically
+		or shipping alone.
 	`,
 	location: "Belgrade, Serbia",
 	links: [
