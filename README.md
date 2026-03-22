@@ -4,11 +4,7 @@
 
 ## About
 
-**Product Engineer with 9 years of experience.** Specializing in
-development using **TypeScript**, **React** and **Node.js**, as well as web
-application architecture design, including local-first apps with extensive
-client-side logic. Experienced in team management, process establishment and
-cross-team collaboration in a large-scale product.
+I build web applications that work like real software with domain models, offline capability and architecture that survives past the first pivot. **10 years** across startups in fintech, IoT, nonprofit and enterprise. **TypeScript**, **React**, **Node.js**. Equally comfortable leading a team technically or shipping alone.
 
 ## Current stack
 
