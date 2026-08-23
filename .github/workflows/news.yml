@@ -1,0 +1,49 @@
+name: Deploy Daily Brief
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "apps/news/**"
+      - ".github/workflows/news.yml"
+  workflow_dispatch:
+
+concurrency:
+  group: daily-brief-production
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: production
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24.13.0"
+
+      - name: Load Cloudflare credentials from 1Password
+        uses: 1Password/load-secrets-action@581a835fb51b8e7ec56b71cf2ffddd7e68bb25e0 # v2.0.0
+        with:
+          export-env: true
+        env:
+          OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: "op://LV48/Cloudflare Wrangler/Account ID"
+          CLOUDFLARE_API_TOKEN: "op://LV48/Cloudflare Wrangler/API Token"
+
+      - name: Ensure Pages project exists
+        shell: bash
+        run: |
+          set -euo pipefail
+          if ! npx --yes wrangler@4.59.3 pages project list --json | jq -e '.. | objects | select(.name? == "gerasimov-daily-brief")' >/dev/null; then
+            npx --yes wrangler@4.59.3 pages project create gerasimov-daily-brief --production-branch main
+          fi
+
+      - name: Deploy Daily Brief
+        run: npx --yes wrangler@4.59.3 pages deploy apps/news --project-name gerasimov-daily-brief --branch main
