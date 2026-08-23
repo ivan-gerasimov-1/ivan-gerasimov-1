@@ -1,0 +1,141 @@
+{
+  "date": "2026-08-23",
+  "generatedAt": "2026-08-23T19:05:00+03:00",
+  "sections": [
+    {
+      "id": "serbia",
+      "title": "Сербия & Белград",
+      "items": [
+        {
+          "title": "Пожары в Сербии: к тушению подключились четыре вертолёта ЕС",
+          "summary": "Самая сложная ситуация остаётся в Делиблатской пешчаре. Через механизм гражданской защиты ЕС прибыли четыре Black Hawk и наземные команды; в тушении также участвует российский Ил-76. Ситуация утром была стабильнее, но очаги сохраняются, а сухая погода и ветер оставляют высокий риск нового распространения огня.",
+          "publishedAt": "23 августа",
+          "source": {
+            "name": "Reuters",
+            "url": "https://www.reuters.com/business/environment/eu-sends-helicopters-firefighters-serbia-tackle-wildfires-2026-08-22/"
+          }
+        },
+        {
+          "title": "На Ушче проходит экологический протест «Eko buna»",
+          "summary": "Студенты в блокаде и белградские локальные собрания назначили на 17:00 акцию в парке Ушче. Поводы — пожары, состояние природных ресурсов и последствия добывающих проектов. Для Белграда это сегодня одна из заметных локальных тем; возможны локальные транспортные ограничения вокруг Ушче.",
+          "publishedAt": "23 августа",
+          "source": {
+            "name": "N1",
+            "url": "https://n1info.rs/vesti/studenti-u-blokadi-pozvali-na-eko-bunu-u-nedelju-u-parku-usce/"
+          }
+        },
+        {
+          "title": "Минимальная зарплата в 2027 году вырастет до 405 динаров в час",
+          "summary": "Правительство установило минимальную цену труда на 2027 год на уровне 405 динаров за час — примерно 70 тысяч динаров в среднем за месяц, или около 600 евро. Это рост на 9,2%. Социально-экономический совет к общему решению не пришёл, поэтому размер установило правительство.",
+          "publishedAt": "20 августа",
+          "source": {
+            "name": "RTS",
+            "url": "https://www.rts.rs/lat/vesti/ekonomija/6023448/vlada-srbije-donela-odluku-minimalna-mesecna-zarada-oko-70000-dinara.html"
+          }
+        },
+        {
+          "title": "Маршрут автобуса 312 изменён до 14 сентября",
+          "summary": "Из-за строительства канализационной и водопроводной сети в Ristin potok, Milošev kladenac и Petkov kladenac автобус 312 идёт в объезд через Mokroluška, Toplice Milana и мотопуть M11. Сейчас идёт вторая фаза работ, поэтому изменение актуально до 14 сентября.",
+          "publishedAt": "до 14 сентября",
+          "source": {
+            "name": "Город Белград",
+            "url": "https://www.beograd.rs/lat/servisne-informacije/saobracaj-i-prevoz/a115174/Promena-rezima-rada-linije-broj-312.html"
+          }
+        },
+        {
+          "title": "Работы на Dunavska продлены до 23 сентября",
+          "summary": "На участке Dunavska между Tadeuša Košćuškog и Dubrovačka продолжается ремонт. Для линий 26, 26N и 401N действует временная конечная «Dorćol (Dunavska) 1» в Dubrovačka. Город продлил работы до 23 сентября.",
+          "publishedAt": "до 23 сентября",
+          "source": {
+            "name": "Город Белград",
+            "url": "https://www.beograd.rs/lat/servisne-informacije/saobracaj-i-prevoz/a114559/Izvodjenje-radova-u-ulici-Dunavska.html"
+          }
+        }
+      ]
+    },
+    {
+      "id": "world",
+      "title": "Мир",
+      "items": [
+        {
+          "title": "США готовят новый пакет санкций против Ирана на фоне фактической блокады Ормузского пролива",
+          "summary": "Вашингтон обещает объявить 24 августа новый жёсткий пакет санкций. Тегеран заявляет, что давление не сработает. Главный глобальный эффект уже сейчас — почти остановившееся движение нефтяных танкеров через Ормузский пролив, что поддерживает высокие цены на нефть и превращает конфликт в прямой риск для мировой экономики.",
+          "publishedAt": "23 августа",
+          "source": {
+            "name": "Reuters",
+            "url": "https://www.reuters.com/world/asia-pacific/iran-says-new-sanctions-threatened-by-desperate-us-will-fail-2026-08-23/"
+          }
+        },
+        {
+          "title": "Киев ожидает новую российскую мобилизацию после сентябрьских выборов",
+          "summary": "Зеленский заявил, что украинская разведка ожидает набор ещё примерно 300 тысяч человек после парламентских выборов в России. Одновременно Украина испытывает дефицит перехватчиков Patriot и оценивает недостающее финансирование обороны в $27 млрд. Это указывает на подготовку обеих сторон к продолжению войны, а не к быстрому завершению.",
+          "publishedAt": "23 августа",
+          "source": {
+            "name": "Reuters",
+            "url": "https://www.reuters.com/world/europe/putin-will-draft-300000-new-troops-after-september-elections-zelenskiy-says-2026-08-23/"
+          }
+        },
+        {
+          "title": "Промышленность Германии ускорилась, но услуги остаются в спаде",
+          "summary": "Предварительный PMI Германии за август показывает сильнейшее производство за 51 месяц — индекс вырос до 54,1. При этом сектор услуг сокращается пятый месяц подряд. Для Европы это осторожно позитивный сигнал: промышленный цикл оживает, но восстановление крупнейшей экономики еврозоны пока остаётся неравномерным.",
+          "publishedAt": "21 августа",
+          "source": {
+            "name": "Reuters",
+            "url": "https://www.reuters.com/business/german-business-activity-grows-august-pmi-shows-2026-08-21/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "technology",
+      "title": "Технологии",
+      "items": [
+        {
+          "title": "TypeScript 7: нативный компилятор на Go уже production-ready",
+          "summary": "TypeScript 7 полностью переносит компилятор и language service в нативный Go-код. Microsoft показывает ускорение полных сборок примерно в 8–12 раз, меньший расход памяти и многопоточный type-checking. Важный нюанс миграции: 7.0 пока не предоставляет прежний программный Compiler API, поэтому инструменты вроде typescript-eslint могут временно держать TypeScript 6 рядом через совместимый пакет.",
+          "publishedAt": "8 июля",
+          "source": {
+            "name": "TypeScript",
+            "url": "https://devblogs.microsoft.com/typescript/announcing-typescript-7-0/"
+          }
+        },
+        {
+          "title": "Node.js 24.19 LTS получил text imports и новые low-level API",
+          "summary": "Свежий LTS-релиз добавил экспериментальный импорт текстовых модулей, Blob.textStream(), возможность передавать собственный buffer в readFile() и перевёл stream.compose в stable. Это не революционный релиз, но набор изменений полезен для серверных и tooling-сценариев, где важны потоки, буферы и ESM.",
+          "publishedAt": "3 августа",
+          "source": {
+            "name": "Node.js",
+            "url": "https://nodejs.org/en/blog/release/v24.19.0"
+          }
+        },
+        {
+          "title": "GitHub предлагает агентам разбивать большие изменения на stacked PR",
+          "summary": "GitHub описал паттерн для AI-generated changes: вместо одного гигантского PR агент строит зависимый стек небольших PR, каждый из которых решает одну задачу и остаётся обозримым для ревью. Это особенно интересно как организационный ответ на рост объёма машинно-сгенерированного кода: ограничивать нужно не генерацию, а размер единицы человеческой проверки.",
+          "publishedAt": "4 августа",
+          "source": {
+            "name": "GitHub Engineering",
+            "url": "https://github.blog/engineering/turn-one-giant-ai-generated-pull-request-to-a-reviewable-stack/"
+          }
+        },
+        {
+          "title": "GitHub разобрал июльские сбои: хороший материал про отказоустойчивость CI-инфраструктуры",
+          "summary": "В отчёте восемь инцидентов, включая ошибки после инфраструктурных изменений, сбои SSH-аутентификации, проблемы Vitess при backfill и деградацию Actions из-за сочетания конфигурационного изменения Redis и перераспределения регионального трафика. Практический урок общий: независимые операции над общей critical-path системой могут складываться в отказ, даже если каждая по отдельности выглядит безопасной.",
+          "publishedAt": "12 августа",
+          "source": {
+            "name": "GitHub",
+            "url": "https://github.blog/news-insights/company-news/github-availability-report-july-2026/"
+          }
+        },
+        {
+          "title": "Aspire 13.5 продолжает превращаться в language-neutral dev orchestrator",
+          "summary": "После выхода TypeScript AppHost в GA Aspire развивает общий application model для Node/TypeScript и других рантаймов: в 13.5 обновили dashboard и Interaction Service, добавили persistent volumes для Kubernetes и live terminals прямо в AppHost. Интересен не сам .NET-бренд, а архитектурная идея: декларативный граф сервисов и инфраструктуры как локальный control plane для polyglot-приложения.",
+          "publishedAt": "18 августа",
+          "source": {
+            "name": "Microsoft Aspire",
+            "url": "https://devblogs.microsoft.com/aspire/"
+          }
+        }
+      ]
+    }
+  ]
+}
