@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="description" content="Один короткий выпуск новостей в день: Сербия и Белград, мир, технологии." />
+    <title>Daily Brief</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="./">Daily Brief</a>
+      <button class="archive-toggle" type="button" aria-expanded="false" aria-controls="archive">Архив</button>
+    </header>
+
+    <aside class="archive" id="archive" hidden>
+      <div class="archive-inner">
+        <div class="archive-title">Архив</div>
+        <div class="archive-list" id="archive-list"></div>
+      </div>
+    </aside>
+
+    <main class="page" id="app" aria-live="polite">
+      <div class="loading">Загружаю выпуск…</div>
+    </main>
+
+    <footer class="site-footer">
+      <span>Обновляется один раз в день.</span>
+      <span>Без бесконечной ленты.</span>
+    </footer>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>
