@@ -1,0 +1,114 @@
+{
+  "date": "2026-08-26",
+  "generatedAt": "2026-08-26T12:03:26+02:00",
+  "sections": [
+    {
+      "id": "serbia",
+      "title": "Сербия & Белград",
+      "items": [
+        {
+          "title": "На Новом Белграде с сегодняшнего дня меняются семь автобусных линий из-за работ в Egipatska",
+          "summary": "С 26 по 29 августа закрыт участок Egipatska между зоной перекрёстка с Gandijeva и поворотом к Lidl. В сторону Tošin bunar линии 45, 71, 72, 601, 72N, 601N и 603N идут в объезд через Vojvođanska, Nehruova, Evropska, Gandijeva, Partizanske avijacije и Nikole Dobrovića; в обратную сторону схема остаётся штатной. Появилась и временная остановка Gandijeva 1. Это одно из наиболее заметных локальных транспортных изменений на сегодня, потому что затрагивает сразу несколько дневных и ночных линий Нового Белграда.",
+          "publishedAt": "2026-08-25",
+          "source": {
+            "name": "Grad Beograd",
+            "url": "https://www.beograd.rs/lat/servisne-informacije/saobracaj-i-prevoz/a115362/Promena-rezima-javnog-prevoza-u-Egipatskoj-ulici.html"
+          }
+        },
+        {
+          "title": "На Звездаре сегодня до 22:00 отключена вода на большой группе улиц",
+          "summary": "Из-за ввода в работу нового трубопровода с 08:00 до 22:00 без воды остаются части Dimitrija Tucovića, Čingrijina, Preševska, Milana Rakića, а также Brsjačka, Bukureška, Geršićeva, Cara Jovana Crnog, Hektorovićeva, Spase Garde, Divčibarska и Aradska. Город выставил автоцистерны и просит жителей заранее запастись водой. Это крупнее обычного точечного ремонта и затрагивает плотную жилую часть Звездары на весь рабочий день.",
+          "publishedAt": "2026-08-25",
+          "source": {
+            "name": "Grad Beograd",
+            "url": "https://www.beograd.rs/lat/beoinfo-vesti/a115363/Radovi-na-vodovodnoj-mrezi.html"
+          }
+        },
+        {
+          "title": "На Звездаре до 31 августа меняется работа линии 55 из-за ремонта конечной в Gospodara Vučića",
+          "summary": "С сегодняшнего дня по 31 августа идут работы на разворотной площадке Zvezdara в Gospodara Vučića. Линия 46 сохраняет обычную трассу, а 55 в сторону Звездары перенаправлена к конечной Zvezdara / Pijaca через Vjekoslava Kovača; обратно она идёт через Deskaševa и Bulevar kralja Aleksandra. Автобусы 46 и 55 временно не используют остановку Zvezdara в направлении Bulevar kralja Aleksandra. Для тех, кто регулярно пользуется этим узлом, это изменение на всю оставшуюся рабочую неделю.",
+          "publishedAt": "2026-08-25",
+          "source": {
+            "name": "Grad Beograd",
+            "url": "https://www.beograd.rs/lat/servisne-informacije/saobracaj-i-prevoz/a115364/Radovi-u-Gospodara-Vucica.html"
+          }
+        },
+        {
+          "title": "На завтра запланированы длительные отключения воды на Palilula и Zvezdara",
+          "summary": "27 августа с 08:00 до 22:00 без воды будут части Takovska и Cvijićeva на Palilula, а на Zvezdara с 08:00 до 20:00 — Vizantijska, Lepenskog vira, Teodorina, Vladimira Ćorovića, Vladimira Dvornikovića, Gamzigradska, Feliksa Kanica, Save Petkovića, Livadska, Mitkov kladenac и часть Ladno brdo. Город заранее выставит цистерны. Это полезное предупреждение на завтра: отключения продолжительные и охватывают сразу два района.",
+          "publishedAt": "2026-08-26",
+          "source": {
+            "name": "Grad Beograd",
+            "url": "https://www.beograd.rs/lat/beoinfo-vesti/a115374/Radovi-na-Paliluli-i-Zvezdari.html"
+          }
+        }
+      ]
+    },
+    {
+      "id": "world",
+      "title": "Мир",
+      "items": [
+        {
+          "title": "Иран и Оман приблизились к временному коридору через Ормузский пролив",
+          "summary": "Иран и Оман обсуждают совместный временный навигационный коридор через Ормузский пролив и расчистку мин; глава МИД Омана заявил, что практические договорённости могут быть объявлены скоро. Это заметное изменение после месяцев блокад и опасного судоходства: через пролив до войны проходила примерно пятая часть мировых поставок нефти и СПГ. На фоне переговоров Brent упал более чем на $2 до двухнедельного минимума, что показывает прямой глобальный экономический эффект возможной деэскалации.",
+          "publishedAt": "2026-08-26",
+          "source": {
+            "name": "Reuters",
+            "url": "https://www.reuters.com/world/china/iran-oman-discuss-temporary-hormuz-corridor-impasse-with-us-drags-2026-08-25/"
+          }
+        },
+        {
+          "title": "Канада ввела ответные пошлины на американский импорт примерно на $20 млрд",
+          "summary": "После новых 50-процентных пошлин США Канада объявила зеркальный пакет на около $20 млрд американского импорта; ставки 15%, 25% и 50% начнут действовать 8 сентября примерно для 700 категорий товаров. Отдельно Оттава выделяет C$7,5 млрд поддержки компаниям и работникам. Это уже материальная эскалация, а не очередная угроза: торговая война между двумя тесно связанными экономиками начинает напрямую менять цепочки поставок и инвестиционные решения.",
+          "publishedAt": "2026-08-25T15:06:00Z",
+          "source": {
+            "name": "Reuters",
+            "url": "https://www.reuters.com/business/canada-announces-20-bln-retaliatory-tariffs-us-goods-unveils-support-measures-2026-08-25/"
+          }
+        },
+        {
+          "title": "США поставили на паузу собеседования по иммиграционным визам во всём мире",
+          "summary": "Госдепартамент США временно переносит собеседования по иммиграционным визам во всех посольствах и консульствах на время глобального обучения консульских сотрудников. Срок паузы не назван; уже назначенные интервью переносятся. Это касается именно иммиграционных, а не всех виз. Масштаб решения делает его значимым для семейной и рабочей миграции в США, а неопределённый срок создаёт новый глобальный backlog в и без того ужесточившейся системе легальной иммиграции.",
+          "publishedAt": "2026-08-26T00:21:00Z",
+          "source": {
+            "name": "Reuters",
+            "url": "https://www.reuters.com/legal/government/trump-administration-issues-pause-visa-appointments-applicants-worldwide-2026-08-26/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "technology",
+      "title": "Технологии",
+      "items": [
+        {
+          "title": "Next.js выпустил срочный security patch для двух Critical-уязвимостей",
+          "summary": "Next.js перенёс августовский security release на 25 августа и выпустил 16.3.3 для Active LTS и 15.5.24 для Maintenance LTS. Оба релиза закрывают две уязвимости уровня Critical. Для production-приложений это не тот случай, где стоит ждать обычного dependency window: если проект на ветках 16.3 или 15.5, обновление имеет приоритет над почти любыми функциональными апдейтами. Сам факт, что релиз был ускорен на день, — дополнительный сигнал о серьёзности исправлений.",
+          "publishedAt": "2026-08-25",
+          "source": {
+            "name": "Next.js",
+            "url": "https://nextjs.org/blog/august-2026-security-release"
+          }
+        },
+        {
+          "title": "Meta MTIA 300 показывает архитектуру, где сеть становится частью ускорителя, а не внешним ограничением",
+          "summary": "Meta раскрыла MTIA 300 — собственный training/inference accelerator с встроенными NIC-chiplet'ами и offload коллективных коммуникаций через HCCL. Главная инженерная идея не в очередном AI-чипе, а в co-design compute + network: для recommendation workload'ов узким местом часто становится не FLOPS, а частые межчиповые обмены с жёстким latency budget. Meta переносит часть этой логики прямо в silicon, рассматривая bandwidth, latency и message rate как один системный ресурс. Это хороший пример того, как архитектура распределённой системы меняется, когда communication cost становится first-class constraint.",
+          "publishedAt": "2026-08-24",
+          "source": {
+            "name": "Engineering at Meta",
+            "url": "https://engineering.fb.com/2026/08/24/networking-traffic/mtia-300-meta-training-chip-built-in-nics/"
+          }
+        },
+        {
+          "title": "Cloudflare описала рабочий паттерн AI-агентов для triage: изолированные стадии вместо одного всесильного агента",
+          "summary": "Cloudflare показала внутренний pipeline, которым Astro-maintainers автоматизировали воспроизведение issue, диагностику, проверку patch и preview releases в GitHub Actions; число открытых issues сократилось примерно на 85%. Архитектурно интересен не AI как таковой, а разделение на изолированные subagent-стадии с явными артефактами между ними. Такой design уменьшает blast radius, делает сбои наблюдаемыми и позволяет валидировать каждый этап отдельно — гораздо более зрелая модель для agentic automation, чем один долгоживущий агент с широкими полномочиями.",
+          "publishedAt": "2026-08-04",
+          "source": {
+            "name": "Cloudflare Blog",
+            "url": "https://blog.cloudflare.com/astro-issue-triage/"
+          }
+        }
+      ]
+    }
+  ]
+}
