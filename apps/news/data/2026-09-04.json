@@ -1,0 +1,105 @@
+{
+  "date": "2026-09-04",
+  "generatedAt": "2026-09-04T11:58:45+02:00",
+  "sections": [
+    {
+      "id": "serbia",
+      "title": "Сербия & Белград",
+      "items": [
+        {
+          "title": "Изменения транспорта из-за 10K Beograd начинаются уже сегодня",
+          "summary": "Хотя сама гонка пройдёт в выходные, первая фаза изменений действует с 08:00 4 сентября. Линии 15, 84, 704, 706 и 707 в направлении Земуна обходят Bulevar Nikole Tesle через Bulevar Mihajla Pupina и Trešnjinog cveta; 5 сентября схема станет шире и затронет также 9A и 60. Маршрут гонки проходит через Bulevar Nikole Tesle, Ušće, Staro sajmište и прилегающие улицы, поэтому на Новом Белграде лучше считать эти выходные периодом нестабильной транспортной схемы, а не одним коротким перекрытием.",
+          "publishedAt": "2026-09-04T08:01:00+02:00",
+          "source": {
+            "name": "Blic / Sekretarijat za javni prevoz",
+            "url": "https://www.blic.rs/vesti/beograd/trka-10k-u-beogradu-u-nedelju-i-izmene-linija-gradskog-prevoza-vec-od-danas/gewzeb2"
+          }
+        },
+        {
+          "title": "Đevđelijska на Звездаре закрывается до 18 сентября",
+          "summary": "С сегодняшнего дня полностью закрыт участок Đevđelijska между Tršćanska и Milana Rakića из-за регулярного ремонта улицы; перекрёсток с Šabačka остаётся проезжим. Ограничение продлится две недели, до 18 сентября. Это уже не краткая ночная работа, поэтому для локального движения на Звездаре маршрут лучше перестроить на весь период ремонта.",
+          "publishedAt": "2026-09-04T08:04:00+02:00",
+          "source": {
+            "name": "Blic / Sekretarijat za saobraćaj",
+            "url": "https://www.blic.rs/vesti/beograd/radovi-u-djevdjelijskoj-ulici-zatvara-se-ulica-na-zvezdari-evo-do-kada/8rhv69m"
+          }
+        },
+        {
+          "title": "Сегодня длительные отключения воды в Земуну и на Звездаре",
+          "summary": "На Звездаре часть Vojvode Šupljikca остаётся без воды с 08:30 до 18:00. В Земуну работы крупнее: с 09:00 до 22:00 отключены Dragana Rakića, Sava Burića, Crnog duda, Smokvina, Žirova, Drenova, Bele breze и Hrasta lužnjaka из-за ввода нового трубопровода; организована автоцистерна. Это наиболее практичное сервисное ограничение сегодняшнего дня.",
+          "publishedAt": "2026-09-04T08:40:00+02:00",
+          "source": {
+            "name": "NIN / JKP Beogradski vodovod i kanalizacija",
+            "url": "https://www.nin.rs/drustvo/vesti/122417/dve-beogradske-opstine-danas-bez-vode-zbog-radova-na-mrezi"
+          }
+        },
+        {
+          "title": "У аэропорта завершён 1,65-километровый ливневый коллектор",
+          "summary": "Srbijavode завершила основные работы по подземному коллектору Aerodrom Nikola Tesla–Galovica: тоннель длиной 1 650 м и диаметром 3,2 м способен отводить более 25 м³ воды в секунду. Проект должен снизить риск подтоплений аэропортового комплекса во время сильных ливней и входит в более широкую инфраструктурную подготовку района к Expo 2027. В отличие от множества Expo-анонсов, здесь речь уже о физически завершённом объекте.",
+          "publishedAt": "2026-09-04T08:07:00+02:00",
+          "source": {
+            "name": "Blic / Srbijavode",
+            "url": "https://www.blic.rs/biznis/privreda/novi-kolektor-kod-beogradskog-aerodroma-dug-1650-metara/me3zj6j"
+          }
+        }
+      ]
+    },
+    {
+      "id": "world",
+      "title": "Мир",
+      "items": [
+        {
+          "title": "Китайские поставщики редкоземельных материалов снова ограничивают отгрузки в США",
+          "summary": "Reuters сообщает, что некоторые китайские компании отказываются поставлять редкоземельные материалы американским клиентам даже при наличии экспортных лицензий, опасаясь санкций Пекина. Дефицит особенно чувствителен для обороны, полупроводников, аэрокосмической и энергетической отраслей; по ряду материалов цены остаются около рекордных уровней. Это важный сигнал перед визитом Си Цзиньпина в Вашингтон 24 сентября: торговое перемирие не устранило главный сырьевой chokepoint между двумя экономиками.",
+          "publishedAt": "2026-09-04T09:15:00+02:00",
+          "source": {
+            "name": "Reuters",
+            "url": "https://www.reuters.com/business/aerospace-defense/china-rare-earth-firms-halt-some-us-shipments-over-geopolitical-worries-sources-2026-09-04/"
+          }
+        },
+        {
+          "title": "Дизель в США достиг исторического максимума на фоне глобального дефицита",
+          "summary": "Средняя цена дизеля в США достигла $5,82 за галлон, превысив рекорд 2022 года; запасы дистиллятов в августе были минимальными для этого времени года с 1982-го. Причина шире американского рынка: конфликт вокруг Ирана, сбои российских НПЗ и российский запрет экспорта дизеля одновременно сжимают мировое предложение. Поскольку дизель напрямую входит в стоимость грузоперевозок, сельского хозяйства и промышленности, это уже потенциальный новый канал глобальной продовольственной и товарной инфляции.",
+          "publishedAt": "2026-09-03T21:47:00+02:00",
+          "source": {
+            "name": "Reuters",
+            "url": "https://www.reuters.com/business/energy/us-diesel-hits-record-5820-gallon-gasbuddy-says-2026-09-03/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "technology",
+      "title": "Технологии",
+      "items": [
+        {
+          "title": "Cloudflare пробует хранить HTTP-кэш в zstd и получает почти 3× эффективной ёмкости",
+          "summary": "Cloudflare прототипирует Cache Transcoding в Pingora: подходящие HTML/JSON/CSS/JS ответы при попадании в кэш один раз кодируются zstd level 3, хранятся и передаются между дата-центрами в сжатом виде, а декодируются только перед выдачей клиенту. В тестах подходящие объекты сжимались примерно в 2,8 раза; дополнительный CPU оставался в пределах нескольких процентов. Интересен сам системный trade-off: немного дешёвого CPU на fill/serve обменивается на петабайты storage capacity, меньше eviction и меньший backbone traffic — хороший пример оптимизации не latency отдельного запроса, а общей экономики кэша.",
+          "publishedAt": "2026-09-02T00:00:00Z",
+          "source": {
+            "name": "Cloudflare Blog",
+            "url": "https://blog.cloudflare.com/cache-transcoding/"
+          }
+        },
+        {
+          "title": "npm trusted publishing теперь поддерживает несколько OIDC-конфигураций на пакет",
+          "summary": "GitHub/npm разрешили иметь несколько независимых trusted-publishing конфигураций для одного пакета — например, отдельно для stable, prerelease и staging workflows — без возврата к долгоживущим npm-токенам. Staged packages теперь нельзя одобрить до завершения malware scan, а история approve/reject отображается в версиях пакета. Для TypeScript-экосистемы это небольшое интерфейсно, но существенное supply-chain изменение: сложные release pipelines наконец можно строить вокруг короткоживущего OIDC и человеческого approval вместо секретов с широким сроком жизни.",
+          "publishedAt": "2026-09-03T00:00:00Z",
+          "source": {
+            "name": "GitHub Changelog",
+            "url": "https://github.blog/changelog/2026-09-03-multiple-trusted-publishing-configurations-for-npm/"
+          }
+        },
+        {
+          "title": "GitHub Actions добавил точнее ограничиваемый GITHUB_TOKEN и identity для reusable workflows",
+          "summary": "В Actions появился отдельный read-only permission `vulnerability-alerts` для Dependabot вместо более широких токенов, API для проверки дат deprecation self-hosted runner версий и новые `job.workflow_*` поля, которые показывают реальный source workflow внутри reusable workflows. Последнее особенно полезно для платформенных CI-слоёв: policy, provenance и telemetry теперь могут опираться на identity именно исполняемого reusable workflow, а не только вызывающего workflow.",
+          "publishedAt": "2026-09-03T00:00:00Z",
+          "source": {
+            "name": "GitHub Changelog",
+            "url": "https://github.blog/changelog/2026-09-03-github-actions-early-september-2026-updates/"
+          }
+        }
+      ]
+    }
+  ]
+}
