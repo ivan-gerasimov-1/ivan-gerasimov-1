@@ -1,0 +1,78 @@
+{
+  "date": "2026-09-06",
+  "generatedAt": "2026-09-06T12:00:02+02:00",
+  "sections": [
+    {
+      "id": "serbia",
+      "title": "Сербия & Белград",
+      "items": [
+        {
+          "title": "59-й BITEF стартует через неделю — после прошлогоднего кризиса фестиваль возвращается в официальный формат",
+          "summary": "Город сегодня отдельно анонсировал 59-й BITEF: фестиваль пройдёт в Белграде 13–20 сентября под слоганом «Usudi se da saznaš», с постановками из семи стран на сценах Atelje 212, Народного театра, Bitef teatra, Београдского драматического театра, Pozorište na Terazijama и JDP. Для городской жизни это один из главных культурных событий сентября; контекст необычный — в 2025 году обычное официальное издание BITEF фактически сорвалось на фоне конфликта вокруг управления и художественной автономии, поэтому нынешний фестиваль одновременно является попыткой вернуть институцию в нормальный ритм.",
+          "publishedAt": "2026-09-06",
+          "source": {
+            "name": "Grad Beograd",
+            "url": "https://www.beograd.rs/cir/zivot-u-beogradu/filmski-i-pozorisni-program/a115466/59.-bitef-donosi-predstave-iz-sedam-zemalja.html"
+          }
+        },
+        {
+          "title": "Сегодня водоканал устраняет серию аварий; цистерны направлены в Kovilovo и Ritopek",
+          "summary": "На 6 сентября Beogradski vodovod i kanalizacija опубликовал список текущих аварийных ремонтов и отдельно направил автоцистерны в Kovilovo на Palilula и Ritopek в Grocka. Это не одно крупное общегородское отключение, а россыпь локальных неисправностей, поэтому не раздуваю их в несколько новостей. Из хорошего: плановых отключений электричества сегодня в Белграде нет.",
+          "publishedAt": "2026-09-06",
+          "source": {
+            "name": "Grad Beograd",
+            "url": "https://www.beograd.rs/lat/servisne-informacije/vodovod-i-kanalizacija/a115535/Kvarovi-na-vodovodnoj-mrezi-bice-otklonjeni-tokom-dana.html"
+          }
+        }
+      ]
+    },
+    {
+      "id": "world",
+      "title": "Мир",
+      "items": [
+        {
+          "title": "Извержение Anak Krakatau нарушило авиасообщение через Джакарту",
+          "summary": "Пепел от Anak Krakatau достиг воздушного пространства вокруг Джакарты: работу приостанавливали шесть аэропортов, включая Soekarno-Hatta, затронут 301 рейс, в том числе 58 международных. Власти также остановили занятия в школах и рыболовство в части районов. Это уже не обычная вулканическая активность Индонезии, а крупный транспортный и санитарный сбой вокруг одного из главных авиационных узлов Юго-Восточной Азии; уровень тревоги для вулкана остаётся третьим из четырёх.",
+          "publishedAt": "2026-09-06",
+          "source": {
+            "name": "Reuters",
+            "url": "https://www.reuters.com/business/environment/indonesias-jakarta-airport-suspends-flights-due-ash-mount-anak-krakatau-2026-09-06/"
+          }
+        },
+        {
+          "title": "В Саксонии-Анхальт проходят выборы, которые могут впервые дать AfD земельное большинство",
+          "summary": "Сегодня голосует Саксония-Анхальт. Предвыборные опросы давали AfD более 40%, заметно выше CDU; абсолютное большинство стало бы первым случаем самостоятельного прихода крайне правой партии к власти на земельном уровне в послевоенной Германии. Результата на момент выпуска ещё нет, поэтому это не утверждение о победе, а важная развилка: исход покажет, сохраняется ли практическая «стена» остальных партий против AfD или немецкая партийная система входит в новую фазу.",
+          "publishedAt": "2026-09-06",
+          "source": {
+            "name": "Reuters",
+            "url": "https://www.reuters.com/world/germanys-far-right-afd-seeks-landmark-state-victory-as-saxony-anhalt-votes-2026-09-06/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "technology",
+      "title": "Технологии",
+      "items": [
+        {
+          "title": "Bun 1.4.2 срочно чинит регрессии 1.4.1 — включая утечку AsyncLocalStorage",
+          "summary": "Вчерашний Bun 1.4.2 важен именно как продолжение релиза 1.4.1, который был в предыдущем брифинге. Исправлены две production-регрессии: bundler мог генерировать некорректный JavaScript при импорте Elysia, а AsyncLocalStorage удерживал внешний per-request context живым вместе с долгими timer/promise, создавая скрытую утечку памяти. Также исправлен порядок события worker_threads, из-за которого зависал @discordjs/ws, редкие JIT/GC crashes и ряд ошибок JavaScriptCore. Если 1.4.1 уже раскатан на backend, 1.4.2 выглядит не косметическим patch, а нормальным кандидатом на быстрое обновление.",
+          "publishedAt": "2026-09-05",
+          "source": {
+            "name": "Bun",
+            "url": "https://bun.com/blog/bun-v1.4.2"
+          }
+        },
+        {
+          "title": "GitHub HydraFusion превращает выбор модели в runtime-план исполнения",
+          "summary": "GitHub показал research preview HydraFusion для Copilot CLI: вместо выбора одного LLM система для каждого coding task выбирает один из трёх workflow — single model, cascade с дешёвым первым проходом и escalation gate либо draft + независимый critic + revision. В офлайн-бенчмарках GitHub заявляет качество около Opus 5 при снижении оценочной стоимости на 36–67%, но пока это именно собственные controlled evaluations, а не доказанная production-экономика. Инженерно интереснее сам паттерн: model routing становится обычным orchestration layer с bounded execution, изолированным review, fail-safe application и полным учётом стоимости каждого шага.",
+          "publishedAt": "2026-09-04",
+          "source": {
+            "name": "GitHub",
+            "url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/"
+          }
+        }
+      ]
+    }
+  ]
+}
