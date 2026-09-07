@@ -1,0 +1,105 @@
+{
+  "date": "2026-09-07",
+  "generatedAt": "2026-09-07T11:58:43+02:00",
+  "sections": [
+    {
+      "id": "serbia",
+      "title": "Сербия & Белград",
+      "items": [
+        {
+          "title": "Железнодорожная станция Novi Beograd закроется для пассажиров с 9 сентября до конца года",
+          "summary": "Srbijavoz подтвердил, что с 9 сентября по 31 декабря станция Novi Beograd будет закрыта для посадки и высадки пассажиров из-за интенсификации работ. На этот период Tošin bunar открывают для всех категорий поездов. Для Нового Белграда это крупное повседневное изменение: один из главных железнодорожных узлов выпадет почти на четыре месяца, поэтому поездки на BG Voz и междугородних поездах придётся планировать через Tošin bunar или другие станции.",
+          "publishedAt": "2026-09-04T00:00:00+02:00",
+          "source": {
+            "name": "Srbijavoz",
+            "url": "https://srbijavoz.rs/zatvaranje-stanice-novi-beograd-za-ulazak-i-izlazak-putnika-od-9-septembra-2026-godine/"
+          }
+        },
+        {
+          "title": "С 7 по 21 сентября снова меняются маршруты 25 и 25P из-за работ в Ljubićka",
+          "summary": "Сегодня начинается девятая фаза реконструкции водопровода в Ljubićka на Voždovac. Участок от зоны пересечения с Vojvode Skopljanca до Danijelova закрывается для движения до 21 сентября, а линии 25 и 25P продолжают работать по временной схеме. Это уже не короткая разовая фаза, а двухнедельное ограничение на локальном коридоре, поэтому привычный маршрут через этот район лучше считать изменённым до второй половины сентября.",
+          "publishedAt": "2026-09-05T00:00:00+02:00",
+          "source": {
+            "name": "Grad Beograd",
+            "url": "https://www.beograd.rs/lat/servisne-informacije/saobracaj-i-prevoz/a115532/Izmene-na-linijama-broj-25-i-25P.html"
+          }
+        },
+        {
+          "title": "Во вторник на Врачаре будет девятичасовое отключение воды",
+          "summary": "8 сентября с 08:30 до 18:00 без воды останутся части Hadži Melentijeva, Janka Veselinovića и Đorđa Vajferta. Город обещает автоцистерну с питьевой водой. Это не сегодняшняя авария, а заранее объявленные плановые работы, поэтому жителям района есть смысл подготовиться заранее; особенно заметно это для плотной жилой части Врачара и работы из дома.",
+          "publishedAt": "2026-09-06T00:00:00+02:00",
+          "source": {
+            "name": "Grad Beograd",
+            "url": "https://www.beograd.rs/lat/servisne-informacije/vodovod-i-kanalizacija/a115533/Radovi-na-vodovodnoj-mrezi.html"
+          }
+        }
+      ]
+    },
+    {
+      "id": "world",
+      "title": "Мир",
+      "items": [
+        {
+          "title": "AfD выиграла выборы в Саксонии-Анхальт с 44% голосов — исторический результат для Германии",
+          "summary": "AfD заняла первое место на земельных выборах в Саксонии-Анхальт, получив около 44% голосов и более чем удвоив результат 2021 года; CDU канцлера Фридриха Мерца получила около 18,5%. Это материальное продолжение вчерашней истории: теперь речь уже не о риске победы, а о состоявшемся политическом переломе. AfD всё ещё не имеет абсолютного большинства, а другие партии исключают коалицию с ней, поэтому главный вопрос — сможет ли она превратить электоральную победу в реальную власть.",
+          "publishedAt": "2026-09-06T00:00:00+02:00",
+          "source": {
+            "name": "Reuters",
+            "url": "https://www.reuters.com/world/germanys-far-right-afd-seeks-landmark-state-victory-saxony-anhalt-votes-2026-09-06/"
+          }
+        },
+        {
+          "title": "Япония потратила почти $99 млрд на поддержку иены — резервы показали крупнейшее падение в истории",
+          "summary": "В августе валютные резервы Японии сократились на рекордные $79,6 млрд, до $1,208 трлн. Токио потратил 15,4 трлн иен, около $98,7 млрд, на продажу долларов и покупку иены; часть интервенции проводилась совместно с США впервые с 2011 года. Это показывает, насколько серьёзной стала проблема слабой иены: валютная политика уже требует действий такого масштаба, которые затрагивают рынок американских Treasuries и глобальные потоки капитала.",
+          "publishedAt": "2026-09-07T02:28:00+02:00",
+          "source": {
+            "name": "Reuters",
+            "url": "https://www.reuters.com/world/asia-pacific/japans-august-foreign-reserves-post-largest-ever-drop-after-record-intervention-2026-09-07/"
+          }
+        },
+        {
+          "title": "Китай временно остановил одобрение новых заводов накопителей энергии из-за риска перепроизводства",
+          "summary": "По данным Cailianshe, китайские власти приостановили одобрение новых производств battery cells для систем хранения энергии и проверяют уже заявленные мощности. Стройки, которые уже начались, не затронуты. Для мирового рынка это значимо: Китай — крупнейший производитель таких батарей, а сектор до сих пор рос почти без тормозов вслед за солнечной и ветровой энергетикой. Пауза означает, что Пекин начинает ограничивать тот же цикл избыточных мощностей и ценовой войны, который уже ударил по солнечным панелям и EV.",
+          "publishedAt": "2026-09-07T00:00:00+02:00",
+          "source": {
+            "name": "Reuters",
+            "url": "https://www.reuters.com/business/energy/china-pauses-approvals-battery-storage-manufacturing-projects-cailianshe-reports-2026-09-07/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "technology",
+      "title": "Технологии",
+      "items": [
+        {
+          "title": "Meta поставила управляемый proxy-tier перед ZippyDB и получила единый control point для миллионов клиентов",
+          "summary": "Meta описала ZGateway — прокси перед ZippyDB, её самым массовым distributed key-value store. Вместо прямого many-to-many соединения миллионов клиентов с огромным числом шардов proxy-tier централизует TLS, routing, batching, admission control, load balancing и cross-region failover. Самый полезный вывод архитектурный: когда клиентская поверхность слишком велика и неоднородна, дополнительный hop может окупаться тем, что создаёт одну управляемую точку для rollout, observability и tenant isolation. Особенно хороший паттерн — discriminant load shedding: перегрузивший систему tenant заполняет собственную очередь и сбрасывает только свой excess traffic, не вытесняя остальных.",
+          "publishedAt": "2026-09-03T00:00:00+02:00",
+          "source": {
+            "name": "Engineering at Meta",
+            "url": "https://engineering.fb.com/2026/09/03/core-infra/zgateway-proxy-zippydb-meta/"
+          }
+        },
+        {
+          "title": "Chrome 154 beta приносит post-quantum WebCrypto, streaming HTML insertion и новый WebSocket options bag",
+          "summary": "Chrome 154 beta добавляет в WebCrypto ML-KEM, ML-DSA, ChaCha20-Poly1305 и X-Wing, вводит options dictionary для WebSocket, распространяет CORS и Local Network Access проверки на Background Fetch и экспериментирует со streaming HTML insertion через WritableStream. Для full-stack/web здесь интересен не отдельный API, а общий тренд: browser platform одновременно становится более декларативной и более строгой в security boundaries, а post-quantum primitives начинают переходить из инфраструктурного слоя непосредственно в стандартные web API.",
+          "publishedAt": "2026-09-02T00:00:00+02:00",
+          "source": {
+            "name": "Chrome for Developers",
+            "url": "https://developer.chrome.com/blog/chrome-154-beta"
+          }
+        },
+        {
+          "title": "Cloudflare связывает поиск уязвимостей в коде с реальным production traffic и WAF-сигналами",
+          "summary": "Cloudflare показала Vulnerability Discovery and Remediation: модель ищет уязвимости не в вакууме, а вместе с картой production routes, объёмом трафика, security events и уже действующими WAF-защитами. Findings проходят отдельную валидацию, после чего система предлагает code patch и, когда есть достаточные доказательства, узко scoped WAF rule; модель сама не может применить изменение. Архитектурно это намного интереснее очередного AI-scanner: приоритизация строится на runtime evidence, а безопасность самого агента обеспечивается внешними policy checks и human review — то есть LLM остаётся недоверенным компонентом внутри контролируемого harness.",
+          "publishedAt": "2026-09-03T00:00:00+02:00",
+          "source": {
+            "name": "Cloudflare Blog",
+            "url": "https://blog.cloudflare.com/vulnerability-discovery-remediation/"
+          }
+        }
+      ]
+    }
+  ]
+}
