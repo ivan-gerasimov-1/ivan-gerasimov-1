@@ -1,0 +1,96 @@
+{
+  "date": "2026-09-08",
+  "generatedAt": "2026-09-08T11:57:36+02:00",
+  "sections": [
+    {
+      "id": "serbia",
+      "title": "Сербия & Белград",
+      "items": [
+        {
+          "title": "С сегодняшнего дня меняется работа 32, 66 и EKO1 у Vukov spomenik",
+          "summary": "С 8 по 21 сентября из-за ремонта Kraljice Marije закрыта правая полоса в направлении Bulevar kralja Aleksandra, а участок в зоне работ переведён на двустороннее движение. Обычное конечное/начальное остановочное место Vukov spomenik для 32, 66 и EKO1 временно не используется: 32 и 66 прибывают на Dalmatinska и отправляются от остановки Vukov spomenik в Ruzveltova, а EKO1 отправляется от Tehnički fakulteti. Для района Vukov spomenik это двухнедельное изменение ежедневной пересадки, а не краткий ремонт.",
+          "publishedAt": "2026-09-07T00:00:00+02:00",
+          "source": {
+            "name": "Grad Beograd",
+            "url": "https://www.beograd.rs/lat/servisne-informacije/saobracaj-i-prevoz/a115545/Izmene-na-linijama-broj-32-66-i-EKO1.html"
+          }
+        },
+        {
+          "title": "Сегодня водоканал устраняет аварии сразу в большинстве районов Белграда",
+          "summary": "До 15:00 аварийные ремонты затрагивают адреса на Stari grad, Savski venac, Vračar, Palilula, Zvezdara, Voždovac, Čukarica, Rakovica, Novi Beograd, Zemun, Grocka и Barajevo. Это не одно массовое отключение, а множество локальных неисправностей; автоцистерны отдельно направлены в Kovilovo, Ritopek, Mali Mokri Lug, Radiofar и Đorđa Vajferta. Для повседневной жизни полезнее знать именно широкий охват сегодняшних работ, чем разбирать каждую аварию отдельно.",
+          "publishedAt": "2026-09-08T00:00:00+02:00",
+          "source": {
+            "name": "Grad Beograd",
+            "url": "https://www.beograd.rs/lat/servisne-informacije/vodovod-i-kanalizacija/a115552/Kvarovi-na-vodovodnoj-mrezi-bice-otklonjeni-tokom-dana.html"
+          }
+        },
+        {
+          "title": "На 9 сентября уже объявлены плановые отключения электричества на Zvezdara и Čukarica",
+          "summary": "Город заранее опубликовал завтрашний график: на Zvezdara часть Čelopečka останется без электричества с 09:00 до 14:00, а в Žarkovo часть Poručnika Spasića i Mašere — с 09:00 до 12:00. Масштаб небольшой, поэтому это скорее полезное предупреждение для конкретных кварталов, чем общегородская проблема.",
+          "publishedAt": "2026-09-08T00:00:00+02:00",
+          "source": {
+            "name": "Grad Beograd",
+            "url": "https://www.beograd.rs/lat/servisne-informacije/elektricna-energija/a115553/Planirana-iskljucenja-na-elektro-mrezi.html"
+          }
+        }
+      ]
+    },
+    {
+      "id": "world",
+      "title": "Мир",
+      "items": [
+        {
+          "title": "Хуситы атаковали четыре города Саудовской Аравии — война вокруг Ирана расширилась на новый фронт",
+          "summary": "Поддерживаемые Ираном хуситы нанесли удары ракетами и беспилотниками по Abha, Jazan, Najran и Khamis Mushait; по данным властей, ранены 73 человека, возникли пожары на нефтяных объектах. Это материально новое развитие: после месяцев сравнительного затишья Саудовская Аравия снова стала прямой целью крупной атаки, а Brent приблизился к $100. Риск теперь не только в Ормузском проливе — сама энергетическая инфраструктура Аравийского полуострова снова входит в зону конфликта.",
+          "publishedAt": "2026-09-08T00:00:00+02:00",
+          "source": {
+            "name": "Reuters",
+            "url": "https://www.reuters.com/world/middle-east/iran-says-it-plans-new-gulf-exclusion-zone-threatens-us-with-new-missiles-2026-09-08/"
+          }
+        },
+        {
+          "title": "Экспорт Китая вырос на 25% — высокотехнологичные поставки снова поддерживают слабую внутреннюю экономику",
+          "summary": "В августе китайский экспорт вырос на 25% год к году, импорт — на 28,2%, а торговый профицит достиг $119,1 млрд. Особенно быстро растут высокотехнологичные товары: их экспорт прибавил 42,9%, включая полупроводники и автомобили. Это важно не как очередной сильный торговый месяц, а как подтверждение структуры роста: при слабом внутреннем спросе, инвестициях и недвижимости Китай всё сильнее опирается на внешний спрос и промышленный экспорт.",
+          "publishedAt": "2026-09-08T00:00:00+02:00",
+          "source": {
+            "name": "Reuters",
+            "url": "https://www.reuters.com/world/asia-pacific/chinas-exports-up-25-yy-august-imports-surge-282-2026-09-08/"
+          }
+        },
+        {
+          "title": "Ущерб от гималайского наводнения в Непале оценивается в $2,56 млрд; повреждены 12 ГЭС",
+          "summary": "Две недели после катастрофы дают более ясную картину масштаба: разрушены около 7 500 домов, повреждены 12 гидроэнергетических проектов, а общий ущерб оценивается в $2,56 млрд — почти пятую часть годового бюджета страны. Число погибших в Непале и Тибете превысило 1 300, ещё тысячи числятся пропавшими. Это существенное обновление прежней истории: бедствие уже стало не только гуманитарным кризисом, но и долгосрочным ударом по энергетике и государственным финансам Непала.",
+          "publishedAt": "2026-09-08T00:00:00+02:00",
+          "source": {
+            "name": "Associated Press",
+            "url": "https://apnews.com/article/54356ff1125e24493c003916e2280e03"
+          }
+        }
+      ]
+    },
+    {
+      "id": "technology",
+      "title": "Технологии",
+      "items": [
+        {
+          "title": "Chrome 153 запускает двухнедельный цикл stable-релизов",
+          "summary": "С Chrome 153, который выходит 8 сентября, Chrome переводит Beta и Stable с четырёхнедельного на двухнедельный цикл на desktop, Android и iOS; Dev и Canary не меняются, Extended Stable остаётся восьминедельным. Для web-команд это не просто более частый номер версии: deprecations и feature removals, привязанные к milestones, начнут приходить по календарю заметно быстрее. Практический вывод — browser-compatibility CI, version gates и планы миграций стоит считать по milestone, а не по старому ожиданию «примерно один major в месяц».",
+          "publishedAt": "2026-09-08T00:00:00+02:00",
+          "source": {
+            "name": "Chrome for Developers",
+            "url": "https://developer.chrome.com/blog/chrome-two-week-release"
+          }
+        },
+        {
+          "title": "OpenTelemetry Go получил compile-time instrumentation: zero-code observability без runtime agent",
+          "summary": "Новый технический разбор OpenTelemetry Go показывает стабильный v1 compile-time instrumentation: tracing и metrics внедряются на этапе сборки, а не через runtime agent или ручные изменения бизнес-кода. Для Go это закрывает старый пробел zero-code observability, который в Java, Python и Node обычно решается runtime hooks. Архитектурно подход интересен тем, что переносит instrumentation cost и часть сложности из процесса приложения в build pipeline — полезный паттерн для минимальных контейнеров, статических бинарников и сред, где runtime injection нежелателен.",
+          "publishedAt": "2026-09-08T00:00:00+02:00",
+          "source": {
+            "name": "Alibaba Cloud Native Community",
+            "url": "https://www.alibabacloud.com/blog/alibaba-cloud-partners-with-datadog-close-gos-last-observability-gap_603536"
+          }
+        }
+      ]
+    }
+  ]
+}
