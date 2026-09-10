@@ -1,0 +1,96 @@
+{
+  "date": "2026-09-10",
+  "generatedAt": "2026-09-10T12:08:00+02:00",
+  "sections": [
+    {
+      "id": "serbia",
+      "title": "Сербия & Белград",
+      "items": [
+        {
+          "title": "Часть служб здравстанции Batajnica с сегодняшнего дня работает в бывшей ковид-больнице",
+          "summary": "Из-за сноса старого здания и строительства новой здравстанции в Batajnica сегодня в комплекс на Batajnički drum bb переезжают службы женского здоровья, педиатрия, школьная медицина и лабораторная диагностика; служба для взрослых работает там с 9 сентября. Домашнее лечение переносится в амбуланту Busije, патронаж остаётся в Ugrinovci. Для жителей Batajnica это долгосрочное изменение привычных адресов медицинских услуг на время стройки, а не кратковременная перестановка.",
+          "publishedAt": "2026-09-09T00:00:00+02:00",
+          "source": {
+            "name": "Grad Beograd",
+            "url": "https://www.beograd.rs/lat/beoinfo-vesti/a115577/Zdravstvena-stanica-Batajnica-od-danas-u-Kovid-bolnici-i-na-drugim-lokacijama.html"
+          }
+        },
+        {
+          "title": "На 11 сентября снова запланированы отключения электричества на Palilula и Novi Beograd",
+          "summary": "Город сегодня опубликовал график на пятницу: на Palilula часть Višnjica и Slanački put останется без электричества с 09:00 до 11:00, а на Novi Beograd один адрес в Vojvođanska — с 16:00 до 18:00. Масштаб небольшой, поэтому это скорее практичное раннее предупреждение для конкретных кварталов, чем общегородская проблема.",
+          "publishedAt": "2026-09-10T00:00:00+02:00",
+          "source": {
+            "name": "Grad Beograd",
+            "url": "https://www.beograd.rs/cir/servisne-informacije/elektricna-energija/a115588/Planirana-iskljucenja-na-elektro-mrezi.html"
+          }
+        }
+      ]
+    },
+    {
+      "id": "world",
+      "title": "Мир",
+      "items": [
+        {
+          "title": "МАГАТЭ впервые за 20 лет передало вопрос об Иране в Совбез ООН",
+          "summary": "Совет управляющих МАГАТЭ проголосовал за передачу иранского ядерного досье в Совет Безопасности ООН из-за недостаточного сотрудничества по расследованию следов урана на незаявленных объектах. Это уже не очередной дипломатический обмен заявлениями: решение открывает путь к новому международному давлению и потенциальным мерам Совбеза на фоне продолжающегося конфликта и обеспокоенности запасами высокообогащённого урана.",
+          "publishedAt": "2026-09-10T00:00:00Z",
+          "source": {
+            "name": "Associated Press",
+            "url": "https://apnews.com/article/607ecdffcd8ef88ddf8f33041e86b720"
+          }
+        },
+        {
+          "title": "НАТО сорвало предполагаемую российскую операцию против подводных кабелей у Шпицбергена",
+          "summary": "Reuters сообщает, что весной Великобритания, Норвегия и США перехватили российскую подводную группу, которая, по оценке западных разведок, отрабатывала размещение оборудования для саботажа оптоволоконных кабелей между Шпицбергеном и материковой Норвегией. Кабели не были повреждены. Значение истории в том, что критическая подводная инфраструктура всё явнее становится отдельным фронтом сдерживания и требует постоянного военного наблюдения.",
+          "publishedAt": "2026-09-10T00:00:00Z",
+          "source": {
+            "name": "Reuters",
+            "url": "https://www.reuters.com/world/europe/nato-allies-foil-russian-subsea-cable-sabotage-plot-2026-09-10/"
+          }
+        },
+        {
+          "title": "Инвестиции в clean hydrogen превысили $130 млрд, но экономика проектов всё ещё хромает",
+          "summary": "По новому отчёту Hydrogen Council, объём уже принятых инвестиционных обязательств в чистый водород превысил $130 млрд, а более 570 проектов либо работают, либо находятся в строительстве. Китай лидирует по renewable hydrogen capacity, Европа — по инвестициям. При этом высокая себестоимость и недостаточный спрос продолжают отменять часть проектов. Это важный сигнал: технология выходит из стадии обещаний в инфраструктурную фазу, но ещё не доказала устойчивую экономику без сильной политики поддержки.",
+          "publishedAt": "2026-09-10T00:00:00Z",
+          "source": {
+            "name": "Reuters",
+            "url": "https://www.reuters.com/business/energy/global-clean-hydrogen-investment-tops-130-billion-amid-energy-security-push-2026-09-10/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "technology",
+      "title": "Технологии",
+      "items": [
+        {
+          "title": "Cloudflare переписала module registry Workers вокруг URL-семантики и правил Node.js",
+          "summary": "В workerd появился новый module registry, который резолвит specifier'ы как реальные URL, корректно поддерживает import.meta.url/main/resolve, import attributes, Node-style require(esm), lazy compilation и единообразные ошибки. Для Workers это глубже, чем ещё один слой Node API compatibility: раньше registry был построен вокруг filesystem-like путей и плохо совпадал с семантикой ESM. Новый подход уменьшает расхождение между браузером, Node и edge-runtime и делает многомодульные deployments менее зависимыми от агрессивного bundling. Пока включается флагом new_module_registry.",
+          "publishedAt": "2026-09-09T00:00:00Z",
+          "source": {
+            "name": "Cloudflare Blog",
+            "url": "https://blog.cloudflare.com/workers-module-registry-nodejs/"
+          }
+        },
+        {
+          "title": "Node.js 24.21.0 LTS обновил OpenSSL и ускорил URL-горячие пути",
+          "summary": "Свежий Krypton LTS перешёл на OpenSSL 3.5.8 и Undici 7.29.1, обновил NSS root certificates и добавил загрузку private keys через STORE loaders — полезно для HSM и внешних key stores. Параллельно команда ускорила WHATWG URL parsing, URLSearchParams и net.BlockList. Это не flashy-релиз, но именно такой набор изменений имеет смысл для production Node: криптографическая база, сетевой стек и несколько очень часто встречающихся hot paths улучшаются без смены major.",
+          "publishedAt": "2026-09-09T00:00:00Z",
+          "source": {
+            "name": "Node.js",
+            "url": "https://nodejs.org/tr/blog/release/v24.21.0"
+          }
+        },
+        {
+          "title": "CodeQL 2.27.0 получил native Linux ARM64 и усилил анализ supply-chain путей",
+          "summary": "CodeQL CLI теперь нативно работает на Linux ARM64, а default code scanning умеет использовать private registry configuration при загрузке custom queries и packs. В том же релизе расширено моделирование фреймворков и security sinks: например, добавлены PostgreSQL libpq SQL-injection sinks и новая Rust command-line-injection query. Для CI это постепенно снимает компромисс между ARM64 runners и полноценным static-analysis toolchain, а также делает собственные закрытые CodeQL packs проще использовать без отдельной credential-обвязки.",
+          "publishedAt": "2026-09-09T00:00:00Z",
+          "source": {
+            "name": "GitHub Changelog",
+            "url": "https://github.blog/changelog/2026-09-09-codeql-2-27-0-adds-support-for-linux-arm64/"
+          }
+        }
+      ]
+    }
+  ]
+}
