@@ -1,0 +1,96 @@
+{
+  "date": "2026-09-11",
+  "generatedAt": "2026-09-11T09:57:29Z",
+  "sections": [
+    {
+      "id": "serbia",
+      "title": "Сербия & Белград",
+      "items": [
+        {
+          "title": "Сегодня крупные плановые отключения электричества в Surčin, Zemun и отдельных частях Palilula",
+          "summary": "11 сентября плановые работы затрагивают несколько белградских районов. Наиболее широкий список адресов — в Surčin, включая Bečmen, Dobanovci и Petrovčić, где электричество отключают примерно с 10:00 до 13:00; в Zemunu ряд улиц останется без света с 08:30 до 12:30, а на Palilula отдельные адреса — с 09:00 до 11:00. На Novi Beograd заявлено короткое отключение одного адреса в Vojvođanska с 16:00 до 18:00. Для большинства центра города ограничений нет, но для западной окраины и Земунa это сегодня заметная сервисная работа.",
+          "publishedAt": "2026-09-10T00:00:00+02:00",
+          "source": {
+            "name": "Grad Beograd",
+            "url": "https://www.beograd.rs/lat/servisne-informacije/elektricna-energija/a115588/Planirana-iskljucenja-na-elektro-mrezi.html"
+          }
+        },
+        {
+          "title": "На выходных — Beogradsko leto, BELEF и 3×3 в Čuburski park",
+          "summary": "Город опубликовал программу на 11–13 сентября. Сегодня вечером на террасе Kolarca показывают «La Grazia»; 12–13 сентября Beogradsko leto продолжается на Kalemegdan и в Tašmajdanski park, а в субботу в Čuburski park пройдёт юбилейный десятый гуманитарный турнир Trofej Vračara 3×3. В Sava Centar 12 сентября в рамках BELEF сыграют мюзикл «Sa druge strane jastuka» с Bajaga как специальным гостем. Это не инфраструктурная новость, но полезная компактная карта наиболее заметных городских событий на выходные.",
+          "publishedAt": "2026-09-10T00:00:00+02:00",
+          "source": {
+            "name": "Grad Beograd",
+            "url": "https://www.beograd.rs/lat/zivot-u-beogradu/manifestacije/a115555/Vikend-u-Beogradu.html"
+          }
+        }
+      ]
+    },
+    {
+      "id": "world",
+      "title": "Мир",
+      "items": [
+        {
+          "title": "Хуситы вышли к острову Perim в проливе Bab el-Mandeb — второй ключевой нефтяной маршрут оказался под угрозой",
+          "summary": "Йеменские правительственные источники сообщили Reuters, что хуситы достигли стратегического острова Perim после отхода поддерживаемых Саудовской Аравией сил и также заняли Dhubab. Это материально новое развитие вчерашнего наступления на побережье: Bab el-Mandeb — один из важнейших мировых судоходных коридоров, а Саудовская Аравия особенно зависит от маршрута через Красное море после фактического закрытия Hormuz. Полный контроль хуситов над проливом пока не подтверждён, но риск для торговли и нефтяных поставок заметно вырос.",
+          "publishedAt": "2026-09-11T09:35:17Z",
+          "source": {
+            "name": "Reuters",
+            "url": "https://www.reuters.com/world/middle-east/yemens-houthis-reach-strategic-island-mouth-vital-shipping-lane-2026-09-11/"
+          }
+        },
+        {
+          "title": "Глобальная распродажа облигаций приблизила доходность 10-летних US Treasuries к 5%",
+          "summary": "Доходность 10-летних американских облигаций поднялась примерно до 4,97%, а стоимость заимствований одновременно растёт в Европе, Японии и Австралии. Рынок переоценивает инфляцию из-за Brent около $110 и вероятность повышения ставки ФРС уже на следующей неделе; ЕЦБ повысил ставку накануне. Это важно далеко за пределами bond market: более дорогая базовая ставка быстро проходит в ипотеку, корпоративный долг и оценки акций, а устойчивый уровень выше 5% способен заметно изменить распределение капитала между bonds и equities.",
+          "publishedAt": "2026-09-11T05:54:11Z",
+          "source": {
+            "name": "Reuters",
+            "url": "https://www.reuters.com/world/europe/global-bond-selloff-pushes-10-year-us-yield-toward-5-oil-rate-hike-fears-2026-09-11/"
+          }
+        },
+        {
+          "title": "Почти треть угольных электростанций Индии дошла до критически низких запасов топлива",
+          "summary": "По данным индийского регулятора, 59 электростанций имеют менее 25% нормативного запаса угля или топлива меньше чем на три дня — против 45 станций в конце августа. Продолжительная жара держит спрос на электричество возле исторического максимума около 267–271 ГВт; солнечная генерация помогает днём, но недостаток батарей и низкие уровни водохранилищ усиливают нагрузку на coal generation. Пока это не энергетический кризис, но уже системный риск для одной из крупнейших энергосистем мира.",
+          "publishedAt": "2026-09-11T09:06:33Z",
+          "source": {
+            "name": "Reuters",
+            "url": "https://www.reuters.com/world/india/nearly-third-indias-coal-power-plants-have-critical-low-fuel-stocks-2026-09-11/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "technology",
+      "title": "Технологии",
+      "items": [
+        {
+          "title": "AWS разобрала lease-based архитектуру для сотен долгоживущих WebSocket-соединений",
+          "summary": "Свежий AWS Architecture Blog показывает паттерн для streaming workers, где DynamoDB хранит source of truth и lease ownership, SQS служит лишь быстрым notification channel, а conditional writes гарантируют, что одно соединение принадлежит только одному worker. Worker продлевает lease heartbeat'ом; после crash истёкший lease подбирает reconciliation loop, а graceful shutdown освобождает его сразу. Это хороший практический пример разделения durable state и transient delivery: очередь не должна притворяться координатором владения долгоживущим ресурсом. Отдельно стоит заметить зависимость lease-модели от синхронизации часов и необходимость bounded recovery window.",
+          "publishedAt": "2026-09-10T00:00:00Z",
+          "source": {
+            "name": "AWS Architecture Blog",
+            "url": "https://aws.amazon.com/blogs/architecture/building-resilient-real-time-streaming-workers-with-amazon-dynamodb-leases/"
+          }
+        },
+        {
+          "title": "UAE перерабатывает 5-GW AI campus в распределённую и физически защищённую инфраструктуру",
+          "summary": "По данным Reuters, изначальный 10-square-mile AI campus в Abu Dhabi, вероятно, превратят в сеть дата-центров по разным площадкам UAE после иранских ударов по региональной cloud-инфраструктуре. Рассматриваются underground sections, blast-resistant construction, резервирование power/cooling, electronic jamming и даже размещение наиболее чувствительных систем внутри гор. Для инфраструктурной архитектуры это редкий наглядный пример того, как threat model уровня государства заставляет отказаться от максимальной концентрации compute: locality и efficiency уступают blast radius, geographic redundancy и physical survivability.",
+          "publishedAt": "2026-09-11T09:04:00Z",
+          "source": {
+            "name": "Reuters",
+            "url": "https://www.reuters.com/world/middle-east/uae-revises-ai-data-center-plan-after-iranian-attacks-sources-say-2026-09-11/"
+          }
+        },
+        {
+          "title": "GitHub сегодня продолжает enforcement минимальной версии self-hosted Actions runner",
+          "summary": "11 сентября — очередная контрольная дата по rollout GitHub Actions для Enterprise Cloud: устаревшие self-hosted runner versions сегодня нельзя регистрировать, а с 14 сентября GitHub начинает повторяющиеся окна, где старые версии также не будут выполнять jobs; полное enforcement запланировано на 25 сентября. Для команд со своими runners это уже не будущая deprecation note, а operational deadline: runner version теперь стоит мониторить как часть платформенной совместимости, а не обновлять только при поломке workflow.",
+          "publishedAt": "2026-06-12T00:00:00Z",
+          "source": {
+            "name": "GitHub Changelog",
+            "url": "https://github.blog/changelog/2026-06-12-github-actions-minimum-version-enforcement-timeline-for-self-hosted-runners/"
+          }
+        }
+      ]
+    }
+  ]
+}
