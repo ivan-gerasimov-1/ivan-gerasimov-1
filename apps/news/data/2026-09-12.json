@@ -1,0 +1,96 @@
+{
+  "date": "2026-09-12",
+  "generatedAt": "2026-09-12T11:59:32+02:00",
+  "sections": [
+    {
+      "id": "serbia",
+      "title": "Сербия & Белград",
+      "items": [
+        {
+          "title": "С 14 сентября на месяц меняется маршрут 82 на Новом Белграде",
+          "summary": "Из-за ремонта Gandijeva и Egipatska с 14 сентября по 14 октября линия 82 в направлении Blok 44 пойдёт через Tošin bunar, Egipatska и Gandijeva; остановка Vojvođanska временно не используется, появится временная Gandijeva 1, а часть улиц будет работать в стеснённом двустороннем режиме. Это не разовое перекрытие, а месяц изменённой схемы для одного из самых загруженных районов Нового Белграда.",
+          "publishedAt": "2026-09-12",
+          "source": {
+            "name": "Grad Beograd",
+            "url": "https://www.beograd.rs/lat/servisne-informacije/saobracaj-i-prevoz/a115627/Promena-rezima-rada-linije-broj-82.html"
+          }
+        },
+        {
+          "title": "В воскресенье Земун и Новый Белград ждут крупные изменения транспорта из-за полумарафона и IRONMAN 70.3",
+          "summary": "13 сентября с раннего утра одновременно пройдут 5-й Земунский полумарафон и открытый чемпионат Сербии IRONMAN 70.3. Город вводит специальную схему движения примерно с 06:00 до 14:00; меняются, среди прочих, линии 15, 45 и 55, а ограничения затрагивают Zemun, Novi Beograd и подходы к Ada Ciganlija. Если завтра есть поездки по западной части города, маршрут лучше планировать заранее.",
+          "publishedAt": "2026-09-11",
+          "source": {
+            "name": "Grad Beograd",
+            "url": "https://www.beograd.rs/cir/servisne-informacije/saobracaj-i-prevoz/a115626/U-nedelju-otvoreno-prvenstvo-Srbije-u-triatlonu.html"
+          }
+        },
+        {
+          "title": "Сегодня на Врачаре проходит юбилейный Trofej Vračara 3×3",
+          "summary": "В Čuburski park с 10:00 проходит десятый благотворительный турнир Trofej Vračara 3×3. Это локальное событие без серьёзного транспортного эффекта, но хороший вариант на сегодня, особенно если хочется выбраться куда-то рядом и без сложной логистики.",
+          "publishedAt": "2026-08-26",
+          "source": {
+            "name": "Grad Beograd",
+            "url": "https://www.beograd.rs/cir/zivot-u-beogradu/sportski-program/a115368/Jubilarni-10.-humanitarni-turnir-u-basketu-3-3-Trofej-Vracara.html"
+          }
+        }
+      ]
+    },
+    {
+      "id": "world",
+      "title": "Мир",
+      "items": [
+        {
+          "title": "Саудовская Аравия остановила нефтепровод East-West после атаки дрона",
+          "summary": "После удара дрона Саудовская Аравия остановила критически важный East-West pipeline длиной около 1 200 км, который позволял обходить Ормузский пролив и перевозил примерно 4–5 млн баррелей нефти в сутки. На фоне захвата хуситами острова Perim это создаёт одновременное давление сразу на два ключевых маршрута мировой нефтяной логистики. Это уже качественно новый этап энергетического риска, а не очередной эпизод той же региональной эскалации.",
+          "publishedAt": "2026-09-12",
+          "source": {
+            "name": "Reuters",
+            "url": "https://www.reuters.com/business/energy/saudis-shut-down-oil-pipeline-houthis-tighten-grip-red-sea-shipping-2026-09-12/"
+          }
+        },
+        {
+          "title": "В Конго крупнейшая вспышка Эболы распространилась уже на седьмую провинцию",
+          "summary": "Число подтверждённых случаев Эболы в ДР Конго превысило 7 000, умерли более 3 300 человек; новый случай выявлен в South Ubangi далеко от исходного эпицентра. ВОЗ сообщает о нехватке персонала, операционных ресурсов и финансирования. Это существенно меняет масштаб истории: вспышка становится не только крупнейшей в истории страны, но и всё труднее локализуемой географически.",
+          "publishedAt": "2026-09-11",
+          "source": {
+            "name": "Reuters",
+            "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/ebola-infections-top-7000-congo-virus-spreads-new-province-2026-09-11/"
+          }
+        },
+        {
+          "title": "Си Цзиньпин приехал в Индию впервые за семь лет",
+          "summary": "Си Цзиньпин прибыл в Нью-Дели на саммит BRICS и переговоры с Нарендрой Моди — его первый визит в Индию за семь лет после тяжёлого пограничного кризиса 2020 года. Саммит проходит на фоне серьёзных внутренних разногласий внутри BRICS по Ирану и региональной войне. Сам по себе визит не означает нормализацию, но это наиболее заметный сигнал за годы, что Пекин и Дели снова тестируют возможность более стабильных отношений.",
+          "publishedAt": "2026-09-12",
+          "source": {
+            "name": "Reuters",
+            "url": "https://www.reuters.com/world/china/chinas-xi-lands-delhi-brics-summit-indian-tv-channels-report-2026-09-12/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "technology",
+      "title": "Технологии",
+      "items": [
+        {
+          "title": "React 19.3 стабилизировал View Transitions и Fragment Refs",
+          "summary": "React 19.3 сделал стабильными ViewTransition и Fragment Refs, добавил Trusted Types support, новый browser() API для React DOM и разрешил напрямую рендерить Context в Server Components. Для full-stack React это заметнее обычного minor-релиза: View Transitions становятся частью нормального UI-toolkit без experimental-флага, а Trusted Types даёт более прямой путь к жёсткой CSP/XSS-модели в крупных приложениях.",
+          "publishedAt": "2026-09-09",
+          "source": {
+            "name": "React",
+            "url": "https://react.dev/blog/2026/09/09/react-19-3"
+          }
+        },
+        {
+          "title": "GitHub Actions получил отдельную модель прав для cache",
+          "summary": "GitHub Actions теперь поддерживает cache-mode на уровне workflow и job: read, write, write-only или none. Ограничение применяется самим cache service и наследуется reusable workflows, поэтому вызываемый workflow не может получить больше прав, чем дал caller. Практически это закрывает давно неприятную дыру в supply-chain модели CI: cache больше не обязан быть бинарным «доступен всем шагам или никому», и pull_request_target можно держать read-only без кастомных обходов.",
+          "publishedAt": "2026-09-10",
+          "source": {
+            "name": "GitHub Changelog",
+            "url": "https://github.blog/changelog/2026-09-10-control-github-actions-cache-access-with-cache-mode/"
+          }
+        }
+      ]
+    }
+  ]
+}
